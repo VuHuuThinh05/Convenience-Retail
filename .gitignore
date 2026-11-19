@@ -31,3 +31,6 @@ Thumbs.db
 /products.java
 /transactions.java
 /transaction_items.java
+
+# Power BI dashboard
+/dashboard/

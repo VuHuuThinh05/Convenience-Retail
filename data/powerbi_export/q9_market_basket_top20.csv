@@ -1,0 +1,21 @@
+item_a,item_b,co_occurrence,support,confidence_a_to_b,lift
+Batteries,Sunscreen,32,0.00173,0.0537,1.7486
+Bathrobe,Batteries,29,0.00156,0.049,1.5231
+Bathrobe,Butter,27,0.00146,0.0456,1.4398
+Batteries,Slippers,22,0.00119,0.0369,1.2064
+Shampoo,Sunscreen,20,0.00108,0.0364,1.1864
+Paper Towels,Sunscreen,20,0.00108,0.036,1.1736
+Bathrobe,Sunscreen,19,0.00103,0.0321,1.0452
+Butter,Sunscreen,19,0.00103,0.0324,1.0541
+Batteries,Post-it Notes,19,0.00103,0.0319,2.1023
+Bathrobe,Paper Towels,19,0.00103,0.0321,1.0716
+Heels,Slippers,19,0.00103,0.0625,2.0427
+Batteries,Frozen Burritos,19,0.00103,0.0319,1.9369
+Bathrobe,Duffel Bag,18,0.00097,0.0304,1.8234
+Paper Towels,Shampoo,18,0.00097,0.0324,1.0947
+Butter,Tank Top,18,0.00097,0.0307,1.8449
+Bathrobe,Dress,18,0.00097,0.0304,1.991
+Frozen Meatballs,Sunscreen,18,0.00097,0.0612,1.9939
+Shaving Cream,Spaghetti,18,0.00097,0.0579,3.8033
+Sunscreen,Weight Bench,18,0.00097,0.0316,2.0214
+Shaving Cream,Sunscreen,18,0.00097,0.0579,1.8849

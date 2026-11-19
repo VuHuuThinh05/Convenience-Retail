@@ -1,0 +1,6 @@
+customer_category,total_transactions,total_revenue,avg_order_value
+Adult (30-49),6507,326793.47,50.22
+Young Adult (20-29),4637,237329.72,51.18
+Middle-aged (50-64),3664,181755.48,49.61
+Senior (65+),1891,97550.12,51.59
+Teenager (13-19),1832,93374.64,50.97
