@@ -1,11 +1,4 @@
 transaction_id,item_position,product_id,product_name
-1000000044,7,1,Air Freshener
-1000000067,6,1,Air Freshener
-1000000096,5,1,Air Freshener
-1000000130,1,1,Air Freshener
-1000000265,4,1,Air Freshener
-1000000326,3,1,Air Freshener
-1000000327,7,1,Air Freshener
 1000000344,2,1,Air Freshener
 1000000452,3,1,Air Freshener
 1000000513,1,1,Air Freshener
@@ -17,6 +10,7 @@ transaction_id,item_position,product_id,product_name
 1000000913,5,1,Air Freshener
 1000000922,6,1,Air Freshener
 1000000981,4,1,Air Freshener
+1000000096,5,1,Air Freshener
 1000000984,1,1,Air Freshener
 1000001032,9,1,Air Freshener
 1000001054,1,1,Air Freshener
@@ -106,9 +100,11 @@ transaction_id,item_position,product_id,product_name
 1000007707,2,1,Air Freshener
 1000007741,3,1,Air Freshener
 1000007805,2,1,Air Freshener
+1000000044,7,1,Air Freshener
 1000007885,3,1,Air Freshener
 1000007906,4,1,Air Freshener
 1000007933,5,1,Air Freshener
+1000000067,6,1,Air Freshener
 1000007984,2,1,Air Freshener
 1000008178,8,1,Air Freshener
 1000008212,3,1,Air Freshener
@@ -160,6 +156,7 @@ transaction_id,item_position,product_id,product_name
 1000010730,1,1,Air Freshener
 1000010770,2,1,Air Freshener
 1000010776,3,1,Air Freshener
+1000000265,4,1,Air Freshener
 1000010845,1,1,Air Freshener
 1000010906,2,1,Air Freshener
 1000010945,4,1,Air Freshener
@@ -180,6 +177,7 @@ transaction_id,item_position,product_id,product_name
 1000012273,4,1,Air Freshener
 1000012383,4,1,Air Freshener
 1000012407,11,1,Air Freshener
+1000000130,1,1,Air Freshener
 1000012420,5,1,Air Freshener
 1000012492,1,1,Air Freshener
 1000012552,2,1,Air Freshener
@@ -247,6 +245,7 @@ transaction_id,item_position,product_id,product_name
 1000015583,5,1,Air Freshener
 1000015610,4,1,Air Freshener
 1000015709,6,1,Air Freshener
+1000000326,3,1,Air Freshener
 1000015769,10,1,Air Freshener
 1000015774,3,1,Air Freshener
 1000015785,4,1,Air Freshener
@@ -296,6 +295,8 @@ transaction_id,item_position,product_id,product_name
 1000018394,1,1,Air Freshener
 1000018513,7,1,Air Freshener
 1000018516,2,1,Air Freshener
+1000000327,7,1,Air Freshener
+1000017522,8,2,Allergy Medicine
 1000000044,6,2,Allergy Medicine
 1000000118,1,2,Allergy Medicine
 1000000165,2,2,Allergy Medicine
@@ -542,7 +543,6 @@ transaction_id,item_position,product_id,product_name
 1000017497,2,2,Allergy Medicine
 1000017507,1,2,Allergy Medicine
 1000017519,1,2,Allergy Medicine
-1000017522,8,2,Allergy Medicine
 1000017612,1,2,Allergy Medicine
 1000017668,7,2,Allergy Medicine
 1000017768,6,2,Allergy Medicine
@@ -1085,6 +1085,7 @@ transaction_id,item_position,product_id,product_name
 1000018339,4,4,Aluminum Foil
 1000018345,2,4,Aluminum Foil
 1000018478,3,4,Aluminum Foil
+1000011392,4,5,Apples
 1000000003,1,5,Apples
 1000000093,5,5,Apples
 1000000256,4,5,Apples
@@ -1243,7 +1244,6 @@ transaction_id,item_position,product_id,product_name
 1000011097,1,5,Apples
 1000011116,4,5,Apples
 1000011281,3,5,Apples
-1000011392,4,5,Apples
 1000011534,4,5,Apples
 1000011536,1,5,Apples
 1000011700,3,5,Apples
@@ -1349,7 +1349,6 @@ transaction_id,item_position,product_id,product_name
 1000018465,2,5,Apples
 1000018485,1,5,Apples
 1000018494,1,5,Apples
-1000000017,3,6,Backpack
 1000000082,2,6,Backpack
 1000000109,6,6,Backpack
 1000000194,3,6,Backpack
@@ -1616,6 +1615,7 @@ transaction_id,item_position,product_id,product_name
 1000016227,3,6,Backpack
 1000016263,6,6,Backpack
 1000016269,4,6,Backpack
+1000000017,3,6,Backpack
 1000016366,5,6,Backpack
 1000016373,3,6,Backpack
 1000016509,3,6,Backpack
@@ -1652,6 +1652,7 @@ transaction_id,item_position,product_id,product_name
 1000018440,5,6,Backpack
 1000018461,6,6,Backpack
 1000018487,3,6,Backpack
+1000018152,5,7,Bagels
 1000000201,5,7,Bagels
 1000000217,4,7,Bagels
 1000000321,8,7,Bagels
@@ -1918,7 +1919,6 @@ transaction_id,item_position,product_id,product_name
 1000017996,5,7,Bagels
 1000018020,4,7,Bagels
 1000018057,5,7,Bagels
-1000018152,5,7,Bagels
 1000018185,3,7,Bagels
 1000018436,2,7,Bagels
 1000018469,3,7,Bagels
@@ -2487,6 +2487,7 @@ transaction_id,item_position,product_id,product_name
 1000018402,5,9,Baking Soda
 1000018426,2,9,Baking Soda
 1000018481,3,9,Baking Soda
+1000011082,5,10,Bananas
 1000000098,5,10,Bananas
 1000000120,6,10,Bananas
 1000000250,3,10,Bananas
@@ -2666,7 +2667,6 @@ transaction_id,item_position,product_id,product_name
 1000010749,2,10,Bananas
 1000010954,5,10,Bananas
 1000011057,7,10,Bananas
-1000011082,5,10,Bananas
 1000011168,3,10,Bananas
 1000011193,3,10,Bananas
 1000011253,3,10,Bananas
@@ -2780,8 +2780,6 @@ transaction_id,item_position,product_id,product_name
 1000018294,6,10,Bananas
 1000018500,5,10,Bananas
 1000018519,1,10,Bananas
-1000000001,1,11,Band-Aids
-1000000020,2,11,Band-Aids
 1000000180,3,11,Band-Aids
 1000000301,1,11,Band-Aids
 1000000600,5,11,Band-Aids
@@ -2816,6 +2814,7 @@ transaction_id,item_position,product_id,product_name
 1000002625,7,11,Band-Aids
 1000002634,3,11,Band-Aids
 1000002713,5,11,Band-Aids
+1000000020,2,11,Band-Aids
 1000002820,1,11,Band-Aids
 1000002831,6,11,Band-Aids
 1000002891,1,11,Band-Aids
@@ -2943,6 +2942,7 @@ transaction_id,item_position,product_id,product_name
 1000010913,3,11,Band-Aids
 1000010967,3,11,Band-Aids
 1000010971,5,11,Band-Aids
+1000000001,1,11,Band-Aids
 1000011024,6,11,Band-Aids
 1000011039,3,11,Band-Aids
 1000011059,8,11,Band-Aids
@@ -3303,6 +3303,7 @@ transaction_id,item_position,product_id,product_name
 1000018349,2,12,Barbecue Sauce
 1000018387,7,12,Barbecue Sauce
 1000018391,2,12,Barbecue Sauce
+1000002344,6,13,Bath Bombs
 1000000031,5,13,Bath Bombs
 1000000060,1,13,Bath Bombs
 1000000070,1,13,Bath Bombs
@@ -3337,7 +3338,6 @@ transaction_id,item_position,product_id,product_name
 1000002123,2,13,Bath Bombs
 1000002178,1,13,Bath Bombs
 1000002225,2,13,Bath Bombs
-1000002344,6,13,Bath Bombs
 1000002469,5,13,Bath Bombs
 1000002535,4,13,Bath Bombs
 1000002536,2,13,Bath Bombs
@@ -3895,6 +3895,7 @@ transaction_id,item_position,product_id,product_name
 1000018350,2,14,Bath Mat
 1000018389,2,14,Bath Mat
 1000018526,2,14,Bath Mat
+1000012317,1,15,Bath Salts
 1000000054,3,15,Bath Salts
 1000000077,1,15,Bath Salts
 1000000250,8,15,Bath Salts
@@ -4057,7 +4058,6 @@ transaction_id,item_position,product_id,product_name
 1000012164,1,15,Bath Salts
 1000012191,3,15,Bath Salts
 1000012279,2,15,Bath Salts
-1000012317,1,15,Bath Salts
 1000012633,6,15,Bath Salts
 1000012667,5,15,Bath Salts
 1000012682,2,15,Bath Salts
@@ -4137,10 +4137,10 @@ transaction_id,item_position,product_id,product_name
 1000018213,2,15,Bath Salts
 1000018335,1,15,Bath Salts
 1000018397,6,15,Bath Salts
-1000000045,2,16,Bathrobe
 1000000055,3,16,Bathrobe
 1000000091,3,16,Bathrobe
 1000000114,5,16,Bathrobe
+1000000045,2,16,Bathrobe
 1000000126,3,16,Bathrobe
 1000000136,2,16,Bathrobe
 1000000147,6,16,Bathrobe
@@ -4732,10 +4732,10 @@ transaction_id,item_position,product_id,product_name
 1000018492,4,16,Bathrobe
 1000018497,3,16,Bathrobe
 1000018527,3,16,Bathrobe
+1000000084,2,17,Batteries
 1000000013,1,17,Batteries
 1000000032,8,17,Batteries
 1000000055,6,17,Batteries
-1000000084,2,17,Batteries
 1000000147,3,17,Batteries
 1000000169,4,17,Batteries
 1000000177,3,17,Batteries
@@ -5334,6 +5334,7 @@ transaction_id,item_position,product_id,product_name
 1000018486,4,17,Batteries
 1000018507,2,17,Batteries
 1000018511,7,17,Batteries
+1000001241,4,18,Beach Towel
 1000000025,2,18,Beach Towel
 1000000249,1,18,Beach Towel
 1000000278,3,18,Beach Towel
@@ -5349,7 +5350,6 @@ transaction_id,item_position,product_id,product_name
 1000001005,2,18,Beach Towel
 1000001033,2,18,Beach Towel
 1000001117,5,18,Beach Towel
-1000001241,4,18,Beach Towel
 1000001243,5,18,Beach Towel
 1000001285,3,18,Beach Towel
 1000001339,2,18,Beach Towel
@@ -5620,11 +5620,6 @@ transaction_id,item_position,product_id,product_name
 1000018461,11,18,Beach Towel
 1000018491,4,18,Beach Towel
 1000018511,2,18,Beach Towel
-1000000001,3,19,Beef
-1000000093,9,19,Beef
-1000000246,6,19,Beef
-1000000268,1,19,Beef
-1000000300,3,19,Beef
 1000000385,4,19,Beef
 1000000764,2,19,Beef
 1000000803,3,19,Beef
@@ -5646,6 +5641,7 @@ transaction_id,item_position,product_id,product_name
 1000002537,5,19,Beef
 1000002560,3,19,Beef
 1000002584,6,19,Beef
+1000000093,9,19,Beef
 1000002585,3,19,Beef
 1000002605,2,19,Beef
 1000002713,7,19,Beef
@@ -5661,6 +5657,7 @@ transaction_id,item_position,product_id,product_name
 1000003213,2,19,Beef
 1000003282,1,19,Beef
 1000003318,2,19,Beef
+1000000001,3,19,Beef
 1000003377,3,19,Beef
 1000003527,4,19,Beef
 1000003578,2,19,Beef
@@ -5774,6 +5771,7 @@ transaction_id,item_position,product_id,product_name
 1000010806,6,19,Beef
 1000010813,1,19,Beef
 1000010826,1,19,Beef
+1000000246,6,19,Beef
 1000011051,2,19,Beef
 1000011057,3,19,Beef
 1000011185,4,19,Beef
@@ -5885,6 +5883,9 @@ transaction_id,item_position,product_id,product_name
 1000018269,4,19,Beef
 1000018331,1,19,Beef
 1000018362,4,19,Beef
+1000000268,1,19,Beef
+1000000300,3,19,Beef
+1000010435,2,20,Beer
 1000000106,5,20,Beer
 1000000227,2,20,Beer
 1000000290,2,20,Beer
@@ -6036,7 +6037,6 @@ transaction_id,item_position,product_id,product_name
 1000010370,2,20,Beer
 1000010407,5,20,Beer
 1000010433,4,20,Beer
-1000010435,2,20,Beer
 1000010447,3,20,Beer
 1000010449,6,20,Beer
 1000010467,1,20,Beer
@@ -6452,6 +6452,7 @@ transaction_id,item_position,product_id,product_name
 1000018401,2,21,Belt
 1000018432,2,21,Belt
 1000018519,8,21,Belt
+1000017983,1,22,Bikini
 1000000051,2,22,Bikini
 1000000052,6,22,Bikini
 1000000087,6,22,Bikini
@@ -6738,13 +6739,11 @@ transaction_id,item_position,product_id,product_name
 1000017852,1,22,Bikini
 1000017905,1,22,Bikini
 1000017947,10,22,Bikini
-1000017983,1,22,Bikini
 1000018018,3,22,Bikini
 1000018404,3,22,Bikini
 1000018427,2,22,Bikini
 1000018491,6,22,Bikini
 1000018522,2,22,Bikini
-1000000006,1,23,Binders
 1000000035,3,23,Binders
 1000000064,1,23,Binders
 1000000085,1,23,Binders
@@ -7012,6 +7011,7 @@ transaction_id,item_position,product_id,product_name
 1000017382,1,23,Binders
 1000017384,1,23,Binders
 1000017426,2,23,Binders
+1000000006,1,23,Binders
 1000017433,1,23,Binders
 1000017566,6,23,Binders
 1000017631,3,23,Binders
@@ -7033,6 +7033,7 @@ transaction_id,item_position,product_id,product_name
 1000018459,1,23,Binders
 1000018507,4,23,Binders
 1000018521,3,23,Binders
+1000017442,2,24,Bleach
 1000000026,3,24,Bleach
 1000000258,6,24,Bleach
 1000000294,4,24,Bleach
@@ -7300,7 +7301,6 @@ transaction_id,item_position,product_id,product_name
 1000017397,1,24,Bleach
 1000017416,3,24,Bleach
 1000017430,6,24,Bleach
-1000017442,2,24,Bleach
 1000017520,4,24,Bleach
 1000017547,2,24,Bleach
 1000017719,2,24,Bleach
@@ -7318,7 +7318,6 @@ transaction_id,item_position,product_id,product_name
 1000018324,5,24,Bleach
 1000018358,8,24,Bleach
 1000018511,3,24,Bleach
-1000000128,1,25,Blouse
 1000000258,4,25,Blouse
 1000000469,3,25,Blouse
 1000000519,10,25,Blouse
@@ -7333,6 +7332,7 @@ transaction_id,item_position,product_id,product_name
 1000001056,1,25,Blouse
 1000001147,4,25,Blouse
 1000001182,9,25,Blouse
+1000000128,1,25,Blouse
 1000001336,2,25,Blouse
 1000001439,2,25,Blouse
 1000001499,1,25,Blouse
@@ -7573,6 +7573,7 @@ transaction_id,item_position,product_id,product_name
 1000018406,3,25,Blouse
 1000018456,1,25,Blouse
 1000018468,3,25,Blouse
+1000000725,3,26,Bobby Pins
 1000000037,3,26,Bobby Pins
 1000000125,6,26,Bobby Pins
 1000000135,3,26,Bobby Pins
@@ -7587,7 +7588,6 @@ transaction_id,item_position,product_id,product_name
 1000000551,1,26,Bobby Pins
 1000000694,1,26,Bobby Pins
 1000000710,2,26,Bobby Pins
-1000000725,3,26,Bobby Pins
 1000000767,3,26,Bobby Pins
 1000000865,5,26,Bobby Pins
 1000000940,3,26,Bobby Pins
@@ -7857,6 +7857,7 @@ transaction_id,item_position,product_id,product_name
 1000018349,1,26,Bobby Pins
 1000018402,3,26,Bobby Pins
 1000018514,2,26,Bobby Pins
+1000017929,4,27,Body Wash
 1000000056,3,27,Body Wash
 1000000063,5,27,Body Wash
 1000000126,1,27,Body Wash
@@ -8159,7 +8160,6 @@ transaction_id,item_position,product_id,product_name
 1000017866,3,27,Body Wash
 1000017874,4,27,Body Wash
 1000017885,4,27,Body Wash
-1000017929,4,27,Body Wash
 1000017941,4,27,Body Wash
 1000018054,1,27,Body Wash
 1000018095,1,27,Body Wash
@@ -8168,8 +8168,6 @@ transaction_id,item_position,product_id,product_name
 1000018250,1,27,Body Wash
 1000018315,1,27,Body Wash
 1000018479,8,27,Body Wash
-1000000055,7,28,Boots
-1000000096,4,28,Boots
 1000000125,2,28,Boots
 1000000151,4,28,Boots
 1000000155,4,28,Boots
@@ -8184,6 +8182,7 @@ transaction_id,item_position,product_id,product_name
 1000001072,4,28,Boots
 1000001239,2,28,Boots
 1000001315,1,28,Boots
+1000000096,4,28,Boots
 1000001505,4,28,Boots
 1000001545,3,28,Boots
 1000001569,2,28,Boots
@@ -8282,6 +8281,7 @@ transaction_id,item_position,product_id,product_name
 1000007222,2,28,Boots
 1000007237,1,28,Boots
 1000007261,2,28,Boots
+1000000055,7,28,Boots
 1000007320,6,28,Boots
 1000007331,2,28,Boots
 1000007342,2,28,Boots
@@ -8730,6 +8730,7 @@ transaction_id,item_position,product_id,product_name
 1000018220,2,29,Bra
 1000018396,5,29,Bra
 1000018520,1,29,Bra
+1000000775,3,30,Bread
 1000000059,1,30,Bread
 1000000107,3,30,Bread
 1000000119,6,30,Bread
@@ -8744,7 +8745,6 @@ transaction_id,item_position,product_id,product_name
 1000000759,2,30,Bread
 1000000765,7,30,Bread
 1000000768,7,30,Bread
-1000000775,3,30,Bread
 1000000814,7,30,Bread
 1000000940,7,30,Bread
 1000000971,4,30,Bread
@@ -9320,6 +9320,7 @@ transaction_id,item_position,product_id,product_name
 1000018325,3,31,Briefcase
 1000018413,3,31,Briefcase
 1000018462,10,31,Briefcase
+1000007715,3,32,Brown Sugar
 1000000007,1,32,Brown Sugar
 1000000034,1,32,Brown Sugar
 1000000058,3,32,Brown Sugar
@@ -9433,7 +9434,6 @@ transaction_id,item_position,product_id,product_name
 1000007448,3,32,Brown Sugar
 1000007630,1,32,Brown Sugar
 1000007705,1,32,Brown Sugar
-1000007715,3,32,Brown Sugar
 1000007771,4,32,Brown Sugar
 1000007791,3,32,Brown Sugar
 1000007810,3,32,Brown Sugar
@@ -9603,7 +9603,6 @@ transaction_id,item_position,product_id,product_name
 1000018356,6,32,Brown Sugar
 1000018384,1,32,Brown Sugar
 1000018466,2,32,Brown Sugar
-1000000021,4,33,Brownies
 1000000062,3,33,Brownies
 1000000099,4,33,Brownies
 1000000139,3,33,Brownies
@@ -9861,6 +9860,7 @@ transaction_id,item_position,product_id,product_name
 1000016184,1,33,Brownies
 1000016227,9,33,Brownies
 1000016316,2,33,Brownies
+1000000021,4,33,Brownies
 1000016333,4,33,Brownies
 1000016476,3,33,Brownies
 1000016500,5,33,Brownies
@@ -9894,6 +9894,7 @@ transaction_id,item_position,product_id,product_name
 1000018280,5,33,Brownies
 1000018358,3,33,Brownies
 1000018413,2,33,Brownies
+1000017451,1,34,Bubble Bath
 1000000149,1,34,Bubble Bath
 1000000170,4,34,Bubble Bath
 1000000270,5,34,Bubble Bath
@@ -10151,7 +10152,6 @@ transaction_id,item_position,product_id,product_name
 1000017239,7,34,Bubble Bath
 1000017245,2,34,Bubble Bath
 1000017340,1,34,Bubble Bath
-1000017451,1,34,Bubble Bath
 1000017463,2,34,Bubble Bath
 1000017474,6,34,Bubble Bath
 1000017525,5,34,Bubble Bath
@@ -10166,8 +10166,8 @@ transaction_id,item_position,product_id,product_name
 1000018383,3,34,Bubble Bath
 1000018446,1,34,Bubble Bath
 1000018448,3,34,Bubble Bath
-1000000071,2,35,Bubble Wrap
 1000000085,2,35,Bubble Wrap
+1000000071,2,35,Bubble Wrap
 1000000094,3,35,Bubble Wrap
 1000000112,7,35,Bubble Wrap
 1000000160,1,35,Bubble Wrap
@@ -10431,8 +10431,8 @@ transaction_id,item_position,product_id,product_name
 1000018332,3,35,Bubble Wrap
 1000018375,1,35,Bubble Wrap
 1000018386,3,35,Bubble Wrap
-1000000003,4,36,Bug Spray
 1000000004,1,36,Bug Spray
+1000000003,4,36,Bug Spray
 1000000034,2,36,Bug Spray
 1000000056,4,36,Bug Spray
 1000000078,1,36,Bug Spray
@@ -10699,6 +10699,7 @@ transaction_id,item_position,product_id,product_name
 1000018440,4,36,Bug Spray
 1000018496,2,36,Bug Spray
 1000018504,4,36,Bug Spray
+1000012506,3,37,Butter
 1000000062,1,37,Butter
 1000000067,5,37,Butter
 1000000197,2,37,Butter
@@ -11101,7 +11102,6 @@ transaction_id,item_position,product_id,product_name
 1000012448,6,37,Butter
 1000012487,6,37,Butter
 1000012495,1,37,Butter
-1000012506,3,37,Butter
 1000012550,1,37,Butter
 1000012589,1,37,Butter
 1000012605,4,37,Butter
@@ -11288,10 +11288,6 @@ transaction_id,item_position,product_id,product_name
 1000018465,7,37,Butter
 1000018479,2,37,Butter
 1000018526,5,37,Butter
-1000000058,6,38,Calculator
-1000000201,8,38,Calculator
-1000000235,2,38,Calculator
-1000000250,10,38,Calculator
 1000000354,3,38,Calculator
 1000000537,2,38,Calculator
 1000000733,2,38,Calculator
@@ -11368,6 +11364,7 @@ transaction_id,item_position,product_id,product_name
 1000004664,2,38,Calculator
 1000004671,6,38,Calculator
 1000004688,1,38,Calculator
+1000000201,8,38,Calculator
 1000004712,2,38,Calculator
 1000004719,9,38,Calculator
 1000004838,1,38,Calculator
@@ -11461,6 +11458,7 @@ transaction_id,item_position,product_id,product_name
 1000010515,3,38,Calculator
 1000010674,4,38,Calculator
 1000010723,4,38,Calculator
+1000000235,2,38,Calculator
 1000010819,3,38,Calculator
 1000010972,4,38,Calculator
 1000010981,10,38,Calculator
@@ -11505,6 +11503,7 @@ transaction_id,item_position,product_id,product_name
 1000013229,4,38,Calculator
 1000013421,3,38,Calculator
 1000013476,2,38,Calculator
+1000000058,6,38,Calculator
 1000013501,6,38,Calculator
 1000013624,1,38,Calculator
 1000013646,1,38,Calculator
@@ -11555,6 +11554,7 @@ transaction_id,item_position,product_id,product_name
 1000016934,5,38,Calculator
 1000017035,9,38,Calculator
 1000017115,1,38,Calculator
+1000000250,10,38,Calculator
 1000017166,1,38,Calculator
 1000017253,2,38,Calculator
 1000017434,3,38,Calculator
@@ -11572,6 +11572,7 @@ transaction_id,item_position,product_id,product_name
 1000018348,2,38,Calculator
 1000018461,5,38,Calculator
 1000018492,3,38,Calculator
+1000017624,8,39,Candles
 1000000111,6,39,Candles
 1000000167,7,39,Candles
 1000000364,3,39,Candles
@@ -11838,7 +11839,6 @@ transaction_id,item_position,product_id,product_name
 1000017534,1,39,Candles
 1000017549,2,39,Candles
 1000017593,5,39,Candles
-1000017624,8,39,Candles
 1000017648,1,39,Candles
 1000017720,7,39,Candles
 1000017733,3,39,Candles
@@ -12388,6 +12388,7 @@ transaction_id,item_position,product_id,product_name
 1000018254,1,41,Canned Fruit
 1000018296,4,41,Canned Fruit
 1000018507,3,41,Canned Fruit
+1000010582,5,42,Canned Soup
 1000000093,11,42,Canned Soup
 1000000201,9,42,Canned Soup
 1000000265,2,42,Canned Soup
@@ -12559,7 +12560,6 @@ transaction_id,item_position,product_id,product_name
 1000010526,3,42,Canned Soup
 1000010542,12,42,Canned Soup
 1000010573,3,42,Canned Soup
-1000010582,5,42,Canned Soup
 1000010670,7,42,Canned Soup
 1000010823,1,42,Canned Soup
 1000010872,7,42,Canned Soup
@@ -12682,7 +12682,6 @@ transaction_id,item_position,product_id,product_name
 1000018414,8,42,Canned Soup
 1000018459,2,42,Canned Soup
 1000018519,6,42,Canned Soup
-1000000020,1,43,Canned Tuna
 1000000051,6,43,Canned Tuna
 1000000090,1,43,Canned Tuna
 1000000178,1,43,Canned Tuna
@@ -12961,6 +12960,7 @@ transaction_id,item_position,product_id,product_name
 1000016657,3,43,Canned Tuna
 1000016706,1,43,Canned Tuna
 1000016782,2,43,Canned Tuna
+1000000020,1,43,Canned Tuna
 1000016832,3,43,Canned Tuna
 1000016886,3,43,Canned Tuna
 1000016894,2,43,Canned Tuna
@@ -12978,6 +12978,7 @@ transaction_id,item_position,product_id,product_name
 1000018419,2,43,Canned Tuna
 1000018439,5,43,Canned Tuna
 1000018490,7,43,Canned Tuna
+1000016997,1,44,Canned Vegetables
 1000000004,6,44,Canned Vegetables
 1000000067,2,44,Canned Vegetables
 1000000130,4,44,Canned Vegetables
@@ -13256,7 +13257,6 @@ transaction_id,item_position,product_id,product_name
 1000016827,3,44,Canned Vegetables
 1000016855,5,44,Canned Vegetables
 1000016957,5,44,Canned Vegetables
-1000016997,1,44,Canned Vegetables
 1000017126,6,44,Canned Vegetables
 1000017208,5,44,Canned Vegetables
 1000017226,8,44,Canned Vegetables
@@ -13279,11 +13279,11 @@ transaction_id,item_position,product_id,product_name
 1000018269,7,44,Canned Vegetables
 1000018379,2,44,Canned Vegetables
 1000018474,2,44,Canned Vegetables
-1000000044,4,45,Canola Oil
 1000000081,3,45,Canola Oil
 1000000094,1,45,Canola Oil
 1000000223,4,45,Canola Oil
 1000000225,6,45,Canola Oil
+1000000044,4,45,Canola Oil
 1000000267,5,45,Canola Oil
 1000000324,1,45,Canola Oil
 1000000486,1,45,Canola Oil
@@ -13551,11 +13551,11 @@ transaction_id,item_position,product_id,product_name
 1000018368,6,45,Canola Oil
 1000018371,1,45,Canola Oil
 1000018470,1,45,Canola Oil
+1000000179,11,46,Capri Pants
 1000000060,4,46,Capri Pants
 1000000086,3,46,Capri Pants
 1000000115,1,46,Capri Pants
 1000000175,7,46,Capri Pants
-1000000179,11,46,Capri Pants
 1000000280,7,46,Capri Pants
 1000000325,5,46,Capri Pants
 1000000514,4,46,Capri Pants
@@ -13831,6 +13831,7 @@ transaction_id,item_position,product_id,product_name
 1000018384,3,46,Capri Pants
 1000018421,2,46,Capri Pants
 1000018459,3,46,Capri Pants
+1000006033,2,47,Carry-on Bag
 1000000010,5,47,Carry-on Bag
 1000000030,2,47,Carry-on Bag
 1000000128,3,47,Carry-on Bag
@@ -13909,7 +13910,6 @@ transaction_id,item_position,product_id,product_name
 1000005856,2,47,Carry-on Bag
 1000005875,2,47,Carry-on Bag
 1000005964,4,47,Carry-on Bag
-1000006033,2,47,Carry-on Bag
 1000006118,11,47,Carry-on Bag
 1000006124,4,47,Carry-on Bag
 1000006231,5,47,Carry-on Bag
@@ -14089,10 +14089,9 @@ transaction_id,item_position,product_id,product_name
 1000018226,8,47,Carry-on Bag
 1000018450,7,47,Carry-on Bag
 1000018515,5,47,Carry-on Bag
-1000000073,1,48,Cashews
-1000000089,3,48,Cashews
 1000000182,5,48,Cashews
 1000000197,3,48,Cashews
+1000000089,3,48,Cashews
 1000000210,2,48,Cashews
 1000000370,4,48,Cashews
 1000000470,10,48,Cashews
@@ -14225,6 +14224,7 @@ transaction_id,item_position,product_id,product_name
 1000007847,1,48,Cashews
 1000007855,5,48,Cashews
 1000007857,2,48,Cashews
+1000000073,1,48,Cashews
 1000007940,2,48,Cashews
 1000008094,1,48,Cashews
 1000008128,4,48,Cashews
@@ -14629,9 +14629,9 @@ transaction_id,item_position,product_id,product_name
 1000018332,5,49,Cereal
 1000018430,2,49,Cereal
 1000018508,4,49,Cereal
+1000000139,2,50,Charcoal
 1000000002,5,50,Charcoal
 1000000063,1,50,Charcoal
-1000000139,2,50,Charcoal
 1000000204,5,50,Charcoal
 1000000361,3,50,Charcoal
 1000000367,4,50,Charcoal
@@ -15174,6 +15174,7 @@ transaction_id,item_position,product_id,product_name
 1000018425,2,51,Cheese
 1000018448,1,51,Cheese
 1000018474,3,51,Cheese
+1000009458,7,52,Chewing Gum
 1000000003,8,52,Chewing Gum
 1000000105,3,52,Chewing Gum
 1000000144,2,52,Chewing Gum
@@ -15309,7 +15310,6 @@ transaction_id,item_position,product_id,product_name
 1000009299,6,52,Chewing Gum
 1000009428,12,52,Chewing Gum
 1000009452,1,52,Chewing Gum
-1000009458,7,52,Chewing Gum
 1000009609,4,52,Chewing Gum
 1000009723,1,52,Chewing Gum
 1000009737,2,52,Chewing Gum
@@ -15443,12 +15443,11 @@ transaction_id,item_position,product_id,product_name
 1000018303,1,52,Chewing Gum
 1000018309,2,52,Chewing Gum
 1000018347,1,52,Chewing Gum
-1000000046,5,53,Chicken
-1000000067,4,53,Chicken
 1000000097,1,53,Chicken
 1000000263,4,53,Chicken
 1000000277,3,53,Chicken
 1000000404,5,53,Chicken
+1000000046,5,53,Chicken
 1000000634,5,53,Chicken
 1000000688,8,53,Chicken
 1000000958,3,53,Chicken
@@ -15456,6 +15455,7 @@ transaction_id,item_position,product_id,product_name
 1000001100,2,53,Chicken
 1000001233,2,53,Chicken
 1000001392,5,53,Chicken
+1000000067,4,53,Chicken
 1000001429,3,53,Chicken
 1000001454,3,53,Chicken
 1000001475,1,53,Chicken
@@ -15700,6 +15700,7 @@ transaction_id,item_position,product_id,product_name
 1000018254,2,53,Chicken
 1000018316,1,53,Chicken
 1000018463,4,53,Chicken
+1000000761,2,54,Chili Powder
 1000000206,1,54,Chili Powder
 1000000250,9,54,Chili Powder
 1000000364,4,54,Chili Powder
@@ -15712,7 +15713,6 @@ transaction_id,item_position,product_id,product_name
 1000000570,4,54,Chili Powder
 1000000609,2,54,Chili Powder
 1000000637,3,54,Chili Powder
-1000000761,2,54,Chili Powder
 1000000874,4,54,Chili Powder
 1000001049,2,54,Chili Powder
 1000001053,4,54,Chili Powder
@@ -15981,12 +15981,12 @@ transaction_id,item_position,product_id,product_name
 1000018411,2,54,Chili Powder
 1000018415,1,54,Chili Powder
 1000018490,2,54,Chili Powder
+1000000579,7,55,Chips
 1000000181,4,55,Chips
 1000000204,2,55,Chips
 1000000253,8,55,Chips
 1000000404,1,55,Chips
 1000000476,10,55,Chips
-1000000579,7,55,Chips
 1000000631,8,55,Chips
 1000000786,5,55,Chips
 1000000890,4,55,Chips
@@ -16530,6 +16530,7 @@ transaction_id,item_position,product_id,product_name
 1000018388,9,56,Chocolate
 1000018445,5,56,Chocolate
 1000018489,4,56,Chocolate
+1000013991,3,57,Cinnamon
 1000000058,8,57,Cinnamon
 1000000103,5,57,Cinnamon
 1000000140,1,57,Cinnamon
@@ -16746,7 +16747,6 @@ transaction_id,item_position,product_id,product_name
 1000013727,6,57,Cinnamon
 1000013746,2,57,Cinnamon
 1000013869,5,57,Cinnamon
-1000013991,3,57,Cinnamon
 1000014084,7,57,Cinnamon
 1000014162,3,57,Cinnamon
 1000014164,1,57,Cinnamon
@@ -16816,9 +16816,6 @@ transaction_id,item_position,product_id,product_name
 1000018412,1,57,Cinnamon
 1000018501,2,57,Cinnamon
 1000018516,1,57,Cinnamon
-1000000031,4,58,Coat
-1000000159,1,58,Coat
-1000000210,1,58,Coat
 1000000270,8,58,Coat
 1000000316,4,58,Coat
 1000000358,4,58,Coat
@@ -16841,6 +16838,7 @@ transaction_id,item_position,product_id,product_name
 1000001743,1,58,Coat
 1000001744,5,58,Coat
 1000001800,5,58,Coat
+1000000210,1,58,Coat
 1000001808,4,58,Coat
 1000001878,2,58,Coat
 1000002015,5,58,Coat
@@ -16971,6 +16969,7 @@ transaction_id,item_position,product_id,product_name
 1000010971,1,58,Coat
 1000011002,3,58,Coat
 1000011168,1,58,Coat
+1000000159,1,58,Coat
 1000011187,7,58,Coat
 1000011201,1,58,Coat
 1000011354,2,58,Coat
@@ -17051,6 +17050,7 @@ transaction_id,item_position,product_id,product_name
 1000015981,3,58,Coat
 1000016008,1,58,Coat
 1000016227,6,58,Coat
+1000000031,4,58,Coat
 1000016237,1,58,Coat
 1000016275,1,58,Coat
 1000016329,4,58,Coat
@@ -17332,6 +17332,7 @@ transaction_id,item_position,product_id,product_name
 1000018423,7,59,Coffee
 1000018471,4,59,Coffee
 1000018511,8,59,Coffee
+1000001809,2,60,Cold Medicine
 1000000088,5,60,Cold Medicine
 1000000125,10,60,Cold Medicine
 1000000145,4,60,Cold Medicine
@@ -17354,7 +17355,6 @@ transaction_id,item_position,product_id,product_name
 1000001249,2,60,Cold Medicine
 1000001457,3,60,Cold Medicine
 1000001590,6,60,Cold Medicine
-1000001809,2,60,Cold Medicine
 1000001857,4,60,Cold Medicine
 1000001982,1,60,Cold Medicine
 1000002023,1,60,Cold Medicine
@@ -17893,6 +17893,7 @@ transaction_id,item_position,product_id,product_name
 1000018226,4,61,Colored Pencils
 1000018239,4,61,Colored Pencils
 1000018390,5,61,Colored Pencils
+1000011171,2,62,Comb
 1000000005,2,62,Comb
 1000000077,9,62,Comb
 1000000112,1,62,Comb
@@ -18046,7 +18047,6 @@ transaction_id,item_position,product_id,product_name
 1000011023,3,62,Comb
 1000011031,7,62,Comb
 1000011047,2,62,Comb
-1000011171,2,62,Comb
 1000011282,3,62,Comb
 1000011373,8,62,Comb
 1000011398,4,62,Comb
@@ -18167,7 +18167,6 @@ transaction_id,item_position,product_id,product_name
 1000018444,9,62,Comb
 1000018472,9,62,Comb
 1000018499,2,62,Comb
-1000000020,4,63,Conditioner
 1000000116,2,63,Conditioner
 1000000145,7,63,Conditioner
 1000000311,5,63,Conditioner
@@ -18197,6 +18196,7 @@ transaction_id,item_position,product_id,product_name
 1000001740,3,63,Conditioner
 1000001775,1,63,Conditioner
 1000001882,2,63,Conditioner
+1000000020,4,63,Conditioner
 1000002024,4,63,Conditioner
 1000002064,3,63,Conditioner
 1000002336,2,63,Conditioner
@@ -18692,6 +18692,7 @@ transaction_id,item_position,product_id,product_name
 1000018473,1,64,Construction Paper
 1000018490,1,64,Construction Paper
 1000018524,3,64,Construction Paper
+1000001813,4,65,Cookies
 1000000058,5,65,Cookies
 1000000094,2,65,Cookies
 1000000101,1,65,Cookies
@@ -18721,7 +18722,6 @@ transaction_id,item_position,product_id,product_name
 1000001598,2,65,Cookies
 1000001718,3,65,Cookies
 1000001762,5,65,Cookies
-1000001813,4,65,Cookies
 1000001851,4,65,Cookies
 1000001875,2,65,Cookies
 1000001883,1,65,Cookies
@@ -19276,6 +19276,7 @@ transaction_id,item_position,product_id,product_name
 1000018309,1,66,Cotton Balls
 1000018342,2,66,Cotton Balls
 1000018454,6,66,Cotton Balls
+1000016609,5,67,Cotton Swabs
 1000000253,7,67,Cotton Swabs
 1000000290,3,67,Cotton Swabs
 1000000352,2,67,Cotton Swabs
@@ -19510,7 +19511,6 @@ transaction_id,item_position,product_id,product_name
 1000016517,3,67,Cotton Swabs
 1000016535,7,67,Cotton Swabs
 1000016604,6,67,Cotton Swabs
-1000016609,5,67,Cotton Swabs
 1000016613,5,67,Cotton Swabs
 1000016655,2,67,Cotton Swabs
 1000016835,7,67,Cotton Swabs
@@ -19539,10 +19539,9 @@ transaction_id,item_position,product_id,product_name
 1000018348,8,67,Cotton Swabs
 1000018408,6,67,Cotton Swabs
 1000018488,2,67,Cotton Swabs
-1000000077,5,68,Cough Drops
 1000000204,6,68,Cough Drops
-1000000207,4,68,Cough Drops
 1000000504,2,68,Cough Drops
+1000000207,4,68,Cough Drops
 1000000674,2,68,Cough Drops
 1000000709,1,68,Cough Drops
 1000000814,2,68,Cough Drops
@@ -19681,6 +19680,7 @@ transaction_id,item_position,product_id,product_name
 1000009395,10,68,Cough Drops
 1000009440,1,68,Cough Drops
 1000009494,3,68,Cough Drops
+1000000077,5,68,Cough Drops
 1000009538,1,68,Cough Drops
 1000009736,6,68,Cough Drops
 1000009764,8,68,Cough Drops
@@ -19834,9 +19834,9 @@ transaction_id,item_position,product_id,product_name
 1000018368,1,68,Cough Drops
 1000018423,2,68,Cough Drops
 1000018493,2,68,Cough Drops
+1000000412,1,69,Cough Syrup
 1000000097,7,69,Cough Syrup
 1000000269,1,69,Cough Syrup
-1000000412,1,69,Cough Syrup
 1000000441,5,69,Cough Syrup
 1000000472,3,69,Cough Syrup
 1000000484,3,69,Cough Syrup
@@ -20133,8 +20133,8 @@ transaction_id,item_position,product_id,product_name
 1000018297,4,69,Cough Syrup
 1000018351,2,69,Cough Syrup
 1000018486,1,69,Cough Syrup
-1000000064,3,70,Crackers
 1000000077,8,70,Crackers
+1000000064,3,70,Crackers
 1000000127,5,70,Crackers
 1000000321,1,70,Crackers
 1000000443,10,70,Crackers
@@ -20730,6 +20730,7 @@ transaction_id,item_position,product_id,product_name
 1000018480,2,71,Crayons
 1000018483,1,71,Crayons
 1000018492,2,71,Crayons
+1000009147,4,72,Cream Cheese
 1000000014,3,72,Cream Cheese
 1000000074,5,72,Cream Cheese
 1000000157,1,72,Cream Cheese
@@ -20871,7 +20872,6 @@ transaction_id,item_position,product_id,product_name
 1000008935,6,72,Cream Cheese
 1000009090,5,72,Cream Cheese
 1000009113,1,72,Cream Cheese
-1000009147,4,72,Cream Cheese
 1000009252,2,72,Cream Cheese
 1000009313,4,72,Cream Cheese
 1000009324,1,72,Cream Cheese
@@ -21024,7 +21024,6 @@ transaction_id,item_position,product_id,product_name
 1000018431,3,72,Cream Cheese
 1000018476,4,72,Cream Cheese
 1000018505,3,72,Cream Cheese
-1000000029,2,73,Cucumber
 1000000096,3,73,Cucumber
 1000000102,4,73,Cucumber
 1000000249,3,73,Cucumber
@@ -21035,6 +21034,7 @@ transaction_id,item_position,product_id,product_name
 1000000587,4,73,Cucumber
 1000000619,7,73,Cucumber
 1000000623,7,73,Cucumber
+1000000029,2,73,Cucumber
 1000000707,5,73,Cucumber
 1000000804,2,73,Cucumber
 1000000827,3,73,Cucumber
@@ -21604,6 +21604,7 @@ transaction_id,item_position,product_id,product_name
 1000018410,1,74,Cumin
 1000018438,3,74,Cumin
 1000018491,3,74,Cumin
+1000000678,3,75,Deodorant
 1000000082,4,75,Deodorant
 1000000106,1,75,Deodorant
 1000000167,9,75,Deodorant
@@ -21614,7 +21615,6 @@ transaction_id,item_position,product_id,product_name
 1000000329,1,75,Deodorant
 1000000383,2,75,Deodorant
 1000000584,6,75,Deodorant
-1000000678,3,75,Deodorant
 1000000684,4,75,Deodorant
 1000000690,7,75,Deodorant
 1000000709,8,75,Deodorant
@@ -22204,6 +22204,7 @@ transaction_id,item_position,product_id,product_name
 1000018452,1,76,Detergent
 1000018508,2,76,Detergent
 1000018523,1,76,Detergent
+1000007120,1,77,Dish Soap
 1000000002,2,77,Dish Soap
 1000000042,2,77,Dish Soap
 1000000055,2,77,Dish Soap
@@ -22310,7 +22311,6 @@ transaction_id,item_position,product_id,product_name
 1000006989,6,77,Dish Soap
 1000007055,1,77,Dish Soap
 1000007111,4,77,Dish Soap
-1000007120,1,77,Dish Soap
 1000007156,3,77,Dish Soap
 1000007269,1,77,Dish Soap
 1000007286,4,77,Dish Soap
@@ -22479,11 +22479,6 @@ transaction_id,item_position,product_id,product_name
 1000018430,10,77,Dish Soap
 1000018441,2,77,Dish Soap
 1000018455,2,77,Dish Soap
-1000000036,1,78,Disinfectant Wipes
-1000000100,1,78,Disinfectant Wipes
-1000000182,1,78,Disinfectant Wipes
-1000000267,6,78,Disinfectant Wipes
-1000000273,5,78,Disinfectant Wipes
 1000000335,2,78,Disinfectant Wipes
 1000000405,2,78,Disinfectant Wipes
 1000000419,1,78,Disinfectant Wipes
@@ -22503,6 +22498,7 @@ transaction_id,item_position,product_id,product_name
 1000001687,5,78,Disinfectant Wipes
 1000001707,3,78,Disinfectant Wipes
 1000001795,2,78,Disinfectant Wipes
+1000000100,1,78,Disinfectant Wipes
 1000001816,2,78,Disinfectant Wipes
 1000001831,6,78,Disinfectant Wipes
 1000001843,4,78,Disinfectant Wipes
@@ -22553,6 +22549,7 @@ transaction_id,item_position,product_id,product_name
 1000004420,3,78,Disinfectant Wipes
 1000004487,3,78,Disinfectant Wipes
 1000004520,4,78,Disinfectant Wipes
+1000000182,1,78,Disinfectant Wipes
 1000004547,6,78,Disinfectant Wipes
 1000004614,1,78,Disinfectant Wipes
 1000004682,3,78,Disinfectant Wipes
@@ -22650,6 +22647,7 @@ transaction_id,item_position,product_id,product_name
 1000010581,2,78,Disinfectant Wipes
 1000010641,1,78,Disinfectant Wipes
 1000010700,2,78,Disinfectant Wipes
+1000000267,6,78,Disinfectant Wipes
 1000010701,1,78,Disinfectant Wipes
 1000010714,7,78,Disinfectant Wipes
 1000010720,2,78,Disinfectant Wipes
@@ -22727,6 +22725,7 @@ transaction_id,item_position,product_id,product_name
 1000015019,3,78,Disinfectant Wipes
 1000015104,1,78,Disinfectant Wipes
 1000015160,2,78,Disinfectant Wipes
+1000000036,1,78,Disinfectant Wipes
 1000015249,2,78,Disinfectant Wipes
 1000015441,3,78,Disinfectant Wipes
 1000015470,2,78,Disinfectant Wipes
@@ -22757,6 +22756,7 @@ transaction_id,item_position,product_id,product_name
 1000017418,4,78,Disinfectant Wipes
 1000017571,3,78,Disinfectant Wipes
 1000017722,7,78,Disinfectant Wipes
+1000000273,5,78,Disinfectant Wipes
 1000017756,2,78,Disinfectant Wipes
 1000017809,1,78,Disinfectant Wipes
 1000017854,4,78,Disinfectant Wipes
@@ -22773,6 +22773,7 @@ transaction_id,item_position,product_id,product_name
 1000018383,2,78,Disinfectant Wipes
 1000018423,9,78,Disinfectant Wipes
 1000018488,1,78,Disinfectant Wipes
+1000017738,2,79,Donuts
 1000000069,3,79,Donuts
 1000000107,6,79,Donuts
 1000000142,3,79,Donuts
@@ -23050,7 +23051,6 @@ transaction_id,item_position,product_id,product_name
 1000017670,2,79,Donuts
 1000017706,7,79,Donuts
 1000017718,3,79,Donuts
-1000017738,2,79,Donuts
 1000017757,1,79,Donuts
 1000017771,1,79,Donuts
 1000017774,5,79,Donuts
@@ -23621,6 +23621,7 @@ transaction_id,item_position,product_id,product_name
 1000018378,4,81,Dried Cranberries
 1000018509,6,81,Dried Cranberries
 1000018520,3,81,Dried Cranberries
+1000010291,5,82,Dryer Sheets
 1000000114,2,82,Dryer Sheets
 1000000274,3,82,Dryer Sheets
 1000000348,4,82,Dryer Sheets
@@ -23790,7 +23791,6 @@ transaction_id,item_position,product_id,product_name
 1000010138,4,82,Dryer Sheets
 1000010188,3,82,Dryer Sheets
 1000010251,2,82,Dryer Sheets
-1000010291,5,82,Dryer Sheets
 1000010431,10,82,Dryer Sheets
 1000010434,5,82,Dryer Sheets
 1000010479,7,82,Dryer Sheets
@@ -23922,7 +23922,6 @@ transaction_id,item_position,product_id,product_name
 1000018329,2,82,Dryer Sheets
 1000018371,4,82,Dryer Sheets
 1000018418,1,82,Dryer Sheets
-1000000014,4,83,Duct Tape
 1000000026,8,83,Duct Tape
 1000000046,7,83,Duct Tape
 1000000069,2,83,Duct Tape
@@ -23937,6 +23936,7 @@ transaction_id,item_position,product_id,product_name
 1000000649,2,83,Duct Tape
 1000000827,1,83,Duct Tape
 1000000904,3,83,Duct Tape
+1000000014,4,83,Duct Tape
 1000001039,1,83,Duct Tape
 1000001160,3,83,Duct Tape
 1000001192,2,83,Duct Tape
@@ -24203,6 +24203,7 @@ transaction_id,item_position,product_id,product_name
 1000018273,4,83,Duct Tape
 1000018274,4,83,Duct Tape
 1000018300,6,83,Duct Tape
+1000000983,7,84,Duffel Bag
 1000000009,3,84,Duffel Bag
 1000000010,3,84,Duffel Bag
 1000000125,4,84,Duffel Bag
@@ -24217,7 +24218,6 @@ transaction_id,item_position,product_id,product_name
 1000000895,3,84,Duffel Bag
 1000000916,7,84,Duffel Bag
 1000000962,4,84,Duffel Bag
-1000000983,7,84,Duffel Bag
 1000000994,2,84,Duffel Bag
 1000001082,3,84,Duffel Bag
 1000001268,5,84,Duffel Bag
@@ -25102,6 +25102,7 @@ transaction_id,item_position,product_id,product_name
 1000018318,5,86,Ear Muffs
 1000018397,5,86,Ear Muffs
 1000018490,6,86,Ear Muffs
+1000006306,9,87,Eggs
 1000000187,3,87,Eggs
 1000000232,4,87,Eggs
 1000000590,1,87,Eggs
@@ -25174,7 +25175,6 @@ transaction_id,item_position,product_id,product_name
 1000006257,4,87,Eggs
 1000006263,10,87,Eggs
 1000006300,3,87,Eggs
-1000006306,9,87,Eggs
 1000006427,1,87,Eggs
 1000006508,2,87,Eggs
 1000006517,7,87,Eggs
@@ -25377,8 +25377,6 @@ transaction_id,item_position,product_id,product_name
 1000018385,3,87,Eggs
 1000018424,3,87,Eggs
 1000018484,2,87,Eggs
-1000000097,10,88,Elliptical
-1000000198,2,88,Elliptical
 1000000200,3,88,Elliptical
 1000000276,3,88,Elliptical
 1000000401,1,88,Elliptical
@@ -25515,6 +25513,7 @@ transaction_id,item_position,product_id,product_name
 1000008507,3,88,Elliptical
 1000008588,8,88,Elliptical
 1000008663,1,88,Elliptical
+1000000097,10,88,Elliptical
 1000008668,7,88,Elliptical
 1000008954,5,88,Elliptical
 1000008975,1,88,Elliptical
@@ -25653,9 +25652,11 @@ transaction_id,item_position,product_id,product_name
 1000018000,9,88,Elliptical
 1000018210,11,88,Elliptical
 1000018238,2,88,Elliptical
+1000000198,2,88,Elliptical
 1000018245,1,88,Elliptical
 1000018340,1,88,Elliptical
 1000018478,1,88,Elliptical
+1000017869,3,89,Energy Drinks
 1000000042,6,89,Energy Drinks
 1000000044,1,89,Energy Drinks
 1000000106,2,89,Energy Drinks
@@ -25931,7 +25932,6 @@ transaction_id,item_position,product_id,product_name
 1000017670,3,89,Energy Drinks
 1000017725,5,89,Energy Drinks
 1000017864,1,89,Energy Drinks
-1000017869,3,89,Energy Drinks
 1000017925,3,89,Energy Drinks
 1000017927,1,89,Energy Drinks
 1000018061,4,89,Energy Drinks
@@ -26486,6 +26486,7 @@ transaction_id,item_position,product_id,product_name
 1000018215,6,91,Exercise Ball
 1000018299,6,91,Exercise Ball
 1000018506,2,91,Exercise Ball
+1000007953,2,92,Exercise Bike
 1000000035,5,92,Exercise Bike
 1000000063,3,92,Exercise Bike
 1000000138,4,92,Exercise Bike
@@ -26623,7 +26624,6 @@ transaction_id,item_position,product_id,product_name
 1000007766,7,92,Exercise Bike
 1000007851,6,92,Exercise Bike
 1000007886,1,92,Exercise Bike
-1000007953,2,92,Exercise Bike
 1000008054,6,92,Exercise Bike
 1000008201,6,92,Exercise Bike
 1000008233,6,92,Exercise Bike
@@ -26784,8 +26784,6 @@ transaction_id,item_position,product_id,product_name
 1000018447,1,92,Exercise Bike
 1000018476,1,92,Exercise Bike
 1000018478,2,92,Exercise Bike
-1000000005,5,93,Extension Cord
-1000000160,3,93,Extension Cord
 1000000175,10,93,Extension Cord
 1000000207,6,93,Extension Cord
 1000000218,3,93,Extension Cord
@@ -26793,6 +26791,7 @@ transaction_id,item_position,product_id,product_name
 1000000319,3,93,Extension Cord
 1000000362,1,93,Extension Cord
 1000000364,6,93,Extension Cord
+1000000160,3,93,Extension Cord
 1000000408,3,93,Extension Cord
 1000000424,2,93,Extension Cord
 1000000612,9,93,Extension Cord
@@ -26803,6 +26802,7 @@ transaction_id,item_position,product_id,product_name
 1000001059,1,93,Extension Cord
 1000001065,1,93,Extension Cord
 1000001174,1,93,Extension Cord
+1000000005,5,93,Extension Cord
 1000001204,1,93,Extension Cord
 1000001228,8,93,Extension Cord
 1000001749,1,93,Extension Cord
@@ -27039,6 +27039,7 @@ transaction_id,item_position,product_id,product_name
 1000018242,4,93,Extension Cord
 1000018306,2,93,Extension Cord
 1000018373,3,93,Extension Cord
+1000000576,4,94,Fabric Softener
 1000000041,7,94,Fabric Softener
 1000000044,3,94,Fabric Softener
 1000000156,3,94,Fabric Softener
@@ -27046,7 +27047,6 @@ transaction_id,item_position,product_id,product_name
 1000000325,7,94,Fabric Softener
 1000000420,4,94,Fabric Softener
 1000000536,5,94,Fabric Softener
-1000000576,4,94,Fabric Softener
 1000000680,3,94,Fabric Softener
 1000000688,5,94,Fabric Softener
 1000000705,11,94,Fabric Softener
@@ -27308,6 +27308,7 @@ transaction_id,item_position,product_id,product_name
 1000018443,7,94,Fabric Softener
 1000018467,1,94,Fabric Softener
 1000018499,4,94,Fabric Softener
+1000001356,2,95,Facial Tissue
 1000000031,1,95,Facial Tissue
 1000000068,4,95,Facial Tissue
 1000000075,4,95,Facial Tissue
@@ -27326,7 +27327,6 @@ transaction_id,item_position,product_id,product_name
 1000000896,2,95,Facial Tissue
 1000001158,2,95,Facial Tissue
 1000001199,1,95,Facial Tissue
-1000001356,2,95,Facial Tissue
 1000001376,3,95,Facial Tissue
 1000001379,8,95,Facial Tissue
 1000001472,5,95,Facial Tissue
@@ -27869,6 +27869,7 @@ transaction_id,item_position,product_id,product_name
 1000018343,5,96,First Aid Kit
 1000018366,1,96,First Aid Kit
 1000018422,1,96,First Aid Kit
+1000001546,4,97,Flashlight
 1000000069,6,97,Flashlight
 1000000111,3,97,Flashlight
 1000000139,1,97,Flashlight
@@ -27891,7 +27892,6 @@ transaction_id,item_position,product_id,product_name
 1000001113,4,97,Flashlight
 1000001232,5,97,Flashlight
 1000001539,7,97,Flashlight
-1000001546,4,97,Flashlight
 1000001662,4,97,Flashlight
 1000001747,10,97,Flashlight
 1000001821,3,97,Flashlight
@@ -28148,9 +28148,6 @@ transaction_id,item_position,product_id,product_name
 1000018398,2,97,Flashlight
 1000018424,5,97,Flashlight
 1000018499,3,97,Flashlight
-1000000191,2,98,Flats
-1000000233,2,98,Flats
-1000000241,2,98,Flats
 1000000247,4,98,Flats
 1000000343,8,98,Flats
 1000000384,4,98,Flats
@@ -28161,9 +28158,11 @@ transaction_id,item_position,product_id,product_name
 1000000757,1,98,Flats
 1000000772,2,98,Flats
 1000000774,3,98,Flats
+1000000241,2,98,Flats
 1000000911,3,98,Flats
 1000000940,2,98,Flats
 1000001273,1,98,Flats
+1000000191,2,98,Flats
 1000001311,2,98,Flats
 1000001326,2,98,Flats
 1000001439,1,98,Flats
@@ -28284,6 +28283,7 @@ transaction_id,item_position,product_id,product_name
 1000008405,1,98,Flats
 1000008482,6,98,Flats
 1000008583,6,98,Flats
+1000000233,2,98,Flats
 1000008612,7,98,Flats
 1000008762,2,98,Flats
 1000008785,4,98,Flats
@@ -28711,6 +28711,7 @@ transaction_id,item_position,product_id,product_name
 1000018400,5,99,Flip Flops
 1000018477,3,99,Flip Flops
 1000018512,4,99,Flip Flops
+1000000899,5,100,Floss
 1000000093,4,100,Floss
 1000000117,2,100,Floss
 1000000170,7,100,Floss
@@ -28721,7 +28722,6 @@ transaction_id,item_position,product_id,product_name
 1000000725,2,100,Floss
 1000000817,2,100,Floss
 1000000890,3,100,Floss
-1000000899,5,100,Floss
 1000000910,6,100,Floss
 1000000913,4,100,Floss
 1000000962,5,100,Floss
@@ -29294,6 +29294,7 @@ transaction_id,item_position,product_id,product_name
 1000018444,5,101,Flour
 1000018472,5,101,Flour
 1000018491,5,101,Flour
+1000008495,5,102,Foam Roller
 1000000076,2,102,Foam Roller
 1000000091,4,102,Foam Roller
 1000000098,1,102,Foam Roller
@@ -29429,7 +29430,6 @@ transaction_id,item_position,product_id,product_name
 1000008221,4,102,Foam Roller
 1000008360,2,102,Foam Roller
 1000008387,5,102,Foam Roller
-1000008495,5,102,Foam Roller
 1000008514,2,102,Foam Roller
 1000008546,1,102,Foam Roller
 1000008679,2,102,Foam Roller
@@ -29588,8 +29588,6 @@ transaction_id,item_position,product_id,product_name
 1000018397,4,102,Foam Roller
 1000018416,1,102,Foam Roller
 1000018528,4,102,Foam Roller
-1000000050,3,103,Folders
-1000000119,8,103,Folders
 1000000146,6,103,Folders
 1000000186,1,103,Folders
 1000000190,1,103,Folders
@@ -29611,6 +29609,7 @@ transaction_id,item_position,product_id,product_name
 1000001558,2,103,Folders
 1000001568,6,103,Folders
 1000001659,3,103,Folders
+1000000050,3,103,Folders
 1000001746,2,103,Folders
 1000001761,2,103,Folders
 1000001882,1,103,Folders
@@ -29858,6 +29857,8 @@ transaction_id,item_position,product_id,product_name
 1000018140,5,103,Folders
 1000018220,4,103,Folders
 1000018387,4,103,Folders
+1000000119,8,103,Folders
+1000018417,5,104,Frozen Bagels
 1000000143,3,104,Frozen Bagels
 1000000224,1,104,Frozen Bagels
 1000000363,1,104,Frozen Bagels
@@ -30149,7 +30150,6 @@ transaction_id,item_position,product_id,product_name
 1000018296,6,104,Frozen Bagels
 1000018314,10,104,Frozen Bagels
 1000018343,3,104,Frozen Bagels
-1000018417,5,104,Frozen Bagels
 1000018447,2,104,Frozen Bagels
 1000018497,1,104,Frozen Bagels
 1000000327,5,105,Frozen Bread
@@ -30710,6 +30710,7 @@ transaction_id,item_position,product_id,product_name
 1000018187,2,106,Frozen Breakfast Sandwiches
 1000018468,4,106,Frozen Breakfast Sandwiches
 1000018473,2,106,Frozen Breakfast Sandwiches
+1000001020,3,107,Frozen Burritos
 1000000031,3,107,Frozen Burritos
 1000000048,1,107,Frozen Burritos
 1000000084,3,107,Frozen Burritos
@@ -30725,7 +30726,6 @@ transaction_id,item_position,product_id,product_name
 1000000852,3,107,Frozen Burritos
 1000000901,2,107,Frozen Burritos
 1000000903,2,107,Frozen Burritos
-1000001020,3,107,Frozen Burritos
 1000001063,1,107,Frozen Burritos
 1000001146,1,107,Frozen Burritos
 1000001171,3,107,Frozen Burritos
@@ -31015,8 +31015,6 @@ transaction_id,item_position,product_id,product_name
 1000018309,4,107,Frozen Burritos
 1000018439,4,107,Frozen Burritos
 1000018442,1,107,Frozen Burritos
-1000000050,9,108,Frozen Cake
-1000000173,5,108,Frozen Cake
 1000000177,2,108,Frozen Cake
 1000000204,4,108,Frozen Cake
 1000000266,3,108,Frozen Cake
@@ -31035,6 +31033,7 @@ transaction_id,item_position,product_id,product_name
 1000001310,7,108,Frozen Cake
 1000001417,3,108,Frozen Cake
 1000001601,1,108,Frozen Cake
+1000000173,5,108,Frozen Cake
 1000001763,5,108,Frozen Cake
 1000001820,4,108,Frozen Cake
 1000002019,4,108,Frozen Cake
@@ -31042,6 +31041,7 @@ transaction_id,item_position,product_id,product_name
 1000002163,2,108,Frozen Cake
 1000002192,1,108,Frozen Cake
 1000002379,7,108,Frozen Cake
+1000000050,9,108,Frozen Cake
 1000002429,2,108,Frozen Cake
 1000002549,1,108,Frozen Cake
 1000002679,5,108,Frozen Cake
@@ -31556,6 +31556,7 @@ transaction_id,item_position,product_id,product_name
 1000018210,6,109,Frozen Chicken Nuggets
 1000018213,9,109,Frozen Chicken Nuggets
 1000018388,8,109,Frozen Chicken Nuggets
+1000001396,5,110,Frozen Cookies
 1000000141,1,110,Frozen Cookies
 1000000173,7,110,Frozen Cookies
 1000000199,2,110,Frozen Cookies
@@ -31574,7 +31575,6 @@ transaction_id,item_position,product_id,product_name
 1000001172,6,110,Frozen Cookies
 1000001355,6,110,Frozen Cookies
 1000001378,5,110,Frozen Cookies
-1000001396,5,110,Frozen Cookies
 1000001432,6,110,Frozen Cookies
 1000001444,7,110,Frozen Cookies
 1000001492,9,110,Frozen Cookies
@@ -32133,6 +32133,7 @@ transaction_id,item_position,product_id,product_name
 1000018374,3,111,Frozen Dinners
 1000018462,2,111,Frozen Dinners
 1000018499,1,111,Frozen Dinners
+1000002267,4,112,Frozen Fish Sticks
 1000000164,1,112,Frozen Fish Sticks
 1000000211,6,112,Frozen Fish Sticks
 1000000260,1,112,Frozen Fish Sticks
@@ -32159,7 +32160,6 @@ transaction_id,item_position,product_id,product_name
 1000002168,9,112,Frozen Fish Sticks
 1000002233,1,112,Frozen Fish Sticks
 1000002243,4,112,Frozen Fish Sticks
-1000002267,4,112,Frozen Fish Sticks
 1000002295,2,112,Frozen Fish Sticks
 1000002356,4,112,Frozen Fish Sticks
 1000002362,5,112,Frozen Fish Sticks
@@ -32418,7 +32418,6 @@ transaction_id,item_position,product_id,product_name
 1000018325,11,112,Frozen Fish Sticks
 1000018327,3,112,Frozen Fish Sticks
 1000018375,4,112,Frozen Fish Sticks
-1000000085,5,113,Frozen Fries
 1000000338,2,113,Frozen Fries
 1000000352,5,113,Frozen Fries
 1000000549,4,113,Frozen Fries
@@ -32595,6 +32594,7 @@ transaction_id,item_position,product_id,product_name
 1000012973,3,113,Frozen Fries
 1000012980,2,113,Frozen Fries
 1000013035,1,113,Frozen Fries
+1000000085,5,113,Frozen Fries
 1000013083,8,113,Frozen Fries
 1000013122,3,113,Frozen Fries
 1000013144,4,113,Frozen Fries
@@ -32684,6 +32684,7 @@ transaction_id,item_position,product_id,product_name
 1000018390,2,113,Frozen Fries
 1000018415,3,113,Frozen Fries
 1000018418,3,113,Frozen Fries
+1000009829,2,114,Frozen Fruit
 1000000010,1,114,Frozen Fruit
 1000000167,1,114,Frozen Fruit
 1000000179,10,114,Frozen Fruit
@@ -32860,7 +32861,6 @@ transaction_id,item_position,product_id,product_name
 1000009786,5,114,Frozen Fruit
 1000009793,1,114,Frozen Fruit
 1000009813,6,114,Frozen Fruit
-1000009829,2,114,Frozen Fruit
 1000009865,1,114,Frozen Fruit
 1000009881,4,114,Frozen Fruit
 1000009928,6,114,Frozen Fruit
@@ -33303,6 +33303,7 @@ transaction_id,item_position,product_id,product_name
 1000018421,1,115,Frozen Garlic Bread
 1000018429,2,115,Frozen Garlic Bread
 1000018467,6,115,Frozen Garlic Bread
+1000015458,2,116,Frozen Meatballs
 1000000066,1,116,Frozen Meatballs
 1000000119,3,116,Frozen Meatballs
 1000000132,4,116,Frozen Meatballs
@@ -33550,7 +33551,6 @@ transaction_id,item_position,product_id,product_name
 1000015276,1,116,Frozen Meatballs
 1000015301,4,116,Frozen Meatballs
 1000015378,2,116,Frozen Meatballs
-1000015458,2,116,Frozen Meatballs
 1000015554,4,116,Frozen Meatballs
 1000015570,4,116,Frozen Meatballs
 1000015597,1,116,Frozen Meatballs
@@ -33597,11 +33597,6 @@ transaction_id,item_position,product_id,product_name
 1000018394,2,116,Frozen Meatballs
 1000018437,2,116,Frozen Meatballs
 1000018481,4,116,Frozen Meatballs
-1000000100,2,117,Frozen Pancakes
-1000000146,1,117,Frozen Pancakes
-1000000147,7,117,Frozen Pancakes
-1000000163,1,117,Frozen Pancakes
-1000000256,3,117,Frozen Pancakes
 1000000300,5,117,Frozen Pancakes
 1000000495,3,117,Frozen Pancakes
 1000000518,2,117,Frozen Pancakes
@@ -33613,6 +33608,7 @@ transaction_id,item_position,product_id,product_name
 1000000856,10,117,Frozen Pancakes
 1000000895,1,117,Frozen Pancakes
 1000000908,3,117,Frozen Pancakes
+1000000163,1,117,Frozen Pancakes
 1000000937,5,117,Frozen Pancakes
 1000000943,2,117,Frozen Pancakes
 1000000944,9,117,Frozen Pancakes
@@ -33679,6 +33675,7 @@ transaction_id,item_position,product_id,product_name
 1000005040,5,117,Frozen Pancakes
 1000005077,5,117,Frozen Pancakes
 1000005288,2,117,Frozen Pancakes
+1000000100,2,117,Frozen Pancakes
 1000005426,8,117,Frozen Pancakes
 1000005472,3,117,Frozen Pancakes
 1000005489,4,117,Frozen Pancakes
@@ -33712,9 +33709,11 @@ transaction_id,item_position,product_id,product_name
 1000006401,3,117,Frozen Pancakes
 1000006456,4,117,Frozen Pancakes
 1000006638,4,117,Frozen Pancakes
+1000000147,7,117,Frozen Pancakes
 1000006707,3,117,Frozen Pancakes
 1000006713,1,117,Frozen Pancakes
 1000006828,9,117,Frozen Pancakes
+1000000146,1,117,Frozen Pancakes
 1000006845,1,117,Frozen Pancakes
 1000006947,2,117,Frozen Pancakes
 1000007066,4,117,Frozen Pancakes
@@ -33888,6 +33887,8 @@ transaction_id,item_position,product_id,product_name
 1000018345,3,117,Frozen Pancakes
 1000018411,4,117,Frozen Pancakes
 1000018503,1,117,Frozen Pancakes
+1000000256,3,117,Frozen Pancakes
+1000018515,4,118,Frozen Pie
 1000000051,4,118,Frozen Pie
 1000000166,2,118,Frozen Pie
 1000000243,3,118,Frozen Pie
@@ -34190,8 +34191,6 @@ transaction_id,item_position,product_id,product_name
 1000018364,8,118,Frozen Pie
 1000018467,2,118,Frozen Pie
 1000018513,1,118,Frozen Pie
-1000018515,4,118,Frozen Pie
-1000000005,1,119,Frozen Pizza
 1000000042,4,119,Frozen Pizza
 1000000129,3,119,Frozen Pizza
 1000000136,3,119,Frozen Pizza
@@ -34206,6 +34205,7 @@ transaction_id,item_position,product_id,product_name
 1000000808,6,119,Frozen Pizza
 1000000826,2,119,Frozen Pizza
 1000000842,4,119,Frozen Pizza
+1000000005,1,119,Frozen Pizza
 1000000847,3,119,Frozen Pizza
 1000000880,1,119,Frozen Pizza
 1000000990,3,119,Frozen Pizza
@@ -34473,6 +34473,7 @@ transaction_id,item_position,product_id,product_name
 1000018321,6,119,Frozen Pizza
 1000018501,4,119,Frozen Pizza
 1000018506,4,119,Frozen Pizza
+1000000907,6,120,Frozen Pizza Rolls
 1000000344,3,120,Frozen Pizza Rolls
 1000000396,2,120,Frozen Pizza Rolls
 1000000451,1,120,Frozen Pizza Rolls
@@ -34487,7 +34488,6 @@ transaction_id,item_position,product_id,product_name
 1000000688,1,120,Frozen Pizza Rolls
 1000000812,3,120,Frozen Pizza Rolls
 1000000906,2,120,Frozen Pizza Rolls
-1000000907,6,120,Frozen Pizza Rolls
 1000000934,5,120,Frozen Pizza Rolls
 1000001012,3,120,Frozen Pizza Rolls
 1000001048,2,120,Frozen Pizza Rolls
@@ -34783,6 +34783,7 @@ transaction_id,item_position,product_id,product_name
 1000018343,7,120,Frozen Pizza Rolls
 1000018399,10,120,Frozen Pizza Rolls
 1000018408,1,120,Frozen Pizza Rolls
+1000008003,3,121,Frozen Sausages
 1000000094,5,121,Frozen Sausages
 1000000103,2,121,Frozen Sausages
 1000000263,3,121,Frozen Sausages
@@ -34896,7 +34897,6 @@ transaction_id,item_position,product_id,product_name
 1000007818,1,121,Frozen Sausages
 1000007854,1,121,Frozen Sausages
 1000007905,5,121,Frozen Sausages
-1000008003,3,121,Frozen Sausages
 1000008019,3,121,Frozen Sausages
 1000008021,5,121,Frozen Sausages
 1000008050,3,121,Frozen Sausages
@@ -35060,7 +35060,6 @@ transaction_id,item_position,product_id,product_name
 1000018464,7,121,Frozen Sausages
 1000018479,7,121,Frozen Sausages
 1000018528,6,121,Frozen Sausages
-1000000012,4,122,Frozen Vegetables
 1000000070,2,122,Frozen Vegetables
 1000000117,3,122,Frozen Vegetables
 1000000146,3,122,Frozen Vegetables
@@ -35318,6 +35317,7 @@ transaction_id,item_position,product_id,product_name
 1000015773,2,122,Frozen Vegetables
 1000015774,2,122,Frozen Vegetables
 1000015828,1,122,Frozen Vegetables
+1000000012,4,122,Frozen Vegetables
 1000015863,2,122,Frozen Vegetables
 1000015909,4,122,Frozen Vegetables
 1000015971,4,122,Frozen Vegetables
@@ -35370,6 +35370,7 @@ transaction_id,item_position,product_id,product_name
 1000018333,3,122,Frozen Vegetables
 1000018404,1,122,Frozen Vegetables
 1000018466,4,122,Frozen Vegetables
+1000017676,5,123,Frozen Waffles
 1000000059,2,123,Frozen Waffles
 1000000086,1,123,Frozen Waffles
 1000000199,1,123,Frozen Waffles
@@ -35627,7 +35628,6 @@ transaction_id,item_position,product_id,product_name
 1000017359,3,123,Frozen Waffles
 1000017524,4,123,Frozen Waffles
 1000017627,1,123,Frozen Waffles
-1000017676,5,123,Frozen Waffles
 1000017680,1,123,Frozen Waffles
 1000017687,4,123,Frozen Waffles
 1000017902,2,123,Frozen Waffles
@@ -35646,13 +35646,13 @@ transaction_id,item_position,product_id,product_name
 1000018430,5,123,Frozen Waffles
 1000018438,4,123,Frozen Waffles
 1000018484,4,123,Frozen Waffles
-1000000035,2,124,Garlic Powder
 1000000157,5,124,Garlic Powder
 1000000178,4,124,Garlic Powder
 1000000208,2,124,Garlic Powder
 1000000346,9,124,Garlic Powder
 1000000357,4,124,Garlic Powder
 1000000425,2,124,Garlic Powder
+1000000035,2,124,Garlic Powder
 1000000437,2,124,Garlic Powder
 1000000458,7,124,Garlic Powder
 1000000698,2,124,Garlic Powder
@@ -35914,13 +35914,13 @@ transaction_id,item_position,product_id,product_name
 1000018230,3,124,Garlic Powder
 1000018275,5,124,Garlic Powder
 1000018424,7,124,Garlic Powder
+1000000382,2,125,Gelato
 1000000077,7,125,Gelato
 1000000093,1,125,Gelato
 1000000175,5,125,Gelato
 1000000179,2,125,Gelato
 1000000192,9,125,Gelato
 1000000195,2,125,Gelato
-1000000382,2,125,Gelato
 1000000434,3,125,Gelato
 1000000443,3,125,Gelato
 1000000513,7,125,Gelato
@@ -36195,6 +36195,7 @@ transaction_id,item_position,product_id,product_name
 1000018397,3,125,Gelato
 1000018453,4,125,Gelato
 1000018458,2,125,Gelato
+1000008427,3,126,Glass Cleaner
 1000000008,3,126,Glass Cleaner
 1000000032,10,126,Glass Cleaner
 1000000083,2,126,Glass Cleaner
@@ -36312,7 +36313,6 @@ transaction_id,item_position,product_id,product_name
 1000008416,3,126,Glass Cleaner
 1000008418,2,126,Glass Cleaner
 1000008423,4,126,Glass Cleaner
-1000008427,3,126,Glass Cleaner
 1000008429,6,126,Glass Cleaner
 1000008443,3,126,Glass Cleaner
 1000008706,4,126,Glass Cleaner
@@ -36472,9 +36472,6 @@ transaction_id,item_position,product_id,product_name
 1000018368,5,126,Glass Cleaner
 1000018412,2,126,Glass Cleaner
 1000018413,1,126,Glass Cleaner
-1000000069,1,127,Gloves
-1000000163,4,127,Gloves
-1000000206,5,127,Gloves
 1000000281,4,127,Gloves
 1000000441,6,127,Gloves
 1000000443,6,127,Gloves
@@ -36498,6 +36495,7 @@ transaction_id,item_position,product_id,product_name
 1000001781,1,127,Gloves
 1000001981,6,127,Gloves
 1000002056,5,127,Gloves
+1000000163,4,127,Gloves
 1000002096,1,127,Gloves
 1000002125,2,127,Gloves
 1000002131,5,127,Gloves
@@ -36604,6 +36602,7 @@ transaction_id,item_position,product_id,product_name
 1000009369,2,127,Gloves
 1000009427,6,127,Gloves
 1000009662,3,127,Gloves
+1000000069,1,127,Gloves
 1000009704,5,127,Gloves
 1000009709,5,127,Gloves
 1000009725,1,127,Gloves
@@ -36747,6 +36746,8 @@ transaction_id,item_position,product_id,product_name
 1000018279,7,127,Gloves
 1000018308,2,127,Gloves
 1000018387,10,127,Gloves
+1000000206,5,127,Gloves
+1000018275,8,128,Glue
 1000000046,2,128,Glue
 1000000055,4,128,Glue
 1000000102,1,128,Glue
@@ -37045,14 +37046,12 @@ transaction_id,item_position,product_id,product_name
 1000018063,4,128,Glue
 1000018072,6,128,Glue
 1000018116,3,128,Glue
-1000018275,8,128,Glue
 1000018279,4,128,Glue
 1000018314,9,128,Glue
 1000018357,6,128,Glue
 1000018377,1,128,Glue
 1000018419,1,128,Glue
 1000018466,7,128,Glue
-1000000050,12,129,Goggles
 1000000070,4,129,Goggles
 1000000170,5,129,Goggles
 1000000182,3,129,Goggles
@@ -37068,6 +37067,7 @@ transaction_id,item_position,product_id,product_name
 1000000841,3,129,Goggles
 1000001049,1,129,Goggles
 1000001186,5,129,Goggles
+1000000050,12,129,Goggles
 1000001188,2,129,Goggles
 1000001193,1,129,Goggles
 1000001231,6,129,Goggles
@@ -37320,6 +37320,7 @@ transaction_id,item_position,product_id,product_name
 1000018333,2,129,Goggles
 1000018362,1,129,Goggles
 1000018465,5,129,Goggles
+1000000796,7,130,Granola Bars
 1000000021,3,130,Granola Bars
 1000000197,7,130,Granola Bars
 1000000206,4,130,Granola Bars
@@ -37335,7 +37336,6 @@ transaction_id,item_position,product_id,product_name
 1000000693,3,130,Granola Bars
 1000000695,1,130,Granola Bars
 1000000767,1,130,Granola Bars
-1000000796,7,130,Granola Bars
 1000000885,4,130,Granola Bars
 1000000922,5,130,Granola Bars
 1000000995,2,130,Granola Bars
@@ -37619,6 +37619,7 @@ transaction_id,item_position,product_id,product_name
 1000018376,2,130,Granola Bars
 1000018402,2,130,Granola Bars
 1000018481,1,130,Granola Bars
+1000008794,7,131,Gum
 1000000050,7,131,Gum
 1000000178,3,131,Gum
 1000000194,1,131,Gum
@@ -37750,7 +37751,6 @@ transaction_id,item_position,product_id,product_name
 1000008723,4,131,Gum
 1000008728,4,131,Gum
 1000008738,1,131,Gum
-1000008794,7,131,Gum
 1000008937,2,131,Gum
 1000009031,6,131,Gum
 1000009082,2,131,Gum
@@ -37901,13 +37901,12 @@ transaction_id,item_position,product_id,product_name
 1000018253,7,131,Gum
 1000018290,1,131,Gum
 1000018448,2,131,Gum
-1000000014,1,132,Gym Bag
-1000000270,9,132,Gym Bag
 1000000307,1,132,Gym Bag
 1000000342,4,132,Gym Bag
 1000000360,1,132,Gym Bag
 1000000416,9,132,Gym Bag
 1000000427,4,132,Gym Bag
+1000000014,1,132,Gym Bag
 1000000441,9,132,Gym Bag
 1000000610,3,132,Gym Bag
 1000000751,9,132,Gym Bag
@@ -38180,6 +38179,8 @@ transaction_id,item_position,product_id,product_name
 1000018436,1,132,Gym Bag
 1000018460,2,132,Gym Bag
 1000018499,5,132,Gym Bag
+1000000270,9,132,Gym Bag
+1000017974,4,133,Gym Towel
 1000000219,1,133,Gym Towel
 1000000263,2,133,Gym Towel
 1000000285,3,133,Gym Towel
@@ -38464,7 +38465,6 @@ transaction_id,item_position,product_id,product_name
 1000017908,5,133,Gym Towel
 1000017943,7,133,Gym Towel
 1000017957,3,133,Gym Towel
-1000017974,4,133,Gym Towel
 1000018001,4,133,Gym Towel
 1000018050,11,133,Gym Towel
 1000018110,4,133,Gym Towel
@@ -38472,11 +38472,11 @@ transaction_id,item_position,product_id,product_name
 1000018393,3,133,Gym Towel
 1000018462,4,133,Gym Towel
 1000018500,1,133,Gym Towel
-1000000494,2,134,Hair Ties
 1000000547,6,134,Hair Ties
 1000000580,5,134,Hair Ties
 1000000724,4,134,Hair Ties
 1000000735,2,134,Hair Ties
+1000000494,2,134,Hair Ties
 1000000758,2,134,Hair Ties
 1000000863,5,134,Hair Ties
 1000000866,3,134,Hair Ties
@@ -38746,11 +38746,11 @@ transaction_id,item_position,product_id,product_name
 1000018414,6,134,Hair Ties
 1000018490,5,134,Hair Ties
 1000018507,1,134,Hair Ties
+1000000329,3,135,Hairbrush
 1000000093,2,135,Hairbrush
 1000000158,3,135,Hairbrush
 1000000164,2,135,Hairbrush
 1000000278,5,135,Hairbrush
-1000000329,3,135,Hairbrush
 1000000339,2,135,Hairbrush
 1000000383,3,135,Hairbrush
 1000000389,5,135,Hairbrush
@@ -39028,6 +39028,7 @@ transaction_id,item_position,product_id,product_name
 1000018272,6,135,Hairbrush
 1000018378,5,135,Hairbrush
 1000018408,4,135,Hairbrush
+1000004823,2,136,Hand Sanitizer
 1000000042,1,136,Hand Sanitizer
 1000000115,3,136,Hand Sanitizer
 1000000125,8,136,Hand Sanitizer
@@ -39109,7 +39110,6 @@ transaction_id,item_position,product_id,product_name
 1000004669,1,136,Hand Sanitizer
 1000004712,1,136,Hand Sanitizer
 1000004779,2,136,Hand Sanitizer
-1000004823,2,136,Hand Sanitizer
 1000004914,4,136,Hand Sanitizer
 1000004925,2,136,Hand Sanitizer
 1000004962,2,136,Hand Sanitizer
@@ -39335,14 +39335,12 @@ transaction_id,item_position,product_id,product_name
 1000018216,2,136,Hand Sanitizer
 1000018250,8,136,Hand Sanitizer
 1000018462,5,136,Hand Sanitizer
-1000000033,3,137,Handbag
-1000000087,2,137,Handbag
 1000000120,8,137,Handbag
-1000000126,4,137,Handbag
 1000000143,1,137,Handbag
 1000000171,1,137,Handbag
 1000000360,2,137,Handbag
 1000000397,1,137,Handbag
+1000000126,4,137,Handbag
 1000000915,2,137,Handbag
 1000000999,4,137,Handbag
 1000001011,2,137,Handbag
@@ -39460,11 +39458,13 @@ transaction_id,item_position,product_id,product_name
 1000007829,3,137,Handbag
 1000007944,4,137,Handbag
 1000008135,3,137,Handbag
+1000000087,2,137,Handbag
 1000008164,1,137,Handbag
 1000008187,4,137,Handbag
 1000008189,4,137,Handbag
 1000008197,4,137,Handbag
 1000008245,3,137,Handbag
+1000000033,3,137,Handbag
 1000008343,3,137,Handbag
 1000008425,3,137,Handbag
 1000008501,3,137,Handbag
@@ -39613,12 +39613,12 @@ transaction_id,item_position,product_id,product_name
 1000018426,1,137,Handbag
 1000018489,6,137,Handbag
 1000018524,2,137,Handbag
+1000000413,4,138,Hangers
 1000000011,4,138,Hangers
 1000000012,1,138,Hangers
 1000000076,3,138,Hangers
 1000000294,1,138,Hangers
 1000000377,8,138,Hangers
-1000000413,4,138,Hangers
 1000000427,2,138,Hangers
 1000000443,7,138,Hangers
 1000000478,1,138,Hangers
@@ -39901,8 +39901,8 @@ transaction_id,item_position,product_id,product_name
 1000018368,4,138,Hangers
 1000018391,3,138,Hangers
 1000018438,6,138,Hangers
-1000000041,2,139,Hat
 1000000050,4,139,Hat
+1000000041,2,139,Hat
 1000000070,3,139,Hat
 1000000119,1,139,Hat
 1000000178,8,139,Hat
@@ -40469,6 +40469,7 @@ transaction_id,item_position,product_id,product_name
 1000018504,1,140,Headbands
 1000018512,1,140,Headbands
 1000018515,2,140,Headbands
+1000007541,1,141,Heels
 1000000164,3,141,Heels
 1000000197,6,141,Heels
 1000000201,1,141,Heels
@@ -40592,7 +40593,6 @@ transaction_id,item_position,product_id,product_name
 1000007203,5,141,Heels
 1000007479,1,141,Heels
 1000007515,2,141,Heels
-1000007541,1,141,Heels
 1000007544,1,141,Heels
 1000007588,6,141,Heels
 1000007643,1,141,Heels
@@ -40773,7 +40773,6 @@ transaction_id,item_position,product_id,product_name
 1000018349,3,141,Heels
 1000018443,8,141,Heels
 1000018469,4,141,Heels
-1000000043,3,142,Honey
 1000000086,2,142,Honey
 1000000118,2,142,Honey
 1000000133,1,142,Honey
@@ -40789,6 +40788,7 @@ transaction_id,item_position,product_id,product_name
 1000000587,3,142,Honey
 1000000637,5,142,Honey
 1000000800,4,142,Honey
+1000000043,3,142,Honey
 1000000809,1,142,Honey
 1000000870,1,142,Honey
 1000000918,5,142,Honey
@@ -41296,6 +41296,7 @@ transaction_id,item_position,product_id,product_name
 1000018269,9,143,Hoodie
 1000018344,6,143,Hoodie
 1000018426,4,143,Hoodie
+1000001062,1,144,Hot Sauce
 1000000170,9,144,Hot Sauce
 1000000186,2,144,Hot Sauce
 1000000295,3,144,Hot Sauce
@@ -41311,7 +41312,6 @@ transaction_id,item_position,product_id,product_name
 1000000924,2,144,Hot Sauce
 1000000963,2,144,Hot Sauce
 1000000992,2,144,Hot Sauce
-1000001062,1,144,Hot Sauce
 1000001155,4,144,Hot Sauce
 1000001175,9,144,Hot Sauce
 1000001200,6,144,Hot Sauce
@@ -41849,6 +41849,7 @@ transaction_id,item_position,product_id,product_name
 1000018160,2,145,Ice Cream
 1000018205,1,145,Ice Cream
 1000018500,6,145,Ice Cream
+1000009417,2,146,Ice Cream Bars
 1000000150,7,146,Ice Cream Bars
 1000000179,4,146,Ice Cream Bars
 1000000181,3,146,Ice Cream Bars
@@ -41978,7 +41979,6 @@ transaction_id,item_position,product_id,product_name
 1000009258,2,146,Ice Cream Bars
 1000009272,5,146,Ice Cream Bars
 1000009331,5,146,Ice Cream Bars
-1000009417,2,146,Ice Cream Bars
 1000009474,3,146,Ice Cream Bars
 1000009490,7,146,Ice Cream Bars
 1000009563,1,146,Ice Cream Bars
@@ -42109,8 +42109,6 @@ transaction_id,item_position,product_id,product_name
 1000018368,7,146,Ice Cream Bars
 1000018383,1,146,Ice Cream Bars
 1000018444,3,146,Ice Cream Bars
-1000000048,4,147,Ice Cream Cones
-1000000057,4,147,Ice Cream Cones
 1000000080,1,147,Ice Cream Cones
 1000000099,6,147,Ice Cream Cones
 1000000155,2,147,Ice Cream Cones
@@ -42267,6 +42265,7 @@ transaction_id,item_position,product_id,product_name
 1000009946,11,147,Ice Cream Cones
 1000009956,5,147,Ice Cream Cones
 1000009957,10,147,Ice Cream Cones
+1000000048,4,147,Ice Cream Cones
 1000009961,1,147,Ice Cream Cones
 1000010052,5,147,Ice Cream Cones
 1000010070,4,147,Ice Cream Cones
@@ -42384,6 +42383,8 @@ transaction_id,item_position,product_id,product_name
 1000018207,5,147,Ice Cream Cones
 1000018325,5,147,Ice Cream Cones
 1000018454,3,147,Ice Cream Cones
+1000000057,4,147,Ice Cream Cones
+1000017689,3,148,Ice Cream Sandwiches
 1000000051,3,148,Ice Cream Sandwiches
 1000000061,1,148,Ice Cream Sandwiches
 1000000097,11,148,Ice Cream Sandwiches
@@ -42658,7 +42659,6 @@ transaction_id,item_position,product_id,product_name
 1000017469,5,148,Ice Cream Sandwiches
 1000017483,5,148,Ice Cream Sandwiches
 1000017537,5,148,Ice Cream Sandwiches
-1000017689,3,148,Ice Cream Sandwiches
 1000017704,4,148,Ice Cream Sandwiches
 1000017722,6,148,Ice Cream Sandwiches
 1000017831,1,148,Ice Cream Sandwiches
@@ -43208,6 +43208,7 @@ transaction_id,item_position,product_id,product_name
 1000018471,6,150,Iced Tea
 1000018482,1,150,Iced Tea
 1000018530,2,150,Iced Tea
+1000011433,1,151,Index Cards
 1000000074,9,151,Index Cards
 1000000106,6,151,Index Cards
 1000000161,2,151,Index Cards
@@ -43365,7 +43366,6 @@ transaction_id,item_position,product_id,product_name
 1000011325,5,151,Index Cards
 1000011340,4,151,Index Cards
 1000011429,4,151,Index Cards
-1000011433,1,151,Index Cards
 1000011556,6,151,Index Cards
 1000011684,3,151,Index Cards
 1000011832,3,151,Index Cards
@@ -43467,7 +43467,6 @@ transaction_id,item_position,product_id,product_name
 1000018428,3,151,Index Cards
 1000018443,5,151,Index Cards
 1000018484,3,151,Index Cards
-1000000050,8,152,Insect Repellent
 1000000283,1,152,Insect Repellent
 1000000329,2,152,Insect Repellent
 1000000538,3,152,Insect Repellent
@@ -43484,6 +43483,7 @@ transaction_id,item_position,product_id,product_name
 1000001206,2,152,Insect Repellent
 1000001286,7,152,Insect Repellent
 1000001359,5,152,Insect Repellent
+1000000050,8,152,Insect Repellent
 1000001389,5,152,Insect Repellent
 1000001512,2,152,Insect Repellent
 1000001563,8,152,Insect Repellent
@@ -44028,6 +44028,7 @@ transaction_id,item_position,product_id,product_name
 1000018403,5,153,Instant Noodles
 1000018476,5,153,Instant Noodles
 1000018482,4,153,Instant Noodles
+1000000779,5,154,Jacket
 1000000103,1,154,Jacket
 1000000120,9,154,Jacket
 1000000196,1,154,Jacket
@@ -44044,7 +44045,6 @@ transaction_id,item_position,product_id,product_name
 1000000738,2,154,Jacket
 1000000750,5,154,Jacket
 1000000759,1,154,Jacket
-1000000779,5,154,Jacket
 1000000788,5,154,Jacket
 1000000845,1,154,Jacket
 1000001014,9,154,Jacket
@@ -44622,324 +44622,299 @@ transaction_id,item_position,product_id,product_name
 1000018405,3,155,Jam
 1000018423,1,155,Jam
 1000018500,3,155,Jam
-1000000028,5,156,Jeans
-1000000032,4,156,Jeans
-1000000127,3,156,Jeans
-1000000132,2,156,Jeans
-1000000164,4,156,Jeans
-1000000187,1,156,Jeans
-1000000206,6,156,Jeans
-1000000226,3,156,Jeans
-1000000351,10,156,Jeans
-1000000464,4,156,Jeans
-1000000713,2,156,Jeans
-1000000738,4,156,Jeans
-1000000805,4,156,Jeans
-1000000883,3,156,Jeans
-1000000897,2,156,Jeans
-1000000932,1,156,Jeans
-1000000975,6,156,Jeans
-1000000989,3,156,Jeans
-1000001052,1,156,Jeans
-1000001172,2,156,Jeans
-1000001289,4,156,Jeans
-1000001342,1,156,Jeans
-1000001350,2,156,Jeans
-1000001367,1,156,Jeans
-1000001378,6,156,Jeans
-1000001429,2,156,Jeans
-1000001442,3,156,Jeans
-1000001499,3,156,Jeans
-1000001743,6,156,Jeans
-1000001754,4,156,Jeans
-1000001772,2,156,Jeans
-1000001841,9,156,Jeans
-1000001907,1,156,Jeans
-1000002068,2,156,Jeans
-1000002131,4,156,Jeans
-1000002142,3,156,Jeans
-1000002207,5,156,Jeans
-1000002272,1,156,Jeans
-1000002318,4,156,Jeans
-1000002356,3,156,Jeans
-1000002365,2,156,Jeans
-1000002421,5,156,Jeans
-1000002441,3,156,Jeans
-1000002477,1,156,Jeans
-1000002673,3,156,Jeans
-1000002751,5,156,Jeans
-1000002780,1,156,Jeans
-1000002864,3,156,Jeans
-1000003022,1,156,Jeans
-1000003109,5,156,Jeans
-1000003183,2,156,Jeans
-1000003313,5,156,Jeans
-1000003369,3,156,Jeans
-1000003401,6,156,Jeans
-1000003464,9,156,Jeans
-1000003537,2,156,Jeans
-1000003607,4,156,Jeans
-1000003631,5,156,Jeans
-1000003686,4,156,Jeans
-1000003742,2,156,Jeans
-1000003791,2,156,Jeans
-1000003797,2,156,Jeans
-1000003856,4,156,Jeans
-1000004065,12,156,Jeans
-1000004155,4,156,Jeans
-1000004177,2,156,Jeans
-1000004197,1,156,Jeans
-1000004319,5,156,Jeans
-1000004355,7,156,Jeans
-1000004623,5,156,Jeans
-1000004697,1,156,Jeans
-1000004745,4,156,Jeans
-1000004766,1,156,Jeans
-1000004802,8,156,Jeans
-1000004957,1,156,Jeans
-1000005009,5,156,Jeans
-1000005066,2,156,Jeans
-1000005068,2,156,Jeans
-1000005130,3,156,Jeans
-1000005166,3,156,Jeans
-1000005264,8,156,Jeans
-1000005271,1,156,Jeans
-1000005393,5,156,Jeans
-1000005484,4,156,Jeans
-1000005665,4,156,Jeans
-1000005675,4,156,Jeans
-1000005686,9,156,Jeans
-1000005697,2,156,Jeans
-1000005722,1,156,Jeans
-1000005739,7,156,Jeans
-1000005744,5,156,Jeans
-1000005837,3,156,Jeans
-1000005977,1,156,Jeans
-1000006034,3,156,Jeans
-1000006060,1,156,Jeans
-1000006083,7,156,Jeans
-1000006146,9,156,Jeans
-1000006222,1,156,Jeans
-1000006239,3,156,Jeans
-1000006285,3,156,Jeans
-1000006315,8,156,Jeans
-1000006374,5,156,Jeans
-1000006375,6,156,Jeans
-1000006521,1,156,Jeans
-1000006538,3,156,Jeans
-1000006656,2,156,Jeans
-1000006763,3,156,Jeans
-1000006824,9,156,Jeans
-1000006839,1,156,Jeans
-1000006930,1,156,Jeans
-1000007139,2,156,Jeans
-1000007147,1,156,Jeans
-1000007149,5,156,Jeans
-1000007179,2,156,Jeans
-1000007272,1,156,Jeans
-1000007362,6,156,Jeans
-1000007491,2,156,Jeans
-1000007531,4,156,Jeans
-1000007694,2,156,Jeans
-1000007716,5,156,Jeans
-1000007889,1,156,Jeans
-1000008056,2,156,Jeans
-1000008087,1,156,Jeans
-1000008094,3,156,Jeans
-1000008103,8,156,Jeans
-1000008116,1,156,Jeans
-1000008158,5,156,Jeans
-1000008171,5,156,Jeans
-1000008212,1,156,Jeans
-1000008357,2,156,Jeans
-1000008473,2,156,Jeans
-1000008610,8,156,Jeans
-1000008708,4,156,Jeans
-1000008876,1,156,Jeans
-1000008893,1,156,Jeans
-1000008926,5,156,Jeans
-1000008982,1,156,Jeans
-1000009080,3,156,Jeans
-1000009081,3,156,Jeans
-1000009221,4,156,Jeans
-1000009274,2,156,Jeans
-1000009446,3,156,Jeans
-1000009456,1,156,Jeans
-1000009693,3,156,Jeans
-1000009697,1,156,Jeans
-1000009707,5,156,Jeans
-1000009889,3,156,Jeans
-1000009940,4,156,Jeans
-1000010101,1,156,Jeans
-1000010177,3,156,Jeans
-1000010276,7,156,Jeans
-1000010317,1,156,Jeans
-1000010340,6,156,Jeans
-1000010479,5,156,Jeans
-1000010656,5,156,Jeans
-1000010684,12,156,Jeans
-1000010739,9,156,Jeans
-1000010848,4,156,Jeans
 1000010931,1,156,Jeans
-1000010981,1,156,Jeans
-1000011003,6,156,Jeans
-1000011009,6,156,Jeans
-1000011017,4,156,Jeans
-1000011174,1,156,Jeans
-1000011201,3,156,Jeans
-1000011204,9,156,Jeans
-1000011372,1,156,Jeans
-1000011467,1,156,Jeans
-1000011507,3,156,Jeans
-1000011547,2,156,Jeans
-1000011554,1,156,Jeans
-1000011678,3,156,Jeans
-1000011751,2,156,Jeans
-1000011856,4,156,Jeans
-1000011869,2,156,Jeans
-1000012015,1,156,Jeans
-1000012023,1,156,Jeans
-1000012080,5,156,Jeans
-1000012190,2,156,Jeans
-1000012298,1,156,Jeans
-1000012313,4,156,Jeans
-1000012333,1,156,Jeans
-1000012464,2,156,Jeans
-1000012506,6,156,Jeans
-1000012622,2,156,Jeans
-1000012656,3,156,Jeans
-1000012709,8,156,Jeans
-1000012741,6,156,Jeans
-1000012767,5,156,Jeans
-1000012793,2,156,Jeans
-1000012825,3,156,Jeans
-1000012838,1,156,Jeans
-1000012840,3,156,Jeans
-1000012953,7,156,Jeans
-1000012958,9,156,Jeans
-1000013128,3,156,Jeans
-1000013335,2,156,Jeans
-1000013437,2,156,Jeans
-1000013446,3,156,Jeans
-1000013450,2,156,Jeans
-1000013507,1,156,Jeans
-1000013691,3,156,Jeans
-1000013696,8,156,Jeans
-1000013776,2,156,Jeans
-1000013874,3,156,Jeans
-1000013929,5,156,Jeans
-1000014001,5,156,Jeans
-1000014037,5,156,Jeans
-1000014060,4,156,Jeans
-1000014263,3,156,Jeans
-1000014264,6,156,Jeans
-1000014280,7,156,Jeans
-1000014291,1,156,Jeans
-1000014311,1,156,Jeans
-1000014370,8,156,Jeans
-1000014371,2,156,Jeans
-1000014436,3,156,Jeans
-1000014490,4,156,Jeans
-1000014567,2,156,Jeans
-1000014584,8,156,Jeans
-1000014666,2,156,Jeans
-1000014759,5,156,Jeans
-1000014794,1,156,Jeans
-1000014801,7,156,Jeans
-1000014808,5,156,Jeans
-1000014857,5,156,Jeans
-1000014865,7,156,Jeans
-1000014956,1,156,Jeans
-1000014960,3,156,Jeans
-1000014995,5,156,Jeans
-1000015003,2,156,Jeans
-1000015048,7,156,Jeans
-1000015063,4,156,Jeans
-1000015071,7,156,Jeans
-1000015174,2,156,Jeans
-1000015271,5,156,Jeans
-1000015289,6,156,Jeans
-1000015293,1,156,Jeans
-1000015323,1,156,Jeans
-1000015376,4,156,Jeans
-1000015397,2,156,Jeans
-1000015458,1,156,Jeans
-1000015588,3,156,Jeans
-1000015750,3,156,Jeans
-1000015754,5,156,Jeans
-1000015791,1,156,Jeans
-1000015808,3,156,Jeans
-1000015936,4,156,Jeans
-1000016012,3,156,Jeans
-1000016058,6,156,Jeans
-1000016156,1,156,Jeans
-1000016209,6,156,Jeans
-1000016211,1,156,Jeans
-1000016236,6,156,Jeans
-1000016289,2,156,Jeans
-1000016300,5,156,Jeans
-1000016303,2,156,Jeans
-1000016359,1,156,Jeans
-1000016389,5,156,Jeans
-1000016406,7,156,Jeans
-1000016480,4,156,Jeans
-1000016510,8,156,Jeans
-1000016527,1,156,Jeans
-1000016690,3,156,Jeans
-1000016756,1,156,Jeans
-1000016759,2,156,Jeans
-1000016799,4,156,Jeans
-1000016875,2,156,Jeans
-1000016895,4,156,Jeans
-1000017046,3,156,Jeans
-1000017068,1,156,Jeans
-1000017147,1,156,Jeans
-1000017152,1,156,Jeans
-1000017232,8,156,Jeans
-1000017245,1,156,Jeans
-1000017367,4,156,Jeans
-1000017427,3,156,Jeans
-1000017512,1,156,Jeans
-1000017600,5,156,Jeans
-1000017650,11,156,Jeans
-1000017659,2,156,Jeans
-1000017664,9,156,Jeans
-1000017721,3,156,Jeans
-1000017857,4,156,Jeans
-1000017930,1,156,Jeans
-1000018064,3,156,Jeans
-1000018185,2,156,Jeans
-1000018243,7,156,Jeans
-1000018305,5,156,Jeans
 1000018511,6,156,Jeans
-1000000017,4,157,Jelly
-1000000052,3,157,Jelly
-1000000097,5,157,Jelly
+1000018305,5,156,Jeans
+1000018243,7,156,Jeans
+1000018185,2,156,Jeans
+1000018064,3,156,Jeans
+1000017930,1,156,Jeans
+1000017857,4,156,Jeans
+1000017721,3,156,Jeans
+1000017664,9,156,Jeans
+1000017659,2,156,Jeans
+1000017650,11,156,Jeans
+1000017600,5,156,Jeans
+1000017512,1,156,Jeans
+1000017427,3,156,Jeans
+1000017367,4,156,Jeans
+1000017245,1,156,Jeans
+1000017232,8,156,Jeans
+1000017152,1,156,Jeans
+1000017147,1,156,Jeans
+1000017068,1,156,Jeans
+1000017046,3,156,Jeans
+1000016895,4,156,Jeans
+1000016875,2,156,Jeans
+1000016799,4,156,Jeans
+1000016759,2,156,Jeans
+1000016756,1,156,Jeans
+1000016690,3,156,Jeans
+1000016527,1,156,Jeans
+1000016510,8,156,Jeans
+1000016480,4,156,Jeans
+1000016406,7,156,Jeans
+1000016389,5,156,Jeans
+1000016359,1,156,Jeans
+1000016303,2,156,Jeans
+1000016300,5,156,Jeans
+1000016289,2,156,Jeans
+1000016236,6,156,Jeans
+1000016211,1,156,Jeans
+1000016209,6,156,Jeans
+1000016156,1,156,Jeans
+1000016058,6,156,Jeans
+1000016012,3,156,Jeans
+1000015936,4,156,Jeans
+1000015808,3,156,Jeans
+1000015791,1,156,Jeans
+1000015754,5,156,Jeans
+1000015750,3,156,Jeans
+1000015588,3,156,Jeans
+1000015458,1,156,Jeans
+1000015397,2,156,Jeans
+1000015376,4,156,Jeans
+1000015323,1,156,Jeans
+1000015293,1,156,Jeans
+1000015289,6,156,Jeans
+1000015271,5,156,Jeans
+1000015174,2,156,Jeans
+1000015071,7,156,Jeans
+1000015063,4,156,Jeans
+1000015048,7,156,Jeans
+1000015003,2,156,Jeans
+1000014995,5,156,Jeans
+1000014960,3,156,Jeans
+1000014956,1,156,Jeans
+1000014865,7,156,Jeans
+1000014857,5,156,Jeans
+1000014808,5,156,Jeans
+1000014801,7,156,Jeans
+1000014794,1,156,Jeans
+1000014759,5,156,Jeans
+1000014666,2,156,Jeans
+1000014584,8,156,Jeans
+1000014567,2,156,Jeans
+1000014490,4,156,Jeans
+1000014436,3,156,Jeans
+1000014371,2,156,Jeans
+1000014370,8,156,Jeans
+1000014311,1,156,Jeans
+1000014291,1,156,Jeans
+1000014280,7,156,Jeans
+1000014264,6,156,Jeans
+1000014263,3,156,Jeans
+1000014060,4,156,Jeans
+1000014037,5,156,Jeans
+1000014001,5,156,Jeans
+1000013929,5,156,Jeans
+1000013874,3,156,Jeans
+1000013776,2,156,Jeans
+1000013696,8,156,Jeans
+1000013691,3,156,Jeans
+1000013507,1,156,Jeans
+1000013450,2,156,Jeans
+1000013446,3,156,Jeans
+1000013437,2,156,Jeans
+1000013335,2,156,Jeans
+1000013128,3,156,Jeans
+1000012958,9,156,Jeans
+1000012953,7,156,Jeans
+1000012840,3,156,Jeans
+1000012838,1,156,Jeans
+1000012825,3,156,Jeans
+1000012793,2,156,Jeans
+1000012767,5,156,Jeans
+1000012741,6,156,Jeans
+1000012709,8,156,Jeans
+1000012656,3,156,Jeans
+1000012622,2,156,Jeans
+1000012506,6,156,Jeans
+1000012464,2,156,Jeans
+1000012333,1,156,Jeans
+1000012313,4,156,Jeans
+1000012298,1,156,Jeans
+1000012190,2,156,Jeans
+1000012080,5,156,Jeans
+1000012023,1,156,Jeans
+1000012015,1,156,Jeans
+1000011869,2,156,Jeans
+1000011856,4,156,Jeans
+1000011751,2,156,Jeans
+1000011678,3,156,Jeans
+1000011554,1,156,Jeans
+1000011547,2,156,Jeans
+1000011507,3,156,Jeans
+1000011467,1,156,Jeans
+1000011372,1,156,Jeans
+1000011204,9,156,Jeans
+1000011201,3,156,Jeans
+1000011174,1,156,Jeans
+1000011017,4,156,Jeans
+1000011009,6,156,Jeans
+1000011003,6,156,Jeans
+1000010981,1,156,Jeans
+1000010848,4,156,Jeans
+1000010739,9,156,Jeans
+1000010684,12,156,Jeans
+1000010656,5,156,Jeans
+1000010479,5,156,Jeans
+1000010340,6,156,Jeans
+1000010317,1,156,Jeans
+1000010276,7,156,Jeans
+1000010177,3,156,Jeans
+1000010101,1,156,Jeans
+1000009940,4,156,Jeans
+1000009889,3,156,Jeans
+1000009707,5,156,Jeans
+1000009697,1,156,Jeans
+1000009693,3,156,Jeans
+1000009456,1,156,Jeans
+1000009446,3,156,Jeans
+1000009274,2,156,Jeans
+1000009221,4,156,Jeans
+1000009081,3,156,Jeans
+1000009080,3,156,Jeans
+1000008982,1,156,Jeans
+1000008926,5,156,Jeans
+1000008893,1,156,Jeans
+1000008876,1,156,Jeans
+1000008708,4,156,Jeans
+1000008610,8,156,Jeans
+1000008473,2,156,Jeans
+1000008357,2,156,Jeans
+1000008212,1,156,Jeans
+1000008171,5,156,Jeans
+1000008158,5,156,Jeans
+1000008116,1,156,Jeans
+1000008103,8,156,Jeans
+1000008094,3,156,Jeans
+1000008087,1,156,Jeans
+1000008056,2,156,Jeans
+1000007889,1,156,Jeans
+1000007716,5,156,Jeans
+1000007694,2,156,Jeans
+1000007531,4,156,Jeans
+1000007491,2,156,Jeans
+1000007362,6,156,Jeans
+1000007272,1,156,Jeans
+1000007179,2,156,Jeans
+1000007149,5,156,Jeans
+1000007147,1,156,Jeans
+1000007139,2,156,Jeans
+1000006930,1,156,Jeans
+1000006839,1,156,Jeans
+1000006824,9,156,Jeans
+1000006763,3,156,Jeans
+1000006656,2,156,Jeans
+1000006538,3,156,Jeans
+1000006521,1,156,Jeans
+1000006375,6,156,Jeans
+1000006374,5,156,Jeans
+1000006315,8,156,Jeans
+1000006285,3,156,Jeans
+1000006239,3,156,Jeans
+1000006222,1,156,Jeans
+1000006146,9,156,Jeans
+1000006083,7,156,Jeans
+1000006060,1,156,Jeans
+1000006034,3,156,Jeans
+1000005977,1,156,Jeans
+1000005837,3,156,Jeans
+1000005744,5,156,Jeans
+1000005739,7,156,Jeans
+1000005722,1,156,Jeans
+1000005697,2,156,Jeans
+1000005686,9,156,Jeans
+1000005675,4,156,Jeans
+1000005665,4,156,Jeans
+1000005484,4,156,Jeans
+1000005393,5,156,Jeans
+1000005271,1,156,Jeans
+1000005264,8,156,Jeans
+1000005166,3,156,Jeans
+1000005130,3,156,Jeans
+1000005068,2,156,Jeans
+1000005066,2,156,Jeans
+1000005009,5,156,Jeans
+1000004957,1,156,Jeans
+1000004802,8,156,Jeans
+1000004766,1,156,Jeans
+1000004745,4,156,Jeans
+1000004697,1,156,Jeans
+1000004623,5,156,Jeans
+1000004355,7,156,Jeans
+1000004319,5,156,Jeans
+1000004197,1,156,Jeans
+1000004177,2,156,Jeans
+1000004155,4,156,Jeans
+1000004065,12,156,Jeans
+1000003856,4,156,Jeans
+1000003797,2,156,Jeans
+1000003791,2,156,Jeans
+1000003742,2,156,Jeans
+1000003686,4,156,Jeans
+1000003631,5,156,Jeans
+1000003607,4,156,Jeans
+1000003537,2,156,Jeans
+1000003464,9,156,Jeans
+1000003401,6,156,Jeans
+1000003369,3,156,Jeans
+1000003313,5,156,Jeans
+1000003183,2,156,Jeans
+1000003109,5,156,Jeans
+1000003022,1,156,Jeans
+1000002864,3,156,Jeans
+1000002780,1,156,Jeans
+1000002751,5,156,Jeans
+1000002673,3,156,Jeans
+1000002477,1,156,Jeans
+1000002441,3,156,Jeans
+1000002421,5,156,Jeans
+1000002365,2,156,Jeans
+1000002356,3,156,Jeans
+1000002318,4,156,Jeans
+1000002272,1,156,Jeans
+1000002207,5,156,Jeans
+1000002142,3,156,Jeans
+1000002131,4,156,Jeans
+1000002068,2,156,Jeans
+1000001907,1,156,Jeans
+1000001841,9,156,Jeans
+1000001772,2,156,Jeans
+1000001754,4,156,Jeans
+1000001743,6,156,Jeans
+1000001499,3,156,Jeans
+1000001442,3,156,Jeans
+1000001429,2,156,Jeans
+1000001378,6,156,Jeans
+1000001367,1,156,Jeans
+1000001350,2,156,Jeans
+1000001342,1,156,Jeans
+1000001289,4,156,Jeans
+1000001172,2,156,Jeans
+1000001052,1,156,Jeans
+1000000989,3,156,Jeans
+1000000975,6,156,Jeans
+1000000932,1,156,Jeans
+1000000897,2,156,Jeans
+1000000883,3,156,Jeans
+1000000805,4,156,Jeans
+1000000738,4,156,Jeans
+1000000713,2,156,Jeans
+1000000464,4,156,Jeans
+1000000351,10,156,Jeans
+1000000226,3,156,Jeans
+1000000206,6,156,Jeans
+1000000187,1,156,Jeans
+1000000164,4,156,Jeans
+1000000132,2,156,Jeans
+1000000127,3,156,Jeans
+1000000032,4,156,Jeans
+1000000028,5,156,Jeans
 1000000170,1,157,Jelly
-1000000184,1,157,Jelly
-1000000185,2,157,Jelly
-1000000219,2,157,Jelly
-1000000277,4,157,Jelly
-1000000443,4,157,Jelly
-1000000478,3,157,Jelly
-1000000518,6,157,Jelly
-1000000566,1,157,Jelly
-1000000611,7,157,Jelly
-1000000779,3,157,Jelly
-1000000833,7,157,Jelly
-1000000914,3,157,Jelly
-1000001098,2,157,Jelly
-1000001102,1,157,Jelly
-1000001305,6,157,Jelly
-1000001307,1,157,Jelly
-1000001379,7,157,Jelly
-1000001404,1,157,Jelly
-1000001408,2,157,Jelly
-1000001470,2,157,Jelly
-1000001527,2,157,Jelly
-1000001559,1,157,Jelly
-1000001884,4,157,Jelly
-1000001895,2,157,Jelly
+1000000052,3,157,Jelly
+1000000017,4,157,Jelly
 1000002003,5,157,Jelly
 1000002047,6,157,Jelly
 1000002229,7,157,Jelly
@@ -45047,6 +45022,7 @@ transaction_id,item_position,product_id,product_name
 1000008551,1,157,Jelly
 1000008707,3,157,Jelly
 1000008774,5,157,Jelly
+1000001895,2,157,Jelly
 1000008785,6,157,Jelly
 1000008814,5,157,Jelly
 1000008909,4,157,Jelly
@@ -45197,12 +45173,30 @@ transaction_id,item_position,product_id,product_name
 1000018231,10,157,Jelly
 1000018342,4,157,Jelly
 1000018406,1,157,Jelly
-1000000044,5,158,Juice
-1000000076,6,158,Juice
-1000000145,6,158,Juice
-1000000226,1,158,Juice
-1000000256,1,158,Juice
-1000000301,2,158,Juice
+1000000097,5,157,Jelly
+1000001884,4,157,Jelly
+1000001559,1,157,Jelly
+1000001527,2,157,Jelly
+1000001470,2,157,Jelly
+1000001408,2,157,Jelly
+1000001404,1,157,Jelly
+1000001379,7,157,Jelly
+1000001307,1,157,Jelly
+1000001305,6,157,Jelly
+1000001102,1,157,Jelly
+1000001098,2,157,Jelly
+1000000914,3,157,Jelly
+1000000833,7,157,Jelly
+1000000779,3,157,Jelly
+1000000611,7,157,Jelly
+1000000566,1,157,Jelly
+1000000518,6,157,Jelly
+1000000478,3,157,Jelly
+1000000443,4,157,Jelly
+1000000277,4,157,Jelly
+1000000219,2,157,Jelly
+1000000185,2,157,Jelly
+1000000184,1,157,Jelly
 1000000334,1,158,Juice
 1000000359,4,158,Juice
 1000000394,5,158,Juice
@@ -45240,6 +45234,7 @@ transaction_id,item_position,product_id,product_name
 1000002604,1,158,Juice
 1000002671,5,158,Juice
 1000002684,1,158,Juice
+1000000145,6,158,Juice
 1000002761,2,158,Juice
 1000002799,3,158,Juice
 1000002825,3,158,Juice
@@ -45326,6 +45321,7 @@ transaction_id,item_position,product_id,product_name
 1000008099,8,158,Juice
 1000008156,2,158,Juice
 1000008164,5,158,Juice
+1000000256,1,158,Juice
 1000008287,12,158,Juice
 1000008402,3,158,Juice
 1000008412,5,158,Juice
@@ -45346,11 +45342,13 @@ transaction_id,item_position,product_id,product_name
 1000009256,6,158,Juice
 1000009295,2,158,Juice
 1000009480,5,158,Juice
+1000000226,1,158,Juice
 1000009493,2,158,Juice
 1000009578,3,158,Juice
 1000009607,1,158,Juice
 1000009629,4,158,Juice
 1000009688,1,158,Juice
+1000000044,5,158,Juice
 1000009764,4,158,Juice
 1000009768,6,158,Juice
 1000009845,5,158,Juice
@@ -45444,6 +45442,7 @@ transaction_id,item_position,product_id,product_name
 1000014938,9,158,Juice
 1000015032,1,158,Juice
 1000015034,3,158,Juice
+1000000076,6,158,Juice
 1000015075,9,158,Juice
 1000015124,2,158,Juice
 1000015133,3,158,Juice
@@ -45457,6 +45456,7 @@ transaction_id,item_position,product_id,product_name
 1000015617,1,158,Juice
 1000015662,1,158,Juice
 1000015837,6,158,Juice
+1000000301,2,158,Juice
 1000015982,4,158,Juice
 1000016009,1,158,Juice
 1000016110,5,158,Juice
@@ -45502,6 +45502,7 @@ transaction_id,item_position,product_id,product_name
 1000018257,1,158,Juice
 1000018462,9,158,Juice
 1000018464,3,158,Juice
+1000018482,3,159,Jump Rope
 1000000022,1,159,Jump Rope
 1000000032,5,159,Jump Rope
 1000000058,1,159,Jump Rope
@@ -45761,7 +45762,6 @@ transaction_id,item_position,product_id,product_name
 1000018378,3,159,Jump Rope
 1000018429,4,159,Jump Rope
 1000018470,2,159,Jump Rope
-1000018482,3,159,Jump Rope
 1000000009,1,160,Ketchup
 1000000026,5,160,Ketchup
 1000000033,1,160,Ketchup
@@ -46326,6 +46326,7 @@ transaction_id,item_position,product_id,product_name
 1000018350,1,161,Kettlebells
 1000018387,9,161,Kettlebells
 1000018518,8,161,Kettlebells
+1000009202,2,162,Laptop Bag
 1000000004,5,162,Laptop Bag
 1000000065,1,162,Laptop Bag
 1000000315,8,162,Laptop Bag
@@ -46451,7 +46452,6 @@ transaction_id,item_position,product_id,product_name
 1000009088,1,162,Laptop Bag
 1000009142,9,162,Laptop Bag
 1000009191,1,162,Laptop Bag
-1000009202,2,162,Laptop Bag
 1000009388,9,162,Laptop Bag
 1000009508,5,162,Laptop Bag
 1000009539,1,162,Laptop Bag
@@ -46583,8 +46583,6 @@ transaction_id,item_position,product_id,product_name
 1000018437,6,162,Laptop Bag
 1000018441,6,162,Laptop Bag
 1000018489,2,162,Laptop Bag
-1000000056,2,163,Laundry Basket
-1000000105,2,163,Laundry Basket
 1000000230,3,163,Laundry Basket
 1000000258,5,163,Laundry Basket
 1000000343,7,163,Laundry Basket
@@ -46592,6 +46590,7 @@ transaction_id,item_position,product_id,product_name
 1000000522,6,163,Laundry Basket
 1000000681,2,163,Laundry Basket
 1000000750,6,163,Laundry Basket
+1000000056,2,163,Laundry Basket
 1000000955,1,163,Laundry Basket
 1000001014,8,163,Laundry Basket
 1000001087,2,163,Laundry Basket
@@ -46860,6 +46859,8 @@ transaction_id,item_position,product_id,product_name
 1000018367,3,163,Laundry Basket
 1000018431,6,163,Laundry Basket
 1000018440,1,163,Laundry Basket
+1000000105,2,163,Laundry Basket
+1000018066,9,164,Laundry Detergent
 1000000093,12,164,Laundry Detergent
 1000000095,1,164,Laundry Detergent
 1000000119,5,164,Laundry Detergent
@@ -47144,7 +47145,6 @@ transaction_id,item_position,product_id,product_name
 1000017946,1,164,Laundry Detergent
 1000017952,2,164,Laundry Detergent
 1000018019,1,164,Laundry Detergent
-1000018066,9,164,Laundry Detergent
 1000018081,5,164,Laundry Detergent
 1000018135,5,164,Laundry Detergent
 1000018191,2,164,Laundry Detergent
@@ -47706,6 +47706,7 @@ transaction_id,item_position,product_id,product_name
 1000018293,5,166,Lemonade
 1000018378,7,166,Lemonade
 1000018519,7,166,Lemonade
+1000010510,1,167,Light Bulbs
 1000000051,5,167,Light Bulbs
 1000000068,1,167,Light Bulbs
 1000000145,2,167,Light Bulbs
@@ -47852,7 +47853,6 @@ transaction_id,item_position,product_id,product_name
 1000010232,3,167,Light Bulbs
 1000010319,7,167,Light Bulbs
 1000010464,2,167,Light Bulbs
-1000010510,1,167,Light Bulbs
 1000010564,8,167,Light Bulbs
 1000010810,2,167,Light Bulbs
 1000010893,1,167,Light Bulbs
@@ -47992,11 +47992,9 @@ transaction_id,item_position,product_id,product_name
 1000018437,5,167,Light Bulbs
 1000018509,3,167,Light Bulbs
 1000018527,1,167,Light Bulbs
-1000000081,4,168,Lighter
-1000000120,2,168,Lighter
-1000000272,4,168,Lighter
 1000000292,5,168,Lighter
 1000000566,6,168,Lighter
+1000000272,4,168,Lighter
 1000000702,6,168,Lighter
 1000000707,6,168,Lighter
 1000000719,2,168,Lighter
@@ -48010,6 +48008,7 @@ transaction_id,item_position,product_id,product_name
 1000001319,4,168,Lighter
 1000001334,2,168,Lighter
 1000001363,6,168,Lighter
+1000000120,2,168,Lighter
 1000001519,1,168,Lighter
 1000001628,1,168,Lighter
 1000001630,2,168,Lighter
@@ -48154,6 +48153,7 @@ transaction_id,item_position,product_id,product_name
 1000011462,2,168,Lighter
 1000011646,2,168,Lighter
 1000011713,4,168,Lighter
+1000000081,4,168,Lighter
 1000011743,4,168,Lighter
 1000011819,2,168,Lighter
 1000011847,3,168,Lighter
@@ -48256,9 +48256,9 @@ transaction_id,item_position,product_id,product_name
 1000018213,5,168,Lighter
 1000018334,5,168,Lighter
 1000018493,1,168,Lighter
+1000000074,1,169,Lighter Fluid
 1000000001,2,169,Lighter Fluid
 1000000029,3,169,Lighter Fluid
-1000000074,1,169,Lighter Fluid
 1000000087,4,169,Lighter Fluid
 1000000288,3,169,Lighter Fluid
 1000000312,4,169,Lighter Fluid
@@ -48524,6 +48524,7 @@ transaction_id,item_position,product_id,product_name
 1000018409,1,169,Lighter Fluid
 1000018414,2,169,Lighter Fluid
 1000018461,10,169,Lighter Fluid
+1000001429,1,170,Lip Balm
 1000000147,2,170,Lip Balm
 1000000234,1,170,Lip Balm
 1000000297,3,170,Lip Balm
@@ -48540,7 +48541,6 @@ transaction_id,item_position,product_id,product_name
 1000001186,3,170,Lip Balm
 1000001264,1,170,Lip Balm
 1000001420,4,170,Lip Balm
-1000001429,1,170,Lip Balm
 1000001450,1,170,Lip Balm
 1000001557,1,170,Lip Balm
 1000001686,2,170,Lip Balm
@@ -49089,6 +49089,7 @@ transaction_id,item_position,product_id,product_name
 1000018399,2,171,Lollipops
 1000018419,5,171,Lollipops
 1000018453,2,171,Lollipops
+1000010975,6,172,Lotion
 1000000025,1,172,Lotion
 1000000257,6,172,Lotion
 1000000320,1,172,Lotion
@@ -49250,7 +49251,6 @@ transaction_id,item_position,product_id,product_name
 1000010876,3,172,Lotion
 1000010901,6,172,Lotion
 1000010927,4,172,Lotion
-1000010975,6,172,Lotion
 1000011015,3,172,Lotion
 1000011026,1,172,Lotion
 1000011177,1,172,Lotion
@@ -49372,17 +49372,17 @@ transaction_id,item_position,product_id,product_name
 1000018345,8,172,Lotion
 1000018366,2,172,Lotion
 1000018370,3,172,Lotion
-1000000077,4,173,Luggage
-1000000105,1,173,Luggage
 1000000190,2,173,Luggage
 1000000231,5,173,Luggage
 1000000252,1,173,Luggage
 1000000275,6,173,Luggage
 1000000410,1,173,Luggage
+1000000105,1,173,Luggage
 1000000553,3,173,Luggage
 1000000711,2,173,Luggage
 1000000760,2,173,Luggage
 1000000902,3,173,Luggage
+1000000077,4,173,Luggage
 1000000908,2,173,Luggage
 1000000962,3,173,Luggage
 1000000971,5,173,Luggage
@@ -49646,12 +49646,12 @@ transaction_id,item_position,product_id,product_name
 1000018370,1,173,Luggage
 1000018486,2,173,Luggage
 1000018496,1,173,Luggage
+1000000418,4,174,Mac and Cheese
 1000000040,1,174,Mac and Cheese
 1000000106,3,174,Mac and Cheese
 1000000146,5,174,Mac and Cheese
 1000000213,1,174,Mac and Cheese
 1000000297,1,174,Mac and Cheese
-1000000418,4,174,Mac and Cheese
 1000000536,3,174,Mac and Cheese
 1000000788,2,174,Mac and Cheese
 1000000801,4,174,Mac and Cheese
@@ -49930,6 +49930,7 @@ transaction_id,item_position,product_id,product_name
 1000018390,3,174,Mac and Cheese
 1000018454,5,174,Mac and Cheese
 1000018472,8,174,Mac and Cheese
+1000000711,4,175,Markers
 1000000107,5,175,Markers
 1000000292,4,175,Markers
 1000000319,5,175,Markers
@@ -49940,7 +49941,6 @@ transaction_id,item_position,product_id,product_name
 1000000571,2,175,Markers
 1000000578,2,175,Markers
 1000000651,4,175,Markers
-1000000711,4,175,Markers
 1000000734,6,175,Markers
 1000000768,8,175,Markers
 1000000786,3,175,Markers
@@ -50508,6 +50508,7 @@ transaction_id,item_position,product_id,product_name
 1000018473,4,176,Matches
 1000018474,1,176,Matches
 1000018497,4,176,Matches
+1000002357,10,177,Mayonnaise
 1000000004,7,177,Mayonnaise
 1000000050,10,177,Mayonnaise
 1000000089,2,177,Mayonnaise
@@ -50548,7 +50549,6 @@ transaction_id,item_position,product_id,product_name
 1000002256,7,177,Mayonnaise
 1000002326,6,177,Mayonnaise
 1000002344,3,177,Mayonnaise
-1000002357,10,177,Mayonnaise
 1000002368,4,177,Mayonnaise
 1000002432,3,177,Mayonnaise
 1000002552,5,177,Mayonnaise
@@ -50760,15 +50760,12 @@ transaction_id,item_position,product_id,product_name
 1000018384,2,177,Mayonnaise
 1000018465,3,177,Mayonnaise
 1000018507,5,177,Mayonnaise
-1000000010,4,178,Messenger Bag
-1000000149,4,178,Messenger Bag
-1000000187,6,178,Messenger Bag
-1000000226,4,178,Messenger Bag
 1000000366,5,178,Messenger Bag
 1000000416,2,178,Messenger Bag
 1000000441,10,178,Messenger Bag
 1000000464,5,178,Messenger Bag
 1000000538,4,178,Messenger Bag
+1000000010,4,178,Messenger Bag
 1000000618,5,178,Messenger Bag
 1000000634,6,178,Messenger Bag
 1000000677,1,178,Messenger Bag
@@ -50902,6 +50899,7 @@ transaction_id,item_position,product_id,product_name
 1000009038,3,178,Messenger Bag
 1000009045,4,178,Messenger Bag
 1000009478,5,178,Messenger Bag
+1000000187,6,178,Messenger Bag
 1000009536,6,178,Messenger Bag
 1000009641,6,178,Messenger Bag
 1000009653,3,178,Messenger Bag
@@ -51047,6 +51045,9 @@ transaction_id,item_position,product_id,product_name
 1000018400,7,178,Messenger Bag
 1000018403,3,178,Messenger Bag
 1000018454,4,178,Messenger Bag
+1000000226,4,178,Messenger Bag
+1000000149,4,178,Messenger Bag
+1000008203,2,179,Milk
 1000000010,2,179,Milk
 1000000042,7,179,Milk
 1000000053,4,179,Milk
@@ -51186,7 +51187,6 @@ transaction_id,item_position,product_id,product_name
 1000007927,3,179,Milk
 1000007961,4,179,Milk
 1000008021,2,179,Milk
-1000008203,2,179,Milk
 1000008259,3,179,Milk
 1000008275,1,179,Milk
 1000008445,2,179,Milk
@@ -51612,6 +51612,7 @@ transaction_id,item_position,product_id,product_name
 1000018437,1,180,Mints
 1000018471,9,180,Mints
 1000018512,3,180,Mints
+1000018327,2,181,Mouthwash
 1000000005,7,181,Mouthwash
 1000000047,4,181,Mouthwash
 1000000178,2,181,Mouthwash
@@ -51898,11 +51899,9 @@ transaction_id,item_position,product_id,product_name
 1000017997,2,181,Mouthwash
 1000018093,4,181,Mouthwash
 1000018250,4,181,Mouthwash
-1000018327,2,181,Mouthwash
 1000018341,3,181,Mouthwash
 1000018343,8,181,Mouthwash
 1000018427,4,181,Mouthwash
-1000000008,1,182,Moving Boxes
 1000000058,7,182,Moving Boxes
 1000000167,3,182,Moving Boxes
 1000000198,1,182,Moving Boxes
@@ -52170,6 +52169,7 @@ transaction_id,item_position,product_id,product_name
 1000015775,9,182,Moving Boxes
 1000015944,1,182,Moving Boxes
 1000015946,5,182,Moving Boxes
+1000000008,1,182,Moving Boxes
 1000016007,1,182,Moving Boxes
 1000016021,1,182,Moving Boxes
 1000016026,3,182,Moving Boxes
@@ -52202,6 +52202,7 @@ transaction_id,item_position,product_id,product_name
 1000018463,2,182,Moving Boxes
 1000018509,4,182,Moving Boxes
 1000018517,5,182,Moving Boxes
+1000018393,4,183,Muffins
 1000000060,2,183,Muffins
 1000000125,3,183,Muffins
 1000000131,3,183,Muffins
@@ -52469,7 +52470,6 @@ transaction_id,item_position,product_id,product_name
 1000018215,9,183,Muffins
 1000018247,3,183,Muffins
 1000018363,6,183,Muffins
-1000018393,4,183,Muffins
 1000018454,1,183,Muffins
 1000018501,3,183,Muffins
 1000018510,1,183,Muffins
@@ -53037,6 +53037,7 @@ transaction_id,item_position,product_id,product_name
 1000018300,2,185,Mustard
 1000018354,3,185,Mustard
 1000018518,1,185,Mustard
+1000017768,7,186,Nail Clippers
 1000000151,1,186,Nail Clippers
 1000000248,2,186,Nail Clippers
 1000000368,5,186,Nail Clippers
@@ -53329,7 +53330,6 @@ transaction_id,item_position,product_id,product_name
 1000017380,1,186,Nail Clippers
 1000017641,1,186,Nail Clippers
 1000017726,5,186,Nail Clippers
-1000017768,7,186,Nail Clippers
 1000017771,5,186,Nail Clippers
 1000017774,7,186,Nail Clippers
 1000017833,2,186,Nail Clippers
@@ -53342,9 +53342,8 @@ transaction_id,item_position,product_id,product_name
 1000018253,2,186,Nail Clippers
 1000018358,5,186,Nail Clippers
 1000018380,3,186,Nail Clippers
-1000000053,3,187,Nail Polish
-1000000098,3,187,Nail Polish
 1000000134,1,187,Nail Polish
+1000000098,3,187,Nail Polish
 1000000192,2,187,Nail Polish
 1000000207,1,187,Nail Polish
 1000000214,1,187,Nail Polish
@@ -53441,6 +53440,7 @@ transaction_id,item_position,product_id,product_name
 1000005636,3,187,Nail Polish
 1000005644,4,187,Nail Polish
 1000005693,6,187,Nail Polish
+1000000053,3,187,Nail Polish
 1000005716,3,187,Nail Polish
 1000005742,4,187,Nail Polish
 1000005932,9,187,Nail Polish
@@ -53931,8 +53931,8 @@ transaction_id,item_position,product_id,product_name
 1000018254,3,188,Nail Polish Remover
 1000018313,2,188,Nail Polish Remover
 1000018519,2,188,Nail Polish Remover
-1000000032,6,189,Napkins
 1000000043,1,189,Napkins
+1000000032,6,189,Napkins
 1000000059,3,189,Napkins
 1000000176,3,189,Napkins
 1000000192,1,189,Napkins
@@ -54522,6 +54522,7 @@ transaction_id,item_position,product_id,product_name
 1000018387,2,190,Notebook Paper
 1000018434,2,190,Notebook Paper
 1000018462,7,190,Notebook Paper
+1000005244,6,191,Notebooks
 1000000112,3,191,Notebooks
 1000000162,3,191,Notebooks
 1000000198,5,191,Notebooks
@@ -54620,7 +54621,6 @@ transaction_id,item_position,product_id,product_name
 1000005114,3,191,Notebooks
 1000005152,2,191,Notebooks
 1000005200,2,191,Notebooks
-1000005244,6,191,Notebooks
 1000005258,2,191,Notebooks
 1000005264,2,191,Notebooks
 1000005327,1,191,Notebooks
@@ -54823,8 +54823,6 @@ transaction_id,item_position,product_id,product_name
 1000018240,1,191,Notebooks
 1000018291,5,191,Notebooks
 1000018313,1,191,Notebooks
-1000000005,6,192,Oats
-1000000026,1,192,Oats
 1000000027,2,192,Oats
 1000000065,4,192,Oats
 1000000108,4,192,Oats
@@ -54837,6 +54835,7 @@ transaction_id,item_position,product_id,product_name
 1000000553,1,192,Oats
 1000000582,8,192,Oats
 1000000689,1,192,Oats
+1000000005,6,192,Oats
 1000000776,2,192,Oats
 1000000777,1,192,Oats
 1000000784,2,192,Oats
@@ -55086,6 +55085,8 @@ transaction_id,item_position,product_id,product_name
 1000018332,6,192,Oats
 1000018421,11,192,Oats
 1000018498,1,192,Oats
+1000000026,1,192,Oats
+1000016327,1,193,Olive Oil
 1000000014,7,193,Olive Oil
 1000000109,1,193,Olive Oil
 1000000110,1,193,Olive Oil
@@ -55361,7 +55362,6 @@ transaction_id,item_position,product_id,product_name
 1000016235,6,193,Olive Oil
 1000016256,2,193,Olive Oil
 1000016310,5,193,Olive Oil
-1000016327,1,193,Olive Oil
 1000016347,1,193,Olive Oil
 1000016386,6,193,Olive Oil
 1000016616,5,193,Olive Oil
@@ -55899,6 +55899,7 @@ transaction_id,item_position,product_id,product_name
 1000018341,2,195,One-Piece Swimsuit
 1000018413,7,195,One-Piece Swimsuit
 1000018441,1,195,One-Piece Swimsuit
+1000014881,1,196,Onion Powder
 1000000002,1,196,Onion Powder
 1000000079,2,196,Onion Powder
 1000000162,2,196,Onion Powder
@@ -56145,7 +56146,6 @@ transaction_id,item_position,product_id,product_name
 1000014725,6,196,Onion Powder
 1000014732,1,196,Onion Powder
 1000014779,9,196,Onion Powder
-1000014881,1,196,Onion Powder
 1000014972,5,196,Onion Powder
 1000015108,1,196,Onion Powder
 1000015135,6,196,Onion Powder
@@ -56198,12 +56198,6 @@ transaction_id,item_position,product_id,product_name
 1000018298,4,196,Onion Powder
 1000018417,4,196,Onion Powder
 1000018462,6,196,Onion Powder
-1000000028,1,197,Orange Juice
-1000000037,4,197,Orange Juice
-1000000122,2,197,Orange Juice
-1000000140,9,197,Orange Juice
-1000000290,1,197,Orange Juice
-1000000370,2,197,Orange Juice
 1000000386,2,197,Orange Juice
 1000000499,2,197,Orange Juice
 1000000552,3,197,Orange Juice
@@ -56229,6 +56223,7 @@ transaction_id,item_position,product_id,product_name
 1000001910,2,197,Orange Juice
 1000001915,5,197,Orange Juice
 1000001921,1,197,Orange Juice
+1000000122,2,197,Orange Juice
 1000001956,3,197,Orange Juice
 1000002092,2,197,Orange Juice
 1000002177,6,197,Orange Juice
@@ -56335,6 +56330,7 @@ transaction_id,item_position,product_id,product_name
 1000008399,2,197,Orange Juice
 1000008401,3,197,Orange Juice
 1000008454,8,197,Orange Juice
+1000000140,9,197,Orange Juice
 1000008551,5,197,Orange Juice
 1000008843,4,197,Orange Juice
 1000008871,7,197,Orange Juice
@@ -56349,6 +56345,7 @@ transaction_id,item_position,product_id,product_name
 1000009543,1,197,Orange Juice
 1000009591,5,197,Orange Juice
 1000009592,3,197,Orange Juice
+1000000037,4,197,Orange Juice
 1000009747,4,197,Orange Juice
 1000009921,5,197,Orange Juice
 1000010010,9,197,Orange Juice
@@ -56356,6 +56353,7 @@ transaction_id,item_position,product_id,product_name
 1000010131,2,197,Orange Juice
 1000010144,1,197,Orange Juice
 1000010153,6,197,Orange Juice
+1000000028,1,197,Orange Juice
 1000010372,2,197,Orange Juice
 1000010496,2,197,Orange Juice
 1000010618,5,197,Orange Juice
@@ -56472,6 +56470,9 @@ transaction_id,item_position,product_id,product_name
 1000018297,1,197,Orange Juice
 1000018362,3,197,Orange Juice
 1000018425,1,197,Orange Juice
+1000000290,1,197,Orange Juice
+1000000370,2,197,Orange Juice
+1000008765,4,198,Oranges
 1000000045,1,198,Oranges
 1000000178,9,198,Oranges
 1000000192,4,198,Oranges
@@ -56605,7 +56606,6 @@ transaction_id,item_position,product_id,product_name
 1000008539,1,198,Oranges
 1000008583,1,198,Oranges
 1000008612,3,198,Oranges
-1000008765,4,198,Oranges
 1000008773,2,198,Oranges
 1000008787,4,198,Oranges
 1000008790,5,198,Oranges
@@ -57011,6 +57011,7 @@ transaction_id,item_position,product_id,product_name
 1000018485,2,199,Packing Tape
 1000018518,7,199,Packing Tape
 1000018527,2,199,Packing Tape
+1000018373,2,200,Pain Relievers
 1000000026,4,200,Pain Relievers
 1000000076,1,200,Pain Relievers
 1000000228,1,200,Pain Relievers
@@ -57310,13 +57311,10 @@ transaction_id,item_position,product_id,product_name
 1000018175,2,200,Pain Relievers
 1000018271,4,200,Pain Relievers
 1000018322,1,200,Pain Relievers
-1000018373,2,200,Pain Relievers
 1000018403,4,200,Pain Relievers
 1000018476,2,200,Pain Relievers
 1000018511,1,200,Pain Relievers
 1000018517,2,200,Pain Relievers
-1000000048,5,201,Pajamas
-1000000120,5,201,Pajamas
 1000000145,5,201,Pajamas
 1000000273,8,201,Pajamas
 1000000314,1,201,Pajamas
@@ -57326,6 +57324,7 @@ transaction_id,item_position,product_id,product_name
 1000000465,7,201,Pajamas
 1000000569,3,201,Pajamas
 1000000572,6,201,Pajamas
+1000000120,5,201,Pajamas
 1000000683,4,201,Pajamas
 1000000734,5,201,Pajamas
 1000000863,7,201,Pajamas
@@ -57359,6 +57358,7 @@ transaction_id,item_position,product_id,product_name
 1000002499,1,201,Pajamas
 1000002578,1,201,Pajamas
 1000002641,1,201,Pajamas
+1000000048,5,201,Pajamas
 1000002690,1,201,Pajamas
 1000002740,4,201,Pajamas
 1000002859,6,201,Pajamas
@@ -57561,6 +57561,7 @@ transaction_id,item_position,product_id,product_name
 1000018050,9,201,Pajamas
 1000018205,4,201,Pajamas
 1000018244,3,201,Pajamas
+1000000605,1,202,Pants
 1000000107,7,202,Pants
 1000000110,4,202,Pants
 1000000118,4,202,Pants
@@ -57570,7 +57571,6 @@ transaction_id,item_position,product_id,product_name
 1000000291,6,202,Pants
 1000000452,1,202,Pants
 1000000470,4,202,Pants
-1000000605,1,202,Pants
 1000000647,3,202,Pants
 1000000667,2,202,Pants
 1000000797,2,202,Pants
@@ -57825,6 +57825,7 @@ transaction_id,item_position,product_id,product_name
 1000018230,8,202,Pants
 1000018504,2,202,Pants
 1000018511,4,202,Pants
+1000002530,6,203,Paper Cups
 1000000110,5,203,Paper Cups
 1000000168,6,203,Paper Cups
 1000000282,4,203,Paper Cups
@@ -57868,7 +57869,6 @@ transaction_id,item_position,product_id,product_name
 1000002408,4,203,Paper Cups
 1000002422,5,203,Paper Cups
 1000002500,1,203,Paper Cups
-1000002530,6,203,Paper Cups
 1000002565,1,203,Paper Cups
 1000002642,9,203,Paper Cups
 1000002685,1,203,Paper Cups
@@ -58422,6 +58422,7 @@ transaction_id,item_position,product_id,product_name
 1000018271,1,204,Paper Plates
 1000018354,1,204,Paper Plates
 1000018370,2,204,Paper Plates
+1000014825,2,205,Paper Towels
 1000000030,1,205,Paper Towels
 1000000041,6,205,Paper Towels
 1000000062,2,205,Paper Towels
@@ -58843,7 +58844,6 @@ transaction_id,item_position,product_id,product_name
 1000014763,4,205,Paper Towels
 1000014769,1,205,Paper Towels
 1000014777,5,205,Paper Towels
-1000014825,2,205,Paper Towels
 1000014850,5,205,Paper Towels
 1000014866,1,205,Paper Towels
 1000015008,2,205,Paper Towels
@@ -58982,13 +58982,11 @@ transaction_id,item_position,product_id,product_name
 1000018459,4,205,Paper Towels
 1000018465,8,205,Paper Towels
 1000018483,6,205,Paper Towels
-1000000041,4,206,Paprika
-1000000057,1,206,Paprika
-1000000111,5,206,Paprika
 1000000172,4,206,Paprika
 1000000211,4,206,Paprika
 1000000293,1,206,Paprika
 1000000302,1,206,Paprika
+1000000111,5,206,Paprika
 1000000368,3,206,Paprika
 1000000398,6,206,Paprika
 1000000445,2,206,Paprika
@@ -58996,6 +58994,7 @@ transaction_id,item_position,product_id,product_name
 1000001082,5,206,Paprika
 1000001098,3,206,Paprika
 1000001119,1,206,Paprika
+1000000057,1,206,Paprika
 1000001201,4,206,Paprika
 1000001207,1,206,Paprika
 1000001232,1,206,Paprika
@@ -59090,6 +59089,7 @@ transaction_id,item_position,product_id,product_name
 1000006761,3,206,Paprika
 1000006857,4,206,Paprika
 1000007126,5,206,Paprika
+1000000041,4,206,Paprika
 1000007133,6,206,Paprika
 1000007152,3,206,Paprika
 1000007186,8,206,Paprika
@@ -59258,11 +59258,11 @@ transaction_id,item_position,product_id,product_name
 1000018392,3,206,Paprika
 1000018398,1,206,Paprika
 1000018484,1,206,Paprika
+1000000241,5,207,Passport Holder
 1000000101,3,207,Passport Holder
 1000000167,4,207,Passport Holder
 1000000172,1,207,Passport Holder
 1000000179,5,207,Passport Holder
-1000000241,5,207,Passport Holder
 1000000282,2,207,Passport Holder
 1000000333,2,207,Passport Holder
 1000000486,3,207,Passport Holder
@@ -59543,6 +59543,7 @@ transaction_id,item_position,product_id,product_name
 1000018269,3,207,Passport Holder
 1000018445,7,207,Passport Holder
 1000018467,5,207,Passport Holder
+1000000952,2,208,Pasta
 1000000181,1,208,Pasta
 1000000209,2,208,Pasta
 1000000218,1,208,Pasta
@@ -59555,7 +59556,6 @@ transaction_id,item_position,product_id,product_name
 1000000615,1,208,Pasta
 1000000674,6,208,Pasta
 1000000689,3,208,Pasta
-1000000952,2,208,Pasta
 1000001013,3,208,Pasta
 1000001155,8,208,Pasta
 1000001156,1,208,Pasta
@@ -60128,6 +60128,7 @@ transaction_id,item_position,product_id,product_name
 1000018359,1,209,Pasta Sauce
 1000018492,5,209,Pasta Sauce
 1000018524,1,209,Pasta Sauce
+1000007519,1,210,Peanut Butter
 1000000119,2,210,Peanut Butter
 1000000184,3,210,Peanut Butter
 1000000207,2,210,Peanut Butter
@@ -60235,7 +60236,6 @@ transaction_id,item_position,product_id,product_name
 1000007418,4,210,Peanut Butter
 1000007470,1,210,Peanut Butter
 1000007512,1,210,Peanut Butter
-1000007519,1,210,Peanut Butter
 1000007594,2,210,Peanut Butter
 1000007703,3,210,Peanut Butter
 1000007710,7,210,Peanut Butter
@@ -60384,8 +60384,6 @@ transaction_id,item_position,product_id,product_name
 1000018226,5,210,Peanut Butter
 1000018268,2,210,Peanut Butter
 1000018497,7,210,Peanut Butter
-1000000016,1,211,Peanuts
-1000000061,3,211,Peanuts
 1000000229,2,211,Peanuts
 1000000440,1,211,Peanuts
 1000000533,2,211,Peanuts
@@ -60404,6 +60402,7 @@ transaction_id,item_position,product_id,product_name
 1000001733,9,211,Peanuts
 1000001870,5,211,Peanuts
 1000001971,7,211,Peanuts
+1000000016,1,211,Peanuts
 1000002116,5,211,Peanuts
 1000002176,1,211,Peanuts
 1000002374,2,211,Peanuts
@@ -60651,6 +60650,8 @@ transaction_id,item_position,product_id,product_name
 1000018317,2,211,Peanuts
 1000018327,5,211,Peanuts
 1000018467,4,211,Peanuts
+1000000061,3,211,Peanuts
+1000017787,2,212,Pencils
 1000000170,2,212,Pencils
 1000000248,4,212,Pencils
 1000000380,1,212,Pencils
@@ -60936,7 +60937,6 @@ transaction_id,item_position,product_id,product_name
 1000017601,2,212,Pencils
 1000017673,1,212,Pencils
 1000017722,8,212,Pencils
-1000017787,2,212,Pencils
 1000017802,3,212,Pencils
 1000017840,1,212,Pencils
 1000017896,4,212,Pencils
@@ -61489,6 +61489,7 @@ transaction_id,item_position,product_id,product_name
 1000018250,2,214,Pepper
 1000018256,6,214,Pepper
 1000018336,4,214,Pepper
+1000008915,2,215,Photo Albums
 1000000061,2,215,Photo Albums
 1000000082,3,215,Photo Albums
 1000000127,1,215,Photo Albums
@@ -61646,7 +61647,6 @@ transaction_id,item_position,product_id,product_name
 1000008715,7,215,Photo Albums
 1000008805,1,215,Photo Albums
 1000008844,4,215,Photo Albums
-1000008915,2,215,Photo Albums
 1000009045,3,215,Photo Albums
 1000009134,2,215,Photo Albums
 1000009271,3,215,Photo Albums
@@ -61772,9 +61772,6 @@ transaction_id,item_position,product_id,product_name
 1000018417,6,215,Photo Albums
 1000018419,3,215,Photo Albums
 1000018509,2,215,Photo Albums
-1000000045,4,216,Pickles
-1000000129,2,216,Pickles
-1000000200,1,216,Pickles
 1000000314,6,216,Pickles
 1000000376,1,216,Pickles
 1000000398,8,216,Pickles
@@ -61889,6 +61886,7 @@ transaction_id,item_position,product_id,product_name
 1000007317,2,216,Pickles
 1000007367,4,216,Pickles
 1000007371,5,216,Pickles
+1000000129,2,216,Pickles
 1000007471,1,216,Pickles
 1000007558,4,216,Pickles
 1000007592,2,216,Pickles
@@ -61898,6 +61896,7 @@ transaction_id,item_position,product_id,product_name
 1000007761,3,216,Pickles
 1000007882,1,216,Pickles
 1000007888,1,216,Pickles
+1000000045,4,216,Pickles
 1000007896,1,216,Pickles
 1000007911,7,216,Pickles
 1000007968,1,216,Pickles
@@ -62059,9 +62058,11 @@ transaction_id,item_position,product_id,product_name
 1000017998,5,216,Pickles
 1000018126,1,216,Pickles
 1000018159,1,216,Pickles
+1000000200,1,216,Pickles
 1000018199,9,216,Pickles
 1000018215,12,216,Pickles
 1000018525,1,216,Pickles
+1000016976,4,217,Picture Frames
 1000000054,4,217,Picture Frames
 1000000184,6,217,Picture Frames
 1000000187,4,217,Picture Frames
@@ -62348,7 +62349,6 @@ transaction_id,item_position,product_id,product_name
 1000016589,1,217,Picture Frames
 1000016644,4,217,Picture Frames
 1000016713,5,217,Picture Frames
-1000016976,4,217,Picture Frames
 1000017077,6,217,Picture Frames
 1000017102,1,217,Picture Frames
 1000017134,4,217,Picture Frames
@@ -62925,6 +62925,7 @@ transaction_id,item_position,product_id,product_name
 1000018054,8,219,Plastic Utensils
 1000018198,2,219,Plastic Utensils
 1000018479,6,219,Plastic Utensils
+1000008111,2,220,Plastic Wrap
 1000000028,3,220,Plastic Wrap
 1000000057,2,220,Plastic Wrap
 1000000175,8,220,Plastic Wrap
@@ -63040,7 +63041,6 @@ transaction_id,item_position,product_id,product_name
 1000008069,2,220,Plastic Wrap
 1000008095,2,220,Plastic Wrap
 1000008101,7,220,Plastic Wrap
-1000008111,2,220,Plastic Wrap
 1000008198,4,220,Plastic Wrap
 1000008437,2,220,Plastic Wrap
 1000008449,7,220,Plastic Wrap
@@ -63213,19 +63213,19 @@ transaction_id,item_position,product_id,product_name
 1000018480,1,220,Plastic Wrap
 1000018500,2,220,Plastic Wrap
 1000018513,3,220,Plastic Wrap
-1000000015,2,221,Polo Shirt
-1000000118,3,221,Polo Shirt
 1000000255,2,221,Polo Shirt
 1000000265,5,221,Polo Shirt
 1000000383,5,221,Polo Shirt
 1000000404,6,221,Polo Shirt
 1000000479,6,221,Polo Shirt
+1000000118,3,221,Polo Shirt
 1000000482,1,221,Polo Shirt
 1000000641,1,221,Polo Shirt
 1000000659,1,221,Polo Shirt
 1000000685,3,221,Polo Shirt
 1000000729,2,221,Polo Shirt
 1000001088,2,221,Polo Shirt
+1000000015,2,221,Polo Shirt
 1000001133,1,221,Polo Shirt
 1000001148,2,221,Polo Shirt
 1000001226,3,221,Polo Shirt
@@ -63475,12 +63475,12 @@ transaction_id,item_position,product_id,product_name
 1000018445,4,221,Polo Shirt
 1000018509,5,221,Polo Shirt
 1000018529,1,221,Polo Shirt
+1000000468,5,222,Popcorn
 1000000265,6,222,Popcorn
 1000000294,2,222,Popcorn
 1000000346,10,222,Popcorn
 1000000406,6,222,Popcorn
 1000000428,2,222,Popcorn
-1000000468,5,222,Popcorn
 1000000590,2,222,Popcorn
 1000000638,5,222,Popcorn
 1000000731,1,222,Popcorn
@@ -63748,6 +63748,7 @@ transaction_id,item_position,product_id,product_name
 1000018328,1,222,Popcorn
 1000018416,3,222,Popcorn
 1000018487,2,222,Popcorn
+1000000932,2,223,Popsicles
 1000000005,4,223,Popsicles
 1000000083,4,223,Popsicles
 1000000237,7,223,Popsicles
@@ -63760,7 +63761,6 @@ transaction_id,item_position,product_id,product_name
 1000000761,1,223,Popsicles
 1000000762,1,223,Popsicles
 1000000796,6,223,Popsicles
-1000000932,2,223,Popsicles
 1000001025,5,223,Popsicles
 1000001098,8,223,Popsicles
 1000001217,1,223,Popsicles
@@ -64308,6 +64308,7 @@ transaction_id,item_position,product_id,product_name
 1000018405,4,224,Post-it Notes
 1000018472,1,224,Post-it Notes
 1000018497,5,224,Post-it Notes
+1000008148,3,225,Pretzels
 1000000065,5,225,Pretzels
 1000000073,2,225,Pretzels
 1000000080,2,225,Pretzels
@@ -64433,7 +64434,6 @@ transaction_id,item_position,product_id,product_name
 1000007961,7,225,Pretzels
 1000008030,2,225,Pretzels
 1000008110,5,225,Pretzels
-1000008148,3,225,Pretzels
 1000008165,4,225,Pretzels
 1000008193,7,225,Pretzels
 1000008195,1,225,Pretzels
@@ -64586,8 +64586,6 @@ transaction_id,item_position,product_id,product_name
 1000018408,3,225,Pretzels
 1000018450,1,225,Pretzels
 1000018475,4,225,Pretzels
-1000000127,6,226,Protein Bars
-1000000358,2,226,Protein Bars
 1000000432,2,226,Protein Bars
 1000000455,3,226,Protein Bars
 1000000518,5,226,Protein Bars
@@ -64599,6 +64597,7 @@ transaction_id,item_position,product_id,product_name
 1000000971,6,226,Protein Bars
 1000001074,4,226,Protein Bars
 1000001108,1,226,Protein Bars
+1000000358,2,226,Protein Bars
 1000001274,2,226,Protein Bars
 1000001372,4,226,Protein Bars
 1000001380,10,226,Protein Bars
@@ -64743,6 +64742,7 @@ transaction_id,item_position,product_id,product_name
 1000011245,3,226,Protein Bars
 1000011342,5,226,Protein Bars
 1000011346,9,226,Protein Bars
+1000000127,6,226,Protein Bars
 1000011357,1,226,Protein Bars
 1000011457,1,226,Protein Bars
 1000011485,1,226,Protein Bars
@@ -64849,6 +64849,7 @@ transaction_id,item_position,product_id,product_name
 1000018444,6,226,Protein Bars
 1000018466,6,226,Protein Bars
 1000018502,1,226,Protein Bars
+1000000807,1,227,Protein Powder
 1000000062,6,227,Protein Powder
 1000000112,6,227,Protein Powder
 1000000154,1,227,Protein Powder
@@ -64860,7 +64861,6 @@ transaction_id,item_position,product_id,product_name
 1000000603,2,227,Protein Powder
 1000000661,2,227,Protein Powder
 1000000750,2,227,Protein Powder
-1000000807,1,227,Protein Powder
 1000000862,1,227,Protein Powder
 1000000934,8,227,Protein Powder
 1000001374,1,227,Protein Powder
@@ -65684,6 +65684,7 @@ transaction_id,item_position,product_id,product_name
 1000018325,1,229,Pull-up Bar
 1000018382,2,229,Pull-up Bar
 1000018516,4,229,Pull-up Bar
+1000010142,2,230,Purse
 1000000136,1,230,Purse
 1000000197,1,230,Purse
 1000000222,4,230,Purse
@@ -65840,7 +65841,6 @@ transaction_id,item_position,product_id,product_name
 1000009775,8,230,Purse
 1000009819,1,230,Purse
 1000009891,3,230,Purse
-1000010142,2,230,Purse
 1000010143,3,230,Purse
 1000010171,3,230,Purse
 1000010261,5,230,Purse
@@ -65971,7 +65971,6 @@ transaction_id,item_position,product_id,product_name
 1000018338,2,230,Purse
 1000018443,10,230,Purse
 1000018521,1,230,Purse
-1000000028,4,231,Raincoat
 1000000035,1,231,Raincoat
 1000000088,3,231,Raincoat
 1000000174,5,231,Raincoat
@@ -66226,6 +66225,7 @@ transaction_id,item_position,product_id,product_name
 1000014857,1,231,Raincoat
 1000014913,2,231,Raincoat
 1000015255,4,231,Raincoat
+1000000028,4,231,Raincoat
 1000015323,8,231,Raincoat
 1000015410,5,231,Raincoat
 1000015512,6,231,Raincoat
@@ -66278,6 +66278,7 @@ transaction_id,item_position,product_id,product_name
 1000018385,2,231,Raincoat
 1000018472,3,231,Raincoat
 1000018509,1,231,Raincoat
+1000017755,4,232,Raisins
 1000000081,2,232,Raisins
 1000000167,2,232,Raisins
 1000000175,4,232,Raisins
@@ -66532,7 +66533,6 @@ transaction_id,item_position,product_id,product_name
 1000017614,8,232,Raisins
 1000017650,8,232,Raisins
 1000017751,5,232,Raisins
-1000017755,4,232,Raisins
 1000017821,2,232,Raisins
 1000017894,5,232,Raisins
 1000017958,8,232,Raisins
@@ -66546,7 +66546,6 @@ transaction_id,item_position,product_id,product_name
 1000018412,3,232,Raisins
 1000018433,2,232,Raisins
 1000018445,2,232,Raisins
-1000000042,3,233,Ramen
 1000000099,7,233,Ramen
 1000000274,1,233,Ramen
 1000000363,4,233,Ramen
@@ -66555,6 +66554,7 @@ transaction_id,item_position,product_id,product_name
 1000000480,3,233,Ramen
 1000000745,3,233,Ramen
 1000000829,1,233,Ramen
+1000000042,3,233,Ramen
 1000000861,3,233,Ramen
 1000000944,8,233,Ramen
 1000001286,1,233,Ramen
@@ -66812,6 +66812,7 @@ transaction_id,item_position,product_id,product_name
 1000018291,4,233,Ramen
 1000018443,3,233,Ramen
 1000018462,3,233,Ramen
+1000000539,5,234,Razors
 1000000009,2,234,Razors
 1000000069,5,234,Razors
 1000000152,1,234,Razors
@@ -66820,7 +66821,6 @@ transaction_id,item_position,product_id,product_name
 1000000423,2,234,Razors
 1000000432,3,234,Razors
 1000000464,3,234,Razors
-1000000539,5,234,Razors
 1000000690,6,234,Razors
 1000000735,6,234,Razors
 1000000879,4,234,Razors
@@ -67094,6 +67094,7 @@ transaction_id,item_position,product_id,product_name
 1000018212,3,234,Razors
 1000018387,1,234,Razors
 1000018507,6,234,Razors
+1000009232,1,235,Resistance Bands
 1000000039,3,235,Resistance Bands
 1000000046,1,235,Resistance Bands
 1000000065,2,235,Resistance Bands
@@ -67247,7 +67248,6 @@ transaction_id,item_position,product_id,product_name
 1000009207,1,235,Resistance Bands
 1000009218,7,235,Resistance Bands
 1000009231,2,235,Resistance Bands
-1000009232,1,235,Resistance Bands
 1000009256,1,235,Resistance Bands
 1000009280,7,235,Resistance Bands
 1000009327,1,235,Resistance Bands
@@ -67381,14 +67381,8 @@ transaction_id,item_position,product_id,product_name
 1000018471,2,235,Resistance Bands
 1000018477,6,235,Resistance Bands
 1000018503,2,235,Resistance Bands
-1000000186,5,236,Rice
-1000000203,5,236,Rice
-1000000346,11,236,Rice
-1000000442,1,236,Rice
-1000000504,3,236,Rice
-1000000572,4,236,Rice
-1000000606,1,236,Rice
 1000000617,5,236,Rice
+1000000572,4,236,Rice
 1000000625,4,236,Rice
 1000000689,2,236,Rice
 1000000698,4,236,Rice
@@ -67406,6 +67400,7 @@ transaction_id,item_position,product_id,product_name
 1000001684,3,236,Rice
 1000001731,5,236,Rice
 1000001832,1,236,Rice
+1000000504,3,236,Rice
 1000002045,6,236,Rice
 1000002084,1,236,Rice
 1000002189,3,236,Rice
@@ -67459,6 +67454,7 @@ transaction_id,item_position,product_id,product_name
 1000005536,3,236,Rice
 1000005541,2,236,Rice
 1000005599,2,236,Rice
+1000000203,5,236,Rice
 1000005625,1,236,Rice
 1000005642,3,236,Rice
 1000005711,1,236,Rice
@@ -67475,6 +67471,7 @@ transaction_id,item_position,product_id,product_name
 1000006386,3,236,Rice
 1000006446,2,236,Rice
 1000006465,3,236,Rice
+1000000186,5,236,Rice
 1000006587,3,236,Rice
 1000006640,2,236,Rice
 1000006780,2,236,Rice
@@ -67509,6 +67506,7 @@ transaction_id,item_position,product_id,product_name
 1000009125,7,236,Rice
 1000009205,7,236,Rice
 1000009241,2,236,Rice
+1000000442,1,236,Rice
 1000009344,5,236,Rice
 1000009440,4,236,Rice
 1000009509,9,236,Rice
@@ -67550,6 +67548,7 @@ transaction_id,item_position,product_id,product_name
 1000012630,3,236,Rice
 1000012640,1,236,Rice
 1000012643,6,236,Rice
+1000000346,11,236,Rice
 1000012676,1,236,Rice
 1000012778,4,236,Rice
 1000012916,7,236,Rice
@@ -67644,9 +67643,10 @@ transaction_id,item_position,product_id,product_name
 1000018353,5,236,Rice
 1000018378,2,236,Rice
 1000018418,2,236,Rice
+1000000606,1,236,Rice
+1000000426,7,237,Rowing Machine
 1000000077,10,237,Rowing Machine
 1000000128,4,237,Rowing Machine
-1000000426,7,237,Rowing Machine
 1000000474,3,237,Rowing Machine
 1000000641,2,237,Rowing Machine
 1000000650,3,237,Rowing Machine
@@ -67910,6 +67910,7 @@ transaction_id,item_position,product_id,product_name
 1000018413,4,237,Rowing Machine
 1000018424,4,237,Rowing Machine
 1000018509,8,237,Rowing Machine
+1000001986,3,238,Rug
 1000000221,4,238,Rug
 1000000266,1,238,Rug
 1000000415,3,238,Rug
@@ -67930,7 +67931,6 @@ transaction_id,item_position,product_id,product_name
 1000001928,7,238,Rug
 1000001934,2,238,Rug
 1000001971,1,238,Rug
-1000001986,3,238,Rug
 1000002083,4,238,Rug
 1000002124,1,238,Rug
 1000002127,1,238,Rug
@@ -68479,6 +68479,7 @@ transaction_id,item_position,product_id,product_name
 1000018421,10,239,Ruler
 1000018501,5,239,Ruler
 1000018514,1,239,Ruler
+1000011268,9,240,Salt
 1000000002,3,240,Salt
 1000000093,8,240,Salt
 1000000195,1,240,Salt
@@ -68604,7 +68605,6 @@ transaction_id,item_position,product_id,product_name
 1000011000,1,240,Salt
 1000011031,4,240,Salt
 1000011045,2,240,Salt
-1000011268,9,240,Salt
 1000011312,3,240,Salt
 1000011352,1,240,Salt
 1000011370,2,240,Salt
@@ -68717,8 +68717,6 @@ transaction_id,item_position,product_id,product_name
 1000018421,6,240,Salt
 1000018431,5,240,Salt
 1000018512,2,240,Salt
-1000000000,3,241,Sandals
-1000000058,2,241,Sandals
 1000000150,5,241,Sandals
 1000000199,5,241,Sandals
 1000000222,1,241,Sandals
@@ -68731,6 +68729,7 @@ transaction_id,item_position,product_id,product_name
 1000000977,2,241,Sandals
 1000001066,1,241,Sandals
 1000001126,7,241,Sandals
+1000000058,2,241,Sandals
 1000001206,1,241,Sandals
 1000001372,3,241,Sandals
 1000001390,1,241,Sandals
@@ -68741,6 +68740,7 @@ transaction_id,item_position,product_id,product_name
 1000001664,1,241,Sandals
 1000001765,3,241,Sandals
 1000001832,5,241,Sandals
+1000000000,3,241,Sandals
 1000001862,3,241,Sandals
 1000001891,4,241,Sandals
 1000002080,11,241,Sandals
@@ -68971,6 +68971,7 @@ transaction_id,item_position,product_id,product_name
 1000018461,9,241,Sandals
 1000018472,2,241,Sandals
 1000018487,1,241,Sandals
+1000001013,2,242,Scarf
 1000000120,7,242,Scarf
 1000000138,1,242,Scarf
 1000000219,3,242,Scarf
@@ -68983,7 +68984,6 @@ transaction_id,item_position,product_id,product_name
 1000000652,9,242,Scarf
 1000000818,3,242,Scarf
 1000000833,1,242,Scarf
-1000001013,2,242,Scarf
 1000001014,6,242,Scarf
 1000001030,3,242,Scarf
 1000001045,2,242,Scarf
@@ -69249,6 +69249,7 @@ transaction_id,item_position,product_id,product_name
 1000018391,7,242,Scarf
 1000018419,6,242,Scarf
 1000018438,5,242,Scarf
+1000001626,8,243,Scissors
 1000000049,2,243,Scissors
 1000000224,8,243,Scissors
 1000000232,5,243,Scissors
@@ -69272,7 +69273,6 @@ transaction_id,item_position,product_id,product_name
 1000001548,4,243,Scissors
 1000001554,3,243,Scissors
 1000001568,2,243,Scissors
-1000001626,8,243,Scissors
 1000001649,6,243,Scissors
 1000001655,3,243,Scissors
 1000001891,3,243,Scissors
@@ -69827,6 +69827,7 @@ transaction_id,item_position,product_id,product_name
 1000018234,1,244,Scrubbers
 1000018312,1,244,Scrubbers
 1000018403,1,244,Scrubbers
+1000006203,2,245,Shampoo
 1000000061,5,245,Shampoo
 1000000108,3,245,Shampoo
 1000000121,2,245,Shampoo
@@ -69994,7 +69995,6 @@ transaction_id,item_position,product_id,product_name
 1000005998,6,245,Shampoo
 1000006169,2,245,Shampoo
 1000006183,3,245,Shampoo
-1000006203,2,245,Shampoo
 1000006208,2,245,Shampoo
 1000006254,1,245,Shampoo
 1000006275,5,245,Shampoo
@@ -70379,8 +70379,6 @@ transaction_id,item_position,product_id,product_name
 1000018445,8,245,Shampoo
 1000018465,1,245,Shampoo
 1000018505,1,245,Shampoo
-1000000055,1,246,Shaving Cream
-1000000074,8,246,Shaving Cream
 1000000116,3,246,Shaving Cream
 1000000343,6,246,Shaving Cream
 1000000350,4,246,Shaving Cream
@@ -70494,6 +70492,7 @@ transaction_id,item_position,product_id,product_name
 1000006633,4,246,Shaving Cream
 1000006762,3,246,Shaving Cream
 1000006770,7,246,Shaving Cream
+1000000074,8,246,Shaving Cream
 1000006775,4,246,Shaving Cream
 1000006819,2,246,Shaving Cream
 1000006871,6,246,Shaving Cream
@@ -70646,6 +70645,7 @@ transaction_id,item_position,product_id,product_name
 1000015940,1,246,Shaving Cream
 1000015962,6,246,Shaving Cream
 1000015965,2,246,Shaving Cream
+1000000055,1,246,Shaving Cream
 1000016034,1,246,Shaving Cream
 1000016112,1,246,Shaving Cream
 1000016136,1,246,Shaving Cream
@@ -70690,6 +70690,7 @@ transaction_id,item_position,product_id,product_name
 1000018347,3,246,Shaving Cream
 1000018374,2,246,Shaving Cream
 1000018479,4,246,Shaving Cream
+1000008782,5,247,Shelving
 1000000109,3,247,Shelving
 1000000204,1,247,Shelving
 1000000216,1,247,Shelving
@@ -70803,7 +70804,6 @@ transaction_id,item_position,product_id,product_name
 1000008723,3,247,Shelving
 1000008731,4,247,Shelving
 1000008769,1,247,Shelving
-1000008782,5,247,Shelving
 1000008814,9,247,Shelving
 1000008904,5,247,Shelving
 1000008937,1,247,Shelving
@@ -71227,6 +71227,7 @@ transaction_id,item_position,product_id,product_name
 1000018487,4,248,Shoes
 1000018509,7,248,Shoes
 1000018513,2,248,Shoes
+1000017070,2,249,Shorts
 1000000067,1,249,Shorts
 1000000115,2,249,Shorts
 1000000235,7,249,Shorts
@@ -71493,7 +71494,6 @@ transaction_id,item_position,product_id,product_name
 1000016906,1,249,Shorts
 1000016990,6,249,Shorts
 1000017032,1,249,Shorts
-1000017070,2,249,Shorts
 1000017136,1,249,Shorts
 1000017318,1,249,Shorts
 1000017359,5,249,Shorts
@@ -71510,8 +71510,6 @@ transaction_id,item_position,product_id,product_name
 1000018186,4,249,Shorts
 1000018332,1,249,Shorts
 1000018391,5,249,Shorts
-1000000349,8,250,Shower Cap
-1000000494,4,250,Shower Cap
 1000000645,3,250,Shower Cap
 1000000702,1,250,Shower Cap
 1000000769,2,250,Shower Cap
@@ -71530,6 +71528,7 @@ transaction_id,item_position,product_id,product_name
 1000001453,1,250,Shower Cap
 1000001471,7,250,Shower Cap
 1000001546,2,250,Shower Cap
+1000000349,8,250,Shower Cap
 1000001550,4,250,Shower Cap
 1000001591,9,250,Shower Cap
 1000001678,7,250,Shower Cap
@@ -71775,6 +71774,8 @@ transaction_id,item_position,product_id,product_name
 1000018477,5,250,Shower Cap
 1000018518,6,250,Shower Cap
 1000018528,3,250,Shower Cap
+1000000494,4,250,Shower Cap
+1000017919,1,251,Shower Curtain
 1000000116,1,251,Shower Curtain
 1000000149,5,251,Shower Curtain
 1000000257,2,251,Shower Curtain
@@ -72058,14 +72059,12 @@ transaction_id,item_position,product_id,product_name
 1000017646,3,251,Shower Curtain
 1000017679,4,251,Shower Curtain
 1000017784,6,251,Shower Curtain
-1000017919,1,251,Shower Curtain
 1000017926,1,251,Shower Curtain
 1000017986,2,251,Shower Curtain
 1000018031,2,251,Shower Curtain
 1000018229,5,251,Shower Curtain
 1000018262,3,251,Shower Curtain
 1000018405,1,251,Shower Curtain
-1000000034,3,252,Shower Shoes
 1000000043,2,252,Shower Shoes
 1000000108,2,252,Shower Shoes
 1000000146,7,252,Shower Shoes
@@ -72073,6 +72072,7 @@ transaction_id,item_position,product_id,product_name
 1000000224,3,252,Shower Shoes
 1000000235,9,252,Shower Shoes
 1000000238,5,252,Shower Shoes
+1000000034,3,252,Shower Shoes
 1000000334,6,252,Shower Shoes
 1000000402,1,252,Shower Shoes
 1000000473,1,252,Shower Shoes
@@ -72329,6 +72329,7 @@ transaction_id,item_position,product_id,product_name
 1000018111,3,252,Shower Shoes
 1000018297,5,252,Shower Shoes
 1000018336,3,252,Shower Shoes
+1000000745,8,253,Skirt
 1000000085,6,253,Skirt
 1000000168,4,253,Skirt
 1000000211,3,253,Skirt
@@ -72336,7 +72337,6 @@ transaction_id,item_position,product_id,product_name
 1000000319,1,253,Skirt
 1000000580,1,253,Skirt
 1000000743,2,253,Skirt
-1000000745,8,253,Skirt
 1000000753,6,253,Skirt
 1000000813,1,253,Skirt
 1000000876,1,253,Skirt
@@ -72607,6 +72607,7 @@ transaction_id,item_position,product_id,product_name
 1000018342,3,253,Skirt
 1000018368,2,253,Skirt
 1000018430,6,253,Skirt
+1000002332,7,254,Slippers
 1000000000,4,254,Slippers
 1000000026,2,254,Slippers
 1000000057,5,254,Slippers
@@ -72683,7 +72684,6 @@ transaction_id,item_position,product_id,product_name
 1000002170,2,254,Slippers
 1000002224,4,254,Slippers
 1000002266,5,254,Slippers
-1000002332,7,254,Slippers
 1000002344,4,254,Slippers
 1000002383,2,254,Slippers
 1000002445,1,254,Slippers
@@ -73180,9 +73180,6 @@ transaction_id,item_position,product_id,product_name
 1000018439,3,254,Slippers
 1000018475,3,254,Slippers
 1000018518,5,254,Slippers
-1000000125,1,255,Snack Cakes
-1000000149,3,255,Snack Cakes
-1000000230,2,255,Snack Cakes
 1000000322,3,255,Snack Cakes
 1000000349,9,255,Snack Cakes
 1000000426,6,255,Snack Cakes
@@ -73331,6 +73328,7 @@ transaction_id,item_position,product_id,product_name
 1000010733,3,255,Snack Cakes
 1000010751,1,255,Snack Cakes
 1000010888,2,255,Snack Cakes
+1000000230,2,255,Snack Cakes
 1000010944,1,255,Snack Cakes
 1000010953,3,255,Snack Cakes
 1000011070,2,255,Snack Cakes
@@ -73400,6 +73398,7 @@ transaction_id,item_position,product_id,product_name
 1000015417,2,255,Snack Cakes
 1000015520,7,255,Snack Cakes
 1000015811,3,255,Snack Cakes
+1000000125,1,255,Snack Cakes
 1000015838,3,255,Snack Cakes
 1000015936,1,255,Snack Cakes
 1000015952,4,255,Snack Cakes
@@ -73431,6 +73430,7 @@ transaction_id,item_position,product_id,product_name
 1000017268,8,255,Snack Cakes
 1000017410,3,255,Snack Cakes
 1000017435,1,255,Snack Cakes
+1000000149,3,255,Snack Cakes
 1000017453,4,255,Snack Cakes
 1000017496,8,255,Snack Cakes
 1000017498,4,255,Snack Cakes
@@ -73453,6 +73453,7 @@ transaction_id,item_position,product_id,product_name
 1000018329,6,255,Snack Cakes
 1000018485,3,255,Snack Cakes
 1000018506,5,255,Snack Cakes
+1000010487,2,256,Sneakers
 1000000085,7,256,Sneakers
 1000000154,2,256,Sneakers
 1000000205,5,256,Sneakers
@@ -73601,7 +73602,6 @@ transaction_id,item_position,product_id,product_name
 1000010365,2,256,Sneakers
 1000010443,6,256,Sneakers
 1000010474,3,256,Sneakers
-1000010487,2,256,Sneakers
 1000010521,3,256,Sneakers
 1000010546,1,256,Sneakers
 1000010578,2,256,Sneakers
@@ -74022,6 +74022,7 @@ transaction_id,item_position,product_id,product_name
 1000018272,2,257,Soap
 1000018361,1,257,Soap
 1000018426,6,257,Soap
+1000017512,4,258,Socks
 1000000009,4,258,Socks
 1000000055,5,258,Socks
 1000000075,3,258,Socks
@@ -74272,7 +74273,6 @@ transaction_id,item_position,product_id,product_name
 1000017089,8,258,Socks
 1000017364,10,258,Socks
 1000017384,5,258,Socks
-1000017512,4,258,Socks
 1000017648,7,258,Socks
 1000017664,5,258,Socks
 1000017671,6,258,Socks
@@ -74287,12 +74287,12 @@ transaction_id,item_position,product_id,product_name
 1000018195,3,258,Socks
 1000018430,4,258,Socks
 1000018453,1,258,Socks
-1000000083,1,259,Soda
-1000000275,5,259,Soda
 1000000315,1,259,Soda
+1000000275,5,259,Soda
 1000000341,1,259,Soda
 1000000343,3,259,Soda
 1000000362,7,259,Soda
+1000000083,1,259,Soda
 1000000368,4,259,Soda
 1000000384,6,259,Soda
 1000000483,3,259,Soda
@@ -74552,8 +74552,8 @@ transaction_id,item_position,product_id,product_name
 1000018469,1,259,Soda
 1000018476,3,259,Soda
 1000018513,5,259,Soda
-1000000077,6,260,Sorbets
 1000000100,4,260,Sorbets
+1000000077,6,260,Sorbets
 1000000113,1,260,Sorbets
 1000000147,1,260,Sorbets
 1000000151,3,260,Sorbets
@@ -74820,12 +74820,12 @@ transaction_id,item_position,product_id,product_name
 1000018252,5,260,Sorbets
 1000018259,10,260,Sorbets
 1000018472,4,260,Sorbets
+1000000366,2,261,Soy Sauce
 1000000142,1,261,Soy Sauce
 1000000160,2,261,Soy Sauce
 1000000176,1,261,Soy Sauce
 1000000346,3,261,Soy Sauce
 1000000355,6,261,Soy Sauce
-1000000366,2,261,Soy Sauce
 1000000479,3,261,Soy Sauce
 1000000553,10,261,Soy Sauce
 1000000569,4,261,Soy Sauce
@@ -75364,6 +75364,7 @@ transaction_id,item_position,product_id,product_name
 1000018163,2,262,Spaghetti
 1000018299,1,262,Spaghetti
 1000018505,5,262,Spaghetti
+1000013600,12,263,Sponges
 1000000039,4,263,Sponges
 1000000074,2,263,Sponges
 1000000175,11,263,Sponges
@@ -75583,7 +75584,6 @@ transaction_id,item_position,product_id,product_name
 1000013259,3,263,Sponges
 1000013470,3,263,Sponges
 1000013491,4,263,Sponges
-1000013600,12,263,Sponges
 1000013626,1,263,Sponges
 1000013663,3,263,Sponges
 1000013723,2,263,Sponges
@@ -75662,9 +75662,6 @@ transaction_id,item_position,product_id,product_name
 1000018315,4,263,Sponges
 1000018388,1,263,Sponges
 1000018414,4,263,Sponges
-1000000075,1,264,Sports Bra
-1000000119,4,264,Sports Bra
-1000000220,6,264,Sports Bra
 1000000221,2,264,Sports Bra
 1000000280,5,264,Sports Bra
 1000000291,7,264,Sports Bra
@@ -75681,6 +75678,8 @@ transaction_id,item_position,product_id,product_name
 1000001485,1,264,Sports Bra
 1000001493,1,264,Sports Bra
 1000001526,2,264,Sports Bra
+1000000119,4,264,Sports Bra
+1000000075,1,264,Sports Bra
 1000001563,10,264,Sports Bra
 1000001627,1,264,Sports Bra
 1000001650,7,264,Sports Bra
@@ -75940,6 +75939,8 @@ transaction_id,item_position,product_id,product_name
 1000018331,3,264,Sports Bra
 1000018416,2,264,Sports Bra
 1000018450,3,264,Sports Bra
+1000000220,6,264,Sports Bra
+1000018063,2,265,Sports Drinks
 1000000088,2,265,Sports Drinks
 1000000314,2,265,Sports Drinks
 1000000426,3,265,Sports Drinks
@@ -76234,7 +76235,6 @@ transaction_id,item_position,product_id,product_name
 1000018019,10,265,Sports Drinks
 1000018041,2,265,Sports Drinks
 1000018049,1,265,Sports Drinks
-1000018063,2,265,Sports Drinks
 1000018070,1,265,Sports Drinks
 1000018102,1,265,Sports Drinks
 1000018135,3,265,Sports Drinks
@@ -76248,7 +76248,6 @@ transaction_id,item_position,product_id,product_name
 1000018429,1,265,Sports Drinks
 1000018471,5,265,Sports Drinks
 1000018474,4,265,Sports Drinks
-1000000047,3,266,Stain Remover
 1000000203,2,266,Stain Remover
 1000000265,7,266,Stain Remover
 1000000478,8,266,Stain Remover
@@ -76257,6 +76256,7 @@ transaction_id,item_position,product_id,product_name
 1000000582,3,266,Stain Remover
 1000000621,2,266,Stain Remover
 1000000629,6,266,Stain Remover
+1000000047,3,266,Stain Remover
 1000000639,1,266,Stain Remover
 1000000664,6,266,Stain Remover
 1000000740,1,266,Stain Remover
@@ -76519,6 +76519,7 @@ transaction_id,item_position,product_id,product_name
 1000018399,12,266,Stain Remover
 1000018461,8,266,Stain Remover
 1000018497,2,266,Stain Remover
+1000000369,2,267,Stamps
 1000000128,2,267,Stamps
 1000000297,4,267,Stamps
 1000000305,3,267,Stamps
@@ -76527,7 +76528,6 @@ transaction_id,item_position,product_id,product_name
 1000000352,3,267,Stamps
 1000000355,2,267,Stamps
 1000000364,5,267,Stamps
-1000000369,2,267,Stamps
 1000000439,3,267,Stamps
 1000000541,2,267,Stamps
 1000000567,10,267,Stamps
@@ -76806,6 +76806,7 @@ transaction_id,item_position,product_id,product_name
 1000018355,8,267,Stamps
 1000018460,1,267,Stamps
 1000018467,3,267,Stamps
+1000000895,2,268,Storage Bins
 1000000022,2,268,Storage Bins
 1000000083,3,268,Storage Bins
 1000000091,1,268,Storage Bins
@@ -76824,7 +76825,6 @@ transaction_id,item_position,product_id,product_name
 1000000753,3,268,Storage Bins
 1000000849,2,268,Storage Bins
 1000000873,2,268,Storage Bins
-1000000895,2,268,Storage Bins
 1000000912,3,268,Storage Bins
 1000001105,4,268,Storage Bins
 1000001195,2,268,Storage Bins
@@ -77109,7 +77109,6 @@ transaction_id,item_position,product_id,product_name
 1000018286,10,268,Storage Bins
 1000018348,4,268,Storage Bins
 1000018443,2,268,Storage Bins
-1000000037,1,269,Sugar
 1000000050,5,269,Sugar
 1000000124,1,269,Sugar
 1000000155,6,269,Sugar
@@ -77234,6 +77233,7 @@ transaction_id,item_position,product_id,product_name
 1000007230,4,269,Sugar
 1000007320,1,269,Sugar
 1000007483,4,269,Sugar
+1000000037,1,269,Sugar
 1000007530,2,269,Sugar
 1000007667,4,269,Sugar
 1000007783,7,269,Sugar
@@ -77423,6 +77423,7 @@ transaction_id,item_position,product_id,product_name
 1000018319,1,269,Sugar
 1000018348,5,269,Sugar
 1000018402,7,269,Sugar
+1000007736,1,270,Suitcase
 1000000018,1,270,Suitcase
 1000000047,2,270,Suitcase
 1000000068,3,270,Suitcase
@@ -77547,7 +77548,6 @@ transaction_id,item_position,product_id,product_name
 1000007447,4,270,Suitcase
 1000007464,5,270,Suitcase
 1000007637,5,270,Suitcase
-1000007736,1,270,Suitcase
 1000007784,12,270,Suitcase
 1000007850,2,270,Suitcase
 1000007886,6,270,Suitcase
@@ -77986,6 +77986,7 @@ transaction_id,item_position,product_id,product_name
 1000018164,3,271,Sunglasses
 1000018471,8,271,Sunglasses
 1000018505,4,271,Sunglasses
+1000010685,3,272,Sunscreen
 1000000012,3,272,Sunscreen
 1000000014,2,272,Sunscreen
 1000000032,9,272,Sunscreen
@@ -78339,7 +78340,6 @@ transaction_id,item_position,product_id,product_name
 1000010676,4,272,Sunscreen
 1000010680,5,272,Sunscreen
 1000010684,10,272,Sunscreen
-1000010685,3,272,Sunscreen
 1000010744,6,272,Sunscreen
 1000010797,4,272,Sunscreen
 1000010854,3,272,Sunscreen
@@ -78566,10 +78566,6 @@ transaction_id,item_position,product_id,product_name
 1000018335,2,272,Sunscreen
 1000018393,2,272,Sunscreen
 1000018513,4,272,Sunscreen
-1000000126,2,273,Super Glue
-1000000235,8,273,Super Glue
-1000000316,2,273,Super Glue
-1000000334,7,273,Super Glue
 1000000358,3,273,Super Glue
 1000000390,1,273,Super Glue
 1000000434,6,273,Super Glue
@@ -78593,6 +78589,7 @@ transaction_id,item_position,product_id,product_name
 1000001319,3,273,Super Glue
 1000001334,1,273,Super Glue
 1000001341,3,273,Super Glue
+1000000235,8,273,Super Glue
 1000001480,4,273,Super Glue
 1000001564,4,273,Super Glue
 1000001685,5,273,Super Glue
@@ -78721,6 +78718,7 @@ transaction_id,item_position,product_id,product_name
 1000009285,3,273,Super Glue
 1000009460,1,273,Super Glue
 1000009474,2,273,Super Glue
+1000000316,2,273,Super Glue
 1000009490,8,273,Super Glue
 1000009505,2,273,Super Glue
 1000009509,4,273,Super Glue
@@ -78808,6 +78806,7 @@ transaction_id,item_position,product_id,product_name
 1000014770,2,273,Super Glue
 1000014884,3,273,Super Glue
 1000015005,5,273,Super Glue
+1000000126,2,273,Super Glue
 1000015065,2,273,Super Glue
 1000015130,2,273,Super Glue
 1000015237,2,273,Super Glue
@@ -78824,6 +78823,7 @@ transaction_id,item_position,product_id,product_name
 1000015910,2,273,Super Glue
 1000015975,3,273,Super Glue
 1000016128,1,273,Super Glue
+1000000334,7,273,Super Glue
 1000016152,2,273,Super Glue
 1000016282,2,273,Super Glue
 1000016329,7,273,Super Glue
@@ -78866,6 +78866,7 @@ transaction_id,item_position,product_id,product_name
 1000018466,1,273,Super Glue
 1000018482,2,273,Super Glue
 1000018528,2,273,Super Glue
+1000018293,2,274,Sweater
 1000000230,7,274,Sweater
 1000000347,2,274,Sweater
 1000000402,2,274,Sweater
@@ -79123,14 +79124,12 @@ transaction_id,item_position,product_id,product_name
 1000018180,6,274,Sweater
 1000018274,2,274,Sweater
 1000018283,6,274,Sweater
-1000018293,2,274,Sweater
 1000018307,4,274,Sweater
 1000018311,4,274,Sweater
 1000018321,2,274,Sweater
 1000018405,2,274,Sweater
 1000018451,2,274,Sweater
 1000018464,6,274,Sweater
-1000000011,3,275,Sweatshirt
 1000000019,4,275,Sweatshirt
 1000000114,1,275,Sweatshirt
 1000000184,5,275,Sweatshirt
@@ -79145,6 +79144,7 @@ transaction_id,item_position,product_id,product_name
 1000000801,5,275,Sweatshirt
 1000000865,2,275,Sweatshirt
 1000000899,7,275,Sweatshirt
+1000000011,3,275,Sweatshirt
 1000001086,1,275,Sweatshirt
 1000001104,5,275,Sweatshirt
 1000001465,1,275,Sweatshirt
@@ -79391,6 +79391,7 @@ transaction_id,item_position,product_id,product_name
 1000018473,3,275,Sweatshirt
 1000018498,3,275,Sweatshirt
 1000018504,3,275,Sweatshirt
+1000000712,8,276,Swim Cap
 1000000000,2,276,Swim Cap
 1000000125,7,276,Swim Cap
 1000000178,6,276,Swim Cap
@@ -79405,7 +79406,6 @@ transaction_id,item_position,product_id,product_name
 1000000567,8,276,Swim Cap
 1000000656,2,276,Swim Cap
 1000000673,2,276,Swim Cap
-1000000712,8,276,Swim Cap
 1000000819,4,276,Swim Cap
 1000000856,5,276,Swim Cap
 1000000885,3,276,Swim Cap
@@ -79681,6 +79681,7 @@ transaction_id,item_position,product_id,product_name
 1000018444,7,276,Swim Cap
 1000018489,5,276,Swim Cap
 1000018506,3,276,Swim Cap
+1000010330,3,277,Swim Trunks
 1000000052,5,277,Swim Trunks
 1000000078,2,277,Swim Trunks
 1000000099,2,277,Swim Trunks
@@ -79834,7 +79835,6 @@ transaction_id,item_position,product_id,product_name
 1000010256,6,277,Swim Trunks
 1000010274,1,277,Swim Trunks
 1000010277,2,277,Swim Trunks
-1000010330,3,277,Swim Trunks
 1000010385,3,277,Swim Trunks
 1000010564,3,277,Swim Trunks
 1000010605,1,277,Swim Trunks
@@ -79963,7 +79963,6 @@ transaction_id,item_position,product_id,product_name
 1000018288,4,277,Swim Trunks
 1000018340,2,277,Swim Trunks
 1000018454,2,277,Swim Trunks
-1000000070,5,278,Syrup
 1000000093,10,278,Syrup
 1000000141,2,278,Syrup
 1000000170,6,278,Syrup
@@ -80248,7 +80247,9 @@ transaction_id,item_position,product_id,product_name
 1000018031,4,278,Syrup
 1000018159,5,278,Syrup
 1000018241,1,278,Syrup
+1000000070,5,278,Syrup
 1000018264,4,278,Syrup
+1000017675,2,279,T-Shirt
 1000000100,6,279,T-Shirt
 1000000114,3,279,T-Shirt
 1000000217,1,279,T-Shirt
@@ -80533,7 +80534,6 @@ transaction_id,item_position,product_id,product_name
 1000017635,6,279,T-Shirt
 1000017656,1,279,T-Shirt
 1000017671,7,279,T-Shirt
-1000017675,2,279,T-Shirt
 1000017693,5,279,T-Shirt
 1000017761,5,279,T-Shirt
 1000017904,1,279,T-Shirt
@@ -81103,6 +81103,7 @@ transaction_id,item_position,product_id,product_name
 1000018302,4,281,Tape
 1000018321,3,281,Tape
 1000018486,3,281,Tape
+1000001539,8,282,Tea
 1000000000,1,282,Tea
 1000000156,2,282,Tea
 1000000527,5,282,Tea
@@ -81128,7 +81129,6 @@ transaction_id,item_position,product_id,product_name
 1000001430,2,282,Tea
 1000001484,4,282,Tea
 1000001512,4,282,Tea
-1000001539,8,282,Tea
 1000001648,2,282,Tea
 1000001687,2,282,Tea
 1000002150,1,282,Tea
@@ -81383,8 +81383,6 @@ transaction_id,item_position,product_id,product_name
 1000018383,4,282,Tea
 1000018447,3,282,Tea
 1000018479,5,282,Tea
-1000000046,6,283,Thermometer
-1000000112,4,283,Thermometer
 1000000259,2,283,Thermometer
 1000000289,2,283,Thermometer
 1000000293,2,283,Thermometer
@@ -81554,6 +81552,7 @@ transaction_id,item_position,product_id,product_name
 1000010633,2,283,Thermometer
 1000010666,1,283,Thermometer
 1000010735,3,283,Thermometer
+1000000112,4,283,Thermometer
 1000010757,1,283,Thermometer
 1000010858,5,283,Thermometer
 1000010987,3,283,Thermometer
@@ -81639,6 +81638,7 @@ transaction_id,item_position,product_id,product_name
 1000016884,4,283,Thermometer
 1000016889,3,283,Thermometer
 1000016955,7,283,Thermometer
+1000000046,6,283,Thermometer
 1000017030,7,283,Thermometer
 1000017092,2,283,Thermometer
 1000017276,9,283,Thermometer
@@ -81663,6 +81663,7 @@ transaction_id,item_position,product_id,product_name
 1000018341,9,283,Thermometer
 1000018345,9,283,Thermometer
 1000018371,6,283,Thermometer
+1000010388,2,284,Toilet Bowl Cleaner
 1000000094,7,284,Toilet Bowl Cleaner
 1000000096,1,284,Toilet Bowl Cleaner
 1000000112,2,284,Toilet Bowl Cleaner
@@ -81832,7 +81833,6 @@ transaction_id,item_position,product_id,product_name
 1000010256,3,284,Toilet Bowl Cleaner
 1000010271,6,284,Toilet Bowl Cleaner
 1000010386,5,284,Toilet Bowl Cleaner
-1000010388,2,284,Toilet Bowl Cleaner
 1000010397,3,284,Toilet Bowl Cleaner
 1000010484,5,284,Toilet Bowl Cleaner
 1000010647,3,284,Toilet Bowl Cleaner
@@ -82282,6 +82282,7 @@ transaction_id,item_position,product_id,product_name
 1000018399,7,285,Toilet Paper
 1000018438,1,285,Toilet Paper
 1000018492,1,285,Toilet Paper
+1000016671,4,286,Tomato Sauce
 1000000003,2,286,Tomato Sauce
 1000000270,1,286,Tomato Sauce
 1000000388,3,286,Tomato Sauce
@@ -82537,7 +82538,6 @@ transaction_id,item_position,product_id,product_name
 1000016496,2,286,Tomato Sauce
 1000016572,6,286,Tomato Sauce
 1000016659,2,286,Tomato Sauce
-1000016671,4,286,Tomato Sauce
 1000016742,3,286,Tomato Sauce
 1000016764,4,286,Tomato Sauce
 1000016771,1,286,Tomato Sauce
@@ -82577,14 +82577,14 @@ transaction_id,item_position,product_id,product_name
 1000018231,4,286,Tomato Sauce
 1000018350,3,286,Tomato Sauce
 1000018436,3,286,Tomato Sauce
-1000000042,5,287,Tomatoes
-1000000052,2,287,Tomatoes
 1000000063,2,287,Tomatoes
+1000000042,5,287,Tomatoes
 1000000262,7,287,Tomatoes
 1000000295,6,287,Tomatoes
 1000000298,1,287,Tomatoes
 1000000310,3,287,Tomatoes
 1000000362,4,287,Tomatoes
+1000000052,2,287,Tomatoes
 1000000391,5,287,Tomatoes
 1000000428,3,287,Tomatoes
 1000000475,2,287,Tomatoes
@@ -82847,6 +82847,7 @@ transaction_id,item_position,product_id,product_name
 1000018409,2,287,Tomatoes
 1000018411,1,287,Tomatoes
 1000018498,4,287,Tomatoes
+1000000343,1,288,Toothbrush
 1000000014,6,288,Toothbrush
 1000000062,4,288,Toothbrush
 1000000074,3,288,Toothbrush
@@ -82854,7 +82855,6 @@ transaction_id,item_position,product_id,product_name
 1000000106,7,288,Toothbrush
 1000000109,4,288,Toothbrush
 1000000282,1,288,Toothbrush
-1000000343,1,288,Toothbrush
 1000000476,2,288,Toothbrush
 1000000477,2,288,Toothbrush
 1000000478,4,288,Toothbrush
@@ -83132,9 +83132,9 @@ transaction_id,item_position,product_id,product_name
 1000018250,9,288,Toothbrush
 1000018275,2,288,Toothbrush
 1000018353,4,288,Toothbrush
+1000000519,12,289,Toothpaste
 1000000071,3,289,Toothpaste
 1000000089,4,289,Toothpaste
-1000000519,12,289,Toothpaste
 1000000624,4,289,Toothpaste
 1000000806,2,289,Toothpaste
 1000000818,1,289,Toothpaste
@@ -83691,6 +83691,7 @@ transaction_id,item_position,product_id,product_name
 1000018450,6,290,Tote Bag
 1000018480,3,290,Tote Bag
 1000018497,6,290,Tote Bag
+1000017363,6,291,Towels
 1000000091,2,291,Towels
 1000000169,3,291,Towels
 1000000201,3,291,Towels
@@ -83932,7 +83933,6 @@ transaction_id,item_position,product_id,product_name
 1000017154,3,291,Towels
 1000017187,5,291,Towels
 1000017243,1,291,Towels
-1000017363,6,291,Towels
 1000017374,1,291,Towels
 1000017504,3,291,Towels
 1000017542,3,291,Towels
@@ -83953,9 +83953,6 @@ transaction_id,item_position,product_id,product_name
 1000018400,6,291,Towels
 1000018462,11,291,Towels
 1000018506,1,291,Towels
-1000000003,6,292,Trail Mix
-1000000027,4,292,Trail Mix
-1000000135,1,292,Trail Mix
 1000000189,2,292,Trail Mix
 1000000194,2,292,Trail Mix
 1000000225,1,292,Trail Mix
@@ -84073,6 +84070,7 @@ transaction_id,item_position,product_id,product_name
 1000006734,2,292,Trail Mix
 1000006872,5,292,Trail Mix
 1000007030,4,292,Trail Mix
+1000000003,6,292,Trail Mix
 1000007064,2,292,Trail Mix
 1000007084,5,292,Trail Mix
 1000007304,4,292,Trail Mix
@@ -84093,6 +84091,7 @@ transaction_id,item_position,product_id,product_name
 1000008603,2,292,Trail Mix
 1000008615,1,292,Trail Mix
 1000008724,6,292,Trail Mix
+1000000027,4,292,Trail Mix
 1000008823,4,292,Trail Mix
 1000008858,2,292,Trail Mix
 1000008859,3,292,Trail Mix
@@ -84209,6 +84208,7 @@ transaction_id,item_position,product_id,product_name
 1000015766,3,292,Trail Mix
 1000015822,1,292,Trail Mix
 1000015827,5,292,Trail Mix
+1000000135,1,292,Trail Mix
 1000015837,7,292,Trail Mix
 1000015869,1,292,Trail Mix
 1000015927,2,292,Trail Mix
@@ -84266,6 +84266,7 @@ transaction_id,item_position,product_id,product_name
 1000018434,1,292,Trail Mix
 1000018485,4,292,Trail Mix
 1000018528,1,292,Trail Mix
+1000018323,6,293,Trash Bags
 1000000108,1,293,Trash Bags
 1000000227,4,293,Trash Bags
 1000000228,2,293,Trash Bags
@@ -84521,7 +84522,6 @@ transaction_id,item_position,product_id,product_name
 1000018208,4,293,Trash Bags
 1000018273,2,293,Trash Bags
 1000018279,2,293,Trash Bags
-1000018323,6,293,Trash Bags
 1000018368,3,293,Trash Bags
 1000018430,3,293,Trash Bags
 1000018444,8,293,Trash Bags
@@ -85090,6 +85090,7 @@ transaction_id,item_position,product_id,product_name
 1000018266,1,295,Tweezers
 1000018343,4,295,Tweezers
 1000018396,1,295,Tweezers
+1000009477,5,296,Umbrella
 1000000008,2,296,Umbrella
 1000000081,1,296,Umbrella
 1000000121,1,296,Umbrella
@@ -85229,7 +85230,6 @@ transaction_id,item_position,product_id,product_name
 1000009102,7,296,Umbrella
 1000009262,5,296,Umbrella
 1000009429,6,296,Umbrella
-1000009477,5,296,Umbrella
 1000009650,1,296,Umbrella
 1000009681,3,296,Umbrella
 1000009728,1,296,Umbrella
@@ -85375,8 +85375,6 @@ transaction_id,item_position,product_id,product_name
 1000018479,1,296,Umbrella
 1000018481,2,296,Umbrella
 1000018486,7,296,Umbrella
-1000000003,7,297,Underwear
-1000000068,5,297,Underwear
 1000000074,7,297,Underwear
 1000000167,5,297,Underwear
 1000000176,2,297,Underwear
@@ -85388,6 +85386,7 @@ transaction_id,item_position,product_id,product_name
 1000000623,3,297,Underwear
 1000000666,9,297,Underwear
 1000000696,1,297,Underwear
+1000000003,7,297,Underwear
 1000000788,4,297,Underwear
 1000000882,2,297,Underwear
 1000000884,5,297,Underwear
@@ -85652,6 +85651,8 @@ transaction_id,item_position,product_id,product_name
 1000018410,4,297,Underwear
 1000018423,3,297,Underwear
 1000018443,4,297,Underwear
+1000000068,5,297,Underwear
+1000017670,1,298,Vegetable Oil
 1000000110,3,298,Vegetable Oil
 1000000150,6,298,Vegetable Oil
 1000000285,2,298,Vegetable Oil
@@ -85940,7 +85941,6 @@ transaction_id,item_position,product_id,product_name
 1000017465,2,298,Vegetable Oil
 1000017606,3,298,Vegetable Oil
 1000017662,1,298,Vegetable Oil
-1000017670,1,298,Vegetable Oil
 1000017830,5,298,Vegetable Oil
 1000017906,3,298,Vegetable Oil
 1000017926,3,298,Vegetable Oil
@@ -86506,6 +86506,7 @@ transaction_id,item_position,product_id,product_name
 1000018231,11,300,Wallet
 1000018246,2,300,Wallet
 1000018268,1,300,Wallet
+1000007703,2,301,Washcloths
 1000000180,1,301,Washcloths
 1000000222,2,301,Washcloths
 1000000461,2,301,Washcloths
@@ -86625,7 +86626,6 @@ transaction_id,item_position,product_id,product_name
 1000007534,4,301,Washcloths
 1000007594,9,301,Washcloths
 1000007657,4,301,Washcloths
-1000007703,2,301,Washcloths
 1000007878,1,301,Washcloths
 1000007938,8,301,Washcloths
 1000007961,2,301,Washcloths
@@ -86786,8 +86786,6 @@ transaction_id,item_position,product_id,product_name
 1000018332,7,301,Washcloths
 1000018372,5,301,Washcloths
 1000018475,2,301,Washcloths
-1000000033,4,302,Water
-1000000041,5,302,Water
 1000000057,3,302,Water
 1000000066,3,302,Water
 1000000092,1,302,Water
@@ -86931,6 +86929,7 @@ transaction_id,item_position,product_id,product_name
 1000010310,1,302,Water
 1000010491,1,302,Water
 1000010586,4,302,Water
+1000000033,4,302,Water
 1000010649,3,302,Water
 1000010664,6,302,Water
 1000010749,3,302,Water
@@ -87060,6 +87059,7 @@ transaction_id,item_position,product_id,product_name
 1000018083,7,302,Water
 1000018095,7,302,Water
 1000018106,2,302,Water
+1000000041,5,302,Water
 1000018165,2,302,Water
 1000018181,1,302,Water
 1000018224,4,302,Water
@@ -87069,6 +87069,7 @@ transaction_id,item_position,product_id,product_name
 1000018475,1,302,Water
 1000018519,4,302,Water
 1000018528,5,302,Water
+1000018458,1,303,Water Bottle
 1000000217,3,303,Water Bottle
 1000000259,5,303,Water Bottle
 1000000494,1,303,Water Bottle
@@ -87342,7 +87343,6 @@ transaction_id,item_position,product_id,product_name
 1000018352,1,303,Water Bottle
 1000018355,4,303,Water Bottle
 1000018429,5,303,Water Bottle
-1000018458,1,303,Water Bottle
 1000018464,4,303,Water Bottle
 1000018479,3,303,Water Bottle
 1000018483,2,303,Water Bottle
@@ -87898,6 +87898,7 @@ transaction_id,item_position,product_id,product_name
 1000018236,1,305,Wine
 1000018281,4,305,Wine
 1000018515,1,305,Wine
+1000008472,3,306,Winter Hat
 1000000129,1,306,Winter Hat
 1000000143,2,306,Winter Hat
 1000000157,3,306,Winter Hat
@@ -88042,7 +88043,6 @@ transaction_id,item_position,product_id,product_name
 1000008291,1,306,Winter Hat
 1000008324,5,306,Winter Hat
 1000008391,2,306,Winter Hat
-1000008472,3,306,Winter Hat
 1000008515,3,306,Winter Hat
 1000008536,2,306,Winter Hat
 1000008657,5,306,Winter Hat
@@ -88204,8 +88204,6 @@ transaction_id,item_position,product_id,product_name
 1000018328,3,306,Winter Hat
 1000018331,4,306,Winter Hat
 1000018526,4,306,Winter Hat
-1000000066,4,307,Workout Clothes
-1000000095,3,307,Workout Clothes
 1000000103,3,307,Workout Clothes
 1000000168,5,307,Workout Clothes
 1000000192,8,307,Workout Clothes
@@ -88219,6 +88217,8 @@ transaction_id,item_position,product_id,product_name
 1000000787,1,307,Workout Clothes
 1000000795,6,307,Workout Clothes
 1000000797,6,307,Workout Clothes
+1000000095,3,307,Workout Clothes
+1000000066,4,307,Workout Clothes
 1000000831,5,307,Workout Clothes
 1000000863,1,307,Workout Clothes
 1000000891,8,307,Workout Clothes
@@ -88457,6 +88457,7 @@ transaction_id,item_position,product_id,product_name
 1000018282,1,307,Workout Clothes
 1000018468,1,307,Workout Clothes
 1000018477,4,307,Workout Clothes
+1000000953,3,308,Yoga Mat
 1000000048,2,308,Yoga Mat
 1000000088,1,308,Yoga Mat
 1000000127,2,308,Yoga Mat
@@ -88470,7 +88471,6 @@ transaction_id,item_position,product_id,product_name
 1000000803,2,308,Yoga Mat
 1000000832,4,308,Yoga Mat
 1000000934,6,308,Yoga Mat
-1000000953,3,308,Yoga Mat
 1000000985,2,308,Yoga Mat
 1000001104,9,308,Yoga Mat
 1000001126,5,308,Yoga Mat
@@ -88737,6 +88737,7 @@ transaction_id,item_position,product_id,product_name
 1000018413,6,308,Yoga Mat
 1000018431,1,308,Yoga Mat
 1000018491,1,308,Yoga Mat
+1000001126,3,309,Yoga Pants
 1000000074,4,309,Yoga Pants
 1000000216,5,309,Yoga Pants
 1000000475,3,309,Yoga Pants
@@ -88751,7 +88752,6 @@ transaction_id,item_position,product_id,product_name
 1000000987,3,309,Yoga Pants
 1000001022,2,309,Yoga Pants
 1000001085,2,309,Yoga Pants
-1000001126,3,309,Yoga Pants
 1000001171,5,309,Yoga Pants
 1000001198,4,309,Yoga Pants
 1000001468,2,309,Yoga Pants
@@ -89016,6 +89016,30 @@ transaction_id,item_position,product_id,product_name
 1000000629,3,310,Yogurt
 1000000647,5,310,Yogurt
 1000000712,1,310,Yogurt
+1000016848,3,310,Yogurt
+1000016923,1,310,Yogurt
+1000017003,7,310,Yogurt
+1000017018,6,310,Yogurt
+1000017061,7,310,Yogurt
+1000017096,1,310,Yogurt
+1000017187,7,310,Yogurt
+1000017265,6,310,Yogurt
+1000017282,5,310,Yogurt
+1000017387,5,310,Yogurt
+1000017450,2,310,Yogurt
+1000017525,2,310,Yogurt
+1000017640,10,310,Yogurt
+1000017694,4,310,Yogurt
+1000017717,3,310,Yogurt
+1000017756,1,310,Yogurt
+1000017811,1,310,Yogurt
+1000018052,1,310,Yogurt
+1000018085,3,310,Yogurt
+1000018123,8,310,Yogurt
+1000018141,1,310,Yogurt
+1000018186,6,310,Yogurt
+1000018388,4,310,Yogurt
+1000018407,1,310,Yogurt
 1000000716,5,310,Yogurt
 1000000893,3,310,Yogurt
 1000001136,3,310,Yogurt
@@ -89274,30 +89298,34 @@ transaction_id,item_position,product_id,product_name
 1000016727,3,310,Yogurt
 1000016756,2,310,Yogurt
 1000016820,2,310,Yogurt
-1000016848,3,310,Yogurt
-1000016923,1,310,Yogurt
-1000017003,7,310,Yogurt
-1000017018,6,310,Yogurt
-1000017061,7,310,Yogurt
-1000017096,1,310,Yogurt
-1000017187,7,310,Yogurt
-1000017265,6,310,Yogurt
-1000017282,5,310,Yogurt
-1000017387,5,310,Yogurt
-1000017450,2,310,Yogurt
-1000017525,2,310,Yogurt
-1000017640,10,310,Yogurt
-1000017694,4,310,Yogurt
-1000017717,3,310,Yogurt
-1000017756,1,310,Yogurt
-1000017811,1,310,Yogurt
-1000018052,1,310,Yogurt
-1000018085,3,310,Yogurt
-1000018123,8,310,Yogurt
-1000018141,1,310,Yogurt
-1000018186,6,310,Yogurt
-1000018388,4,310,Yogurt
-1000018407,1,310,Yogurt
+1000016651,2,311,Ziploc Bags
+1000016699,4,311,Ziploc Bags
+1000016733,6,311,Ziploc Bags
+1000016752,1,311,Ziploc Bags
+1000016820,1,311,Ziploc Bags
+1000016835,9,311,Ziploc Bags
+1000016945,5,311,Ziploc Bags
+1000016970,5,311,Ziploc Bags
+1000017012,8,311,Ziploc Bags
+1000017128,7,311,Ziploc Bags
+1000017133,6,311,Ziploc Bags
+1000017137,2,311,Ziploc Bags
+1000017155,3,311,Ziploc Bags
+1000017235,10,311,Ziploc Bags
+1000017272,4,311,Ziploc Bags
+1000017296,2,311,Ziploc Bags
+1000017706,10,311,Ziploc Bags
+1000017919,5,311,Ziploc Bags
+1000017967,2,311,Ziploc Bags
+1000018079,3,311,Ziploc Bags
+1000018084,2,311,Ziploc Bags
+1000018153,1,311,Ziploc Bags
+1000018162,5,311,Ziploc Bags
+1000018280,4,311,Ziploc Bags
+1000018306,3,311,Ziploc Bags
+1000018334,4,311,Ziploc Bags
+1000018465,4,311,Ziploc Bags
+1000018500,4,311,Ziploc Bags
 1000000097,8,311,Ziploc Bags
 1000000103,4,311,Ziploc Bags
 1000000132,3,311,Ziploc Bags
@@ -89535,31 +89563,3 @@ transaction_id,item_position,product_id,product_name
 1000016481,4,311,Ziploc Bags
 1000016524,3,311,Ziploc Bags
 1000016572,9,311,Ziploc Bags
-1000016651,2,311,Ziploc Bags
-1000016699,4,311,Ziploc Bags
-1000016733,6,311,Ziploc Bags
-1000016752,1,311,Ziploc Bags
-1000016820,1,311,Ziploc Bags
-1000016835,9,311,Ziploc Bags
-1000016945,5,311,Ziploc Bags
-1000016970,5,311,Ziploc Bags
-1000017012,8,311,Ziploc Bags
-1000017128,7,311,Ziploc Bags
-1000017133,6,311,Ziploc Bags
-1000017137,2,311,Ziploc Bags
-1000017155,3,311,Ziploc Bags
-1000017235,10,311,Ziploc Bags
-1000017272,4,311,Ziploc Bags
-1000017296,2,311,Ziploc Bags
-1000017706,10,311,Ziploc Bags
-1000017919,5,311,Ziploc Bags
-1000017967,2,311,Ziploc Bags
-1000018079,3,311,Ziploc Bags
-1000018084,2,311,Ziploc Bags
-1000018153,1,311,Ziploc Bags
-1000018162,5,311,Ziploc Bags
-1000018280,4,311,Ziploc Bags
-1000018306,3,311,Ziploc Bags
-1000018334,4,311,Ziploc Bags
-1000018465,4,311,Ziploc Bags
-1000018500,4,311,Ziploc Bags

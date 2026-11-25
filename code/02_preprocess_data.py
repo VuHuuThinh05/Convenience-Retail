@@ -5,6 +5,10 @@ from decimal import Decimal, ROUND_HALF_UP
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "data/raw/kaggle_convenience_store/convenience_store.csv"
+if not SOURCE.is_file():
+    SOURCE = ROOT / "data/convenience_store.csv"
+if not SOURCE.is_file():
+    raise FileNotFoundError("Thiếu dữ liệu: tải Kaggle hoặc đặt data/convenience_store.csv")
 OUTPUT = ROOT / "data/processed"
 OUTPUT.mkdir(parents=True, exist_ok=True)
 

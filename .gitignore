@@ -18,6 +18,8 @@ __pycache__/
 data/raw/
 data/processed/
 data/exports/
+data/powerbi_export_temp/
+/metastore_db/
 
 # GitHub goc dung de tham khao
 original-project/
@@ -34,3 +36,8 @@ Thumbs.db
 
 # Power BI dashboard
 /dashboard/
+
+metastore_db/
+derby.log
+__pycache__/
+.env

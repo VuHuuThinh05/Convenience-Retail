@@ -1,4 +1,4 @@
-set hive.exec.mode.local.auto=true;
+set hive.exec.mode.local.auto=false;
 USE retail_dw;
 
 -- Q1. Doanh thu theo nam, quy, thang (JOIN dim_time khong trung khoa)
@@ -72,19 +72,9 @@ FROM fact_sales
 GROUP BY promotion
 ORDER BY total_revenue DESC;
 
--- Q7. Doanh thu theo mua (Season)
-SELECT '=== Q7: DOANH THU THEO MUA ===';
-SELECT
-    t.season,
-    COUNT(f.transaction_id) AS total_transactions,
-    ROUND(SUM(f.total_cost), 2) AS total_revenue
-FROM fact_sales f
-JOIN dim_time t ON f.date_str = t.date_str
-GROUP BY t.season
-ORDER BY total_revenue DESC;
 
--- Q8. Top 15 san pham ban chay nhat
-SELECT '=== Q8: TOP 15 SAN PHAM BAN CHAY ===';
+-- Q8. Top 20 san pham ban chay nhat
+SELECT '=== Q8: TOP 20 SAN PHAM BAN CHAY ===';
 SELECT
     product_id,
     product_name,
@@ -92,12 +82,12 @@ SELECT
 FROM fact_transaction_items
 GROUP BY product_id, product_name
 ORDER BY times_purchased DESC
-LIMIT 15;
+LIMIT 20;
 
 -- Q9. Market Basket Analysis (Cap san pham mua cung nhau + Support, Confidence, Lift)
 SELECT '=== Q9: MARKET BASKET ANALYSIS (TOP 20 CAP SAN PHAM) ===';
 WITH total_tx AS (
-    SELECT COUNT(DISTINCT transaction_id) AS n_tx FROM fact_transaction_items
+    SELECT COUNT(DISTINCT transaction_id) AS n_tx FROM fact_sales
 ),
 item_counts AS (
     SELECT product_name, COUNT(DISTINCT transaction_id) AS item_tx

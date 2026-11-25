@@ -1,0 +1,5 @@
+run_id,table_name,format,partitioned,row_count,total_revenue,range_row_count,range_revenue,hdfs_size_bytes
+20261125_215331,fact_sales_text_nopan,TextFile,No,18531,936803.43,2306,117982.81,1360493
+20261125_215331,fact_sales_orc_nopan,ORC,No,18531,936803.43,2306,117982.81,225090
+20261125_215331,fact_sales_text_pan,TextFile,Yes,18531,936803.43,2306,117982.81,1360493
+20261125_215331,fact_sales_orc_pan,ORC,Yes,18531,936803.43,2306,117982.81,322873

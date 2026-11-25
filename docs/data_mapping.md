@@ -44,12 +44,14 @@ File: convenience_store.csv
 
 ## 3. Anh xa MySQL sang Hive
 
-- transactions -> staging -> sales_fact
-- products -> staging -> dim_product
-- transaction_items -> staging -> basket_items_fact
+- transactions -> stg_transactions -> fact_sales
+- products -> stg_products -> dim_product
+- transaction_items -> stg_transaction_items -> fact_transaction_items
 
 Cac dimension khac duoc tao tu truong
 mo ta cua transactions va du lieu thoi gian.
+
+Staging đọc dữ liệu text do Sqoop tạo trên HDFS theo **thứ tự cột**, không dựa vào tên cột trong file. Thứ tự cột trong Hive cần khớp thứ tự xuất của MySQL/Sqoop; kiểm tra bản ghi mẫu và `COUNT(*)`, `SUM(total_cost)` sau khi tạo bảng.
 
 ## 4. Nguyen tac du lieu
 
@@ -60,3 +62,5 @@ mo ta cua transactions va du lieu thoi gian.
 - Khong tu tao don gia san pham roi coi la du lieu goc.
 - Du lieu benchmark mo rong phai duoc danh dau la mo phong.
 - Giu nguyen file CSV Kaggle ban dau.
+- `Season` được giữ trong nguồn để bảo toàn dữ liệu, nhưng nhãn mùa không nhất quán với ngày giao dịch. Không dùng trường này cho Q7 hoặc biểu đồ mùa.
+- `Total_Items` là số vị trí sản phẩm trong giỏ; dữ liệu không có số lượng bán và đơn giá riêng cho mỗi loại sản phẩm.
