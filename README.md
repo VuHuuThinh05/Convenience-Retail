@@ -1,134 +1,45 @@
 # Convenience Retail Big Data — Hadoop Pipeline
 
-Dự án phân tích giao dịch bán lẻ chuỗi cửa hàng tiện lợi theo mô hình **batch**.
+Dự án phân tích giao dịch cửa hàng tiện lợi theo lô trên môi trường Hadoop pseudo-distributed. Phạm vi bám theo đề cương đã duyệt: MySQL → Sqoop → HDFS → Hive → Power BI, phân tích doanh số và giỏ hàng, đánh giá TextFile/ORC và partitioning.
 
-**Luồng dữ liệu:** Kaggle → Python (chuẩn hóa & kiểm tra) → MySQL (`convenience_retail`) → Sqoop → HDFS → Hive → Power BI.
+## Dữ liệu và phạm vi kết luận
 
-**Tiến độ:** Hoàn thành giai đoạn 1–5 trên máy thành viên 1; Hive, phân tích, Power BI và benchmark sẽ được các thành viên tiếp tục phát triển. Repo không chứa phần mềm Hadoop, dịch vụ MySQL hay dữ liệu HDFS đã chạy.
+Nguồn: [Convenience Store — jessekeats (Kaggle)](https://www.kaggle.com/datasets/jessekeats/convenience-store). Bộ dữ liệu đã dùng có **18.531 giao dịch, 311 sản phẩm, 89.564 dòng sản phẩm trong giỏ** và tổng `total_cost` **936803.43** (chưa xác minh đơn vị tiền tệ). Mỗi dòng `fact_sales` là một giao dịch; `total_cost` chỉ được cộng một lần ở cấp giao dịch.
 
-## 1. Yêu cầu môi trường
+Nguồn không có StoreID, mã khách hàng bền vững hay giá bán riêng từng sản phẩm. `City` không đại diện cho cửa hàng; `Customer_Name` không phải khóa khách hàng đáng tin cậy. Phân tích giỏ hàng dùng tần suất đồng xuất hiện, support, confidence và lift; không gán doanh thu cho từng sản phẩm. **Q7 theo mùa đã loại khỏi SQL phân tích, CSV xuất và biểu đồ** vì nhãn `Season` trong dữ liệu nguồn không nhất quán với ngày. Trường nguồn vẫn được giữ để bảo toàn dữ liệu đầu vào, nhưng không dùng làm chỉ số kinh doanh. File Power BI đã lưu không còn bảng Q7 trong khung Data, nhưng vẫn còn trường `dim_time.season` và một nút Q7 cũ trong metadata sơ đồ mô hình; cần kiểm tra các dấu vết này khi làm mới báo cáo.
 
-Ưu tiên **Windows + WSL2 Ubuntu 22.04**, VS Code WSL. Máy đã cài và cấu hình được:
+## Môi trường
 
-| Thành phần | Phiên bản tham chiếu của thành viên 1 |
-|---|---|
-| Python | 3.10.12 |
-| Java | 8 |
-| Hadoop | 3.2.1 |
-| Hive | 3.1.2 |
-| Sqoop | 1.4.7 |
-| MySQL | 8.0.x |
-| SSH | Phục vụ Hadoop pseudo-distributed |
-
-Cần có `java`, `hdfs`, `start-dfs.sh`, `start-yarn.sh`, `sqoop`, `mysql`, `sudo mysql` hoạt động trong Terminal Ubuntu. Các thành viên phải cài các hệ thống này trên máy riêng trước khi chạy pipeline. Cấu hình môi trường không được tự động thiết lập bởi Git clone.
-
-## 2. Clone và chuẩn bị Python
+Môi trường tham chiếu: Windows + WSL2 Ubuntu 22.04, Python 3.10, Java 8, Hadoop 3.2.1, Hive 3.1.2, Sqoop 1.4.7 và MySQL 8. Cần cài và cấu hình các dịch vụ này trên máy chạy; Git clone không tự thiết lập Hadoop, MySQL, Hive Metastore hoặc HDFS. Mọi lệnh bên dưới chạy tại thư mục gốc dự án trong terminal WSL.
 
 ```bash
-git clone https://github.com/Minhnhat0812/Convenience-Retail-BigData.git
-cd Convenience-Retail-BigData
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-## 3. Lấy dữ liệu Kaggle và tiền xử lý
+## Chạy pipeline
 
-Nguồn: [Convenience Store — jessekeats (Kaggle)](https://www.kaggle.com/datasets/jessekeats/convenience-store).
+1. **Lấy và kiểm tra dữ liệu.** Có thể dùng bản sao `data/convenience_store.csv` đang có trong repo để chạy offline, hoặc tải lại bằng `python code/00_download_dataset.py`. Chạy tiếp `python code/02_preprocess_data.py` và `python code/03_validate_data.py`. Script ưu tiên bản tải về `data/raw/kaggle_convenience_store/convenience_store.csv`, rồi dùng bản sao offline khi không có file đó; kết quả xử lý nằm ở `data/processed/`. Nếu Kaggle yêu cầu đăng nhập, dùng tài khoản cá nhân và không đưa token vào repo.
+2. **Nạp MySQL.** Chạy `sudo service mysql start`, `sudo mysql < sql/mysql/create_tables.sql`, rồi `python code/04_load_mysql.py`. Bước nạp **xóa và nạp lại** ba bảng `transactions`, `products`, `transaction_items`; chỉ chạy trên database dành cho đồ án.
+3. **Tạo tài khoản Sqoop chỉ đọc** trong MySQL, ví dụ `CREATE USER 'sqoopuser'@'127.0.0.1' IDENTIFIED BY 'MAT_KHAU_RIENG'; GRANT SELECT ON convenience_retail.* TO 'sqoopuser'@'127.0.0.1';`. Kiểm tra bằng `sqoop list-tables --connect jdbc:mysql://127.0.0.1:3306/convenience_retail --username sqoopuser -P`.
+4. **Đưa dữ liệu lên HDFS.** Chạy `sudo service ssh start`, `start-dfs.sh`, `start-yarn.sh`, rồi `bash scripts/01_import_sqoop.sh`. Script nhập lại ba thư mục `/user/<tên-user>/convenience_retail/raw/` bằng `--delete-target-dir`; không chạy khi tác vụ khác đang đọc dữ liệu ở đó.
+5. **Tạo mô hình Hive từ dữ liệu Sqoop.** Chạy `bash scripts/02_build_hive.sh`. Script truyền user HDFS vào `sql/01_hive_from_sqoop.sql` để đọc đúng ba thư mục đã nhập. Đây là luồng dựng mô hình Hive của dự án.
+6. **Phân tích và xuất Power BI.** Chạy `bash scripts/hive_cli.sh -f sql/04_replay_analysis.sql`, sau đó `mkdir -p data/powerbi_export` và `bash scripts/export_powerbi.sh data/powerbi_export`. Mở `dashboard_biadata.pbix` trong Power BI và cập nhật đường dẫn nguồn CSV trên máy chạy. Các câu hỏi đang sử dụng: **Q1–Q6, Q8–Q9**; không có biểu đồ Q7.
+7. **Kiểm thử.** Chạy `python tests/run_all_tests.py` sau khi MySQL, HDFS, Hive và dữ liệu xuất sẵn sàng. Kiểm tra tổng giao dịch, sản phẩm, chi tiết giỏ, tổng tiền và khóa trước khi dùng số liệu trong báo cáo. Log cũ trong `results/testing/` là lịch sử, không thay thế kết quả của lần chạy cuối.
 
-```bash
-python code/00_download_dataset.py
-python code/02_preprocess_data.py
-python code/03_validate_data.py
-```
+Ngày 25/11/2026, mô hình Hive đã được dựng lại từ HDFS và đối chiếu thành công **18.531 giao dịch, 89.564 chi tiết giỏ, tổng tiền 936803.43**. Các CSV trong `data/powerbi_export/` đã được xuất lại từ mô hình này. Lần kiểm thử WSL gần nhất trong `results/testing/test_summary.csv` đạt **10/10 (100%)** sau khi cấu hình kết nối MySQL hợp lệ. Dashboard Power BI cần làm mới và lưu để phản ánh lần chạy này.
 
-Nếu Kaggle yêu cầu đăng nhập hoặc chấp thuận điều khoản dataset, từng thành viên thực hiện với tài khoản riêng; không đưa token lên GitHub.
+Để T01/T03 kết nối MySQL mà không ghi mật khẩu vào script, tạo login path bằng `mysql_config_editor set --login-path=retail_test --host=127.0.0.1 --user=sqoopuser --password` (nhập mật khẩu tại lời nhắc), thử `mysql --login-path=retail_test --database=convenience_retail -e 'SELECT COUNT(*) FROM transactions;'`, rồi đặt `export RETAIL_MYSQL_CMD='mysql --login-path=retail_test --batch --skip-column-names --database=convenience_retail'` trước khi chạy lại `python tests/run_all_tests.py`. Nếu user HDFS khác user đang chạy kiểm thử, đặt `RETAIL_HDFS_USER` tương ứng.
 
-Script tải dữ liệu về `data/raw/kaggle_convenience_store/convenience_store.csv`. File `01_inspect_dataset.py` là bước khảo sát dữ liệu tùy chọn. Dữ liệu raw và processed được tạo lại trên từng máy, không commit lên GitHub (cần tuân thủ giấy phép nguồn Kaggle).
+## Đánh giá hiệu năng
 
-Kết quả kỳ vọng với phiên bản dữ liệu nhóm đã kiểm tra:
+Sau khi `fact_sales` trong Hive có dữ liệu, tạo bốn bảng so sánh bằng `bash scripts/hive_cli.sh -f benchmark/02_create_tables.sql`, chạy `bash benchmark/04_run_benchmark.sh`, rồi `python benchmark/05_analyze_results.py`. Wrapper `scripts/hive_cli.sh` chạy Hive từ thư mục home của WSL để Hive Metastore/Derby không tạo file trong `/mnt/d`. So sánh **TextFile và ORC**, mỗi loại có và không partition theo tháng, trên cùng số dòng và tổng tiền. Lần chạy ngày 25/11/2026 có **48/48 phép đo thành công**; `results/benchmark/benchmark_validation.csv` ghi số dòng, tổng tiền, kết quả lọc và dung lượng HDFS của bốn bảng. Với 18.531 giao dịch, chi phí khởi động Hive có thể chi phối thời gian; chỉ kết luận theo các phép đo thực tế, không khẳng định một định dạng luôn nhanh hơn.
 
-| CSV / bảng | Số dòng |
-|---|---:|
-| transactions | 18.531 |
-| products | 311 |
-| transaction_items | 89.564 |
+## Tài liệu
 
-Tổng `total_cost` giao dịch là **936803.43** (chưa xác minh đơn vị tiền tệ). Nếu số liệu từ Kaggle thay đổi do cập nhật dataset, cần kiểm tra phiên bản nguồn trước khi tiếp tục.
+- `docs/data_mapping.md`: ánh xạ dữ liệu nguồn → MySQL → Hive và giới hạn diễn giải.
+- `docs/star_schema_design.md`: grain và quan hệ các bảng phân tích.
+- `docs/dataset_audit.md`: khảo sát và chất lượng dữ liệu gốc.
 
-## 4. Tạo MySQL và nạp dữ liệu
-
-```bash
-sudo service mysql start
-sudo mysql < sql/mysql/create_tables.sql
-python code/04_load_mysql.py
-```
-
-`04_load_mysql.py` tự gọi bước kiểm tra dữ liệu và **xóa/nạp lại ba bảng** `transactions`, `products`, `transaction_items` trong database `convenience_retail`. Không chạy trên database có dữ liệu riêng cần giữ lại.
-
-Kiểm tra:
-
-```bash
-sudo mysql -D convenience_retail -e "SELECT COUNT(*) FROM transactions; SELECT COUNT(*) FROM products; SELECT COUNT(*) FROM transaction_items;"
-```
-
-## 5. Cho phép Sqoop đọc MySQL
-
-Tạo tài khoản SQL chỉ có quyền đọc trên máy mới bằng `sudo mysql` (trong MySQL shell, thay `MAT_KHAU_RIENG` bằng mật khẩu tự chọn, không commit hoặc gửi mật khẩu):
-
-```sql
-CREATE USER IF NOT EXISTS 'sqoopuser'@'127.0.0.1' IDENTIFIED BY 'MAT_KHAU_RIENG';
-GRANT SELECT ON convenience_retail.* TO 'sqoopuser'@'127.0.0.1';
-```
-
-Nếu tài khoản đã tồn tại, xác định đúng mật khẩu và Host trước khi chạy. Có thể thử bằng:
-
-```bash
-sqoop list-tables --connect jdbc:mysql://127.0.0.1:3306/convenience_retail --username sqoopuser -P
-```
-
-Kết quả cần liệt kê `products`, `transactions`, `transaction_items`.
-
-## 6. Khởi động Hadoop và import lên HDFS
-
-```bash
-sudo service ssh start
-start-dfs.sh
-start-yarn.sh
-jps
-bash scripts/01_import_sqoop.sh
-```
-
-`jps` cần thấy ít nhất NameNode, DataNode, SecondaryNameNode, ResourceManager, NodeManager. Bash import hỏi mật khẩu Sqoop ba lần; dữ liệu lưu vào `/user/<ten-user-Ubuntu>/convenience_retail/raw/`.
-
-**Cảnh báo:** `scripts/01_import_sqoop.sh` dùng `--delete-target-dir` nên mỗi lần chạy sẽ xóa thư mục đích HDFS của ba bảng trước khi import lại. Không chạy đồng thời với tác vụ đang đọc các thư mục đó.
-
-Kiểm tra HDFS:
-
-```bash
-for table in products transactions transaction_items; do
-  echo "===== $table ====="
-  hdfs dfs -test -e "/user/$(whoami)/convenience_retail/raw/$table/_SUCCESS" || exit 1
-  hdfs dfs -cat "/user/$(whoami)/convenience_retail/raw/$table/part-m-*" | wc -l
-done
-```
-
-Số dòng cần khớp lần lượt **311, 18531, 89564**. Các file HDFS được tạo ở định dạng text với ký tự phân tách trường `\001` (Ctrl-A). Khi tạo bảng Hive external cần khai báo đúng dấu phân tách này.
-
-## 7. Phân công
-
-- **Thành viên 1:** Kaggle, Python, MySQL, Sqoop, HDFS; mã nguồn `code/`, `sql/mysql/`, `scripts/`.
-- **Thành viên 2:** Hive staging/cleaning, dimensional model & 9 câu hỏi phân tích; tạo script tại `sql/hive/`. Tài liệu tham khảo `docs/star_schema_design.md`.
-- **Thành viên 3:** Dashboard Power BI, benchmark; dùng `powerbi/`, `benchmark/`.
-
-Dùng nhánh Git riêng cho từng thành viên, tạo Pull Request để gộp vào `main`. Không commit `.env`, token, mật khẩu, dữ liệu MySQL/HDFS hay `.venv`.
-
-## 8. Giới hạn dữ liệu
-
-Dataset không cung cấp mã cửa hàng đáng tin cậy, ID khách hàng bền vững hoặc doanh thu riêng từng sản phẩm. `total_cost` là **tổng tiền giao dịch**, không phải doanh thu của mỗi dòng sản phẩm. Không được nhân tổng tiền cho từng dòng `transaction_items` khi phân tích. Cột `City` không phải mã cửa hàng.
-
-## 9. Nguồn tham khảo
-
-- [Kaggle convenience-store](https://www.kaggle.com/datasets/jessekeats/convenience-store)
-- [GitHub reference: E-Commerce-data-analysis-using-Hadoop](https://github.com/abhinaba-fbr/E-Commerce-data-analysis-using-Hadoop) (khảo sát ý tưởng, không commit thư mục `original-project/` vào repo).
+Tham khảo: [Apache Hadoop](https://hadoop.apache.org/docs/), [Apache Hive](https://hive.apache.org/), và Kimball & Ross, *The Data Warehouse Toolkit* (2013).

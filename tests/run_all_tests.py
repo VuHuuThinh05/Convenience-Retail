@@ -25,7 +25,7 @@ EXPORTS = [
     "fact_transaction_items.csv", "q1_revenue_by_time.csv",
     "q2_revenue_by_payment.csv", "q3_revenue_by_city_time.csv",
     "q4_revenue_by_customer_category.csv", "q5_revenue_by_member.csv",
-    "q6_revenue_by_promotion.csv", "q7_revenue_by_season.csv",
+    "q6_revenue_by_promotion.csv",
     "q8_top_products.csv", "q9_market_basket_top20.csv",
 ]
 EXPECTED_ROWS = {"transactions": 18531, "products": 311, "transaction_items": 89564}
@@ -66,9 +66,9 @@ def cmd_exists(cmd):
     if not shutil.which(cmd):
         raise SkipTest(f"Không tìm thấy lệnh '{cmd}' trên hệ điều hành đang chạy. Hãy chạy trong WSL nếu dịch vụ ở WSL.")
 
-def execute(args, timeout=90, stdin=None):
+def execute(args, timeout=90, stdin=None, cwd=None):
     try:
-        process = subprocess.run(args, input=stdin, capture_output=True, text=True,
+        process = subprocess.run(args, input=stdin, capture_output=True, text=True, cwd=cwd,
                                  encoding="utf-8", errors="replace", timeout=timeout)
     except subprocess.TimeoutExpired as exc:
         raise AssertionError(f"Lệnh quá thời gian {timeout}s: {args[0]}") from exc
@@ -106,8 +106,18 @@ def hive_count(table):
     cmd_exists("hive")
     database = os.environ.get("RETAIL_HIVE_DB", "retail_dw")
     require(database.replace("_", "").isalnum(), "Tên RETAIL_HIVE_DB không hợp lệ")
-    output = execute(["hive", "-S", "-e", f"USE {database}; SELECT COUNT(*) FROM {table};"], timeout=180)
+    output = execute(["hive", "-S", "-e", f"USE {database}; SELECT COUNT(*) FROM {table};"], timeout=180, cwd=Path.home())
     return number_from_output(output, "hive")
+
+def hive_revenue(table):
+    cmd_exists("hive")
+    database = os.environ.get("RETAIL_HIVE_DB", "retail_dw")
+    require(database.replace("_", "").isalnum(), "Tên RETAIL_HIVE_DB không hợp lệ")
+    output = execute(["hive", "-S", "-e", f"USE {database}; SELECT CAST(SUM(total_cost) AS DECIMAL(14,2)) FROM {table};"], timeout=180, cwd=Path.home())
+    try:
+        return Decimal(output.strip().splitlines()[-1])
+    except (InvalidOperation, IndexError) as exc:
+        raise AssertionError(f"Hive {table}: không đọc được tổng tiền") from exc
 
 # T01–T10. Return (expected, actual, note). Exceptions -> FAIL or SKIP.
 def t01_mysql(root):
@@ -129,11 +139,20 @@ def t03_mysql_hdfs(root):
     return "Số dòng 3 bảng tương đương", str(pairs), "Đối chiếu số dòng; chưa phải kiểm tra toàn bộ nội dung bản ghi"
 
 def t04_hive(root):
-    names = ["fact_sales", "fact_transaction_items"]
+    names = ["stg_products", "stg_transactions", "stg_transaction_items",
+             "fact_sales", "fact_transaction_items"]
     values = {t: hive_count(t) for t in names}
-    require(all(n > 0 for n in values.values()), f"Bảng Hive không có dữ liệu: {values}")
-    require(values["fact_sales"] == EXPECTED_ROWS["transactions"], "Hive fact_sales sai số dòng")
-    return "Hive truy vấn được; fact_sales=18531", str(values), "Đọc COUNT(*) từ Hive; không biến đổi dữ liệu"
+    expected = {"stg_products": 311, "stg_transactions": 18531,
+                "stg_transaction_items": 89564, "fact_sales": 18531,
+                "fact_transaction_items": 89564}
+    require(values == expected, f"Số dòng Hive không khớp: {values}")
+    stage_revenue = hive_revenue("stg_transactions")
+    fact_revenue = hive_revenue("fact_sales")
+    require(stage_revenue == fact_revenue == BASELINE_REVENUE,
+            f"Tổng tiền Hive sai: staging={stage_revenue}, fact={fact_revenue}")
+    return f"Hive staging/fact đúng số dòng và tổng tiền {BASELINE_REVENUE}", \
+           f"{values}; staging={stage_revenue}, fact={fact_revenue}", \
+           "Đối chiếu staging và fact Hive; không biến đổi dữ liệu"
 
 def t05_unique_transaction(root):
     rows = csv_rows(data_file(root, "fact_sales.csv"), ("transaction_id",))
@@ -187,7 +206,7 @@ def t08_business_exports(root):
         require(0 <= sup <= 1 and 0 <= conf <= 1 and lift > 0 and co > 0,
                 f"Q9 dòng {i}: Support/Confidence/Lift/Frequency không hợp lệ")
     require(len(q9) <= 20, f"Q9 có {len(q9)} dòng, lớn hơn Top 20")
-    return "9 file CSV Q1-Q9 không rỗng; Q9 hợp lệ", \
+    return "8 file CSV Q1-Q6, Q8-Q9 không rỗng; Q9 hợp lệ", \
            ", ".join(f"{k}={v}" for k, v in counts.items()), \
            "Kiểm tra cấu trúc, miền chỉ số; không thay thế việc đối chiếu SQL Hive"
 
@@ -205,7 +224,7 @@ def t09_powerbi_exports(root):
     for name, key in (("dim_customer.csv", "customer_id"), ("dim_product.csv", "product_id"), ("dim_time.csv", "date_str")):
         rows = csv_rows(data_file(root, name), (key,))
         require(count_distinct(rows, key) == len(rows), f"{name}: khóa {key} không duy nhất")
-    return "14 file CSV, khóa dim duy nhất", f"{len(counts)} file", "Kiểm tra cấu trúc xuất CSV và khóa dimension"
+    return "13 file CSV, khóa dim duy nhất", f"{len(counts)} file", "Kiểm tra cấu trúc xuất CSV và khóa dimension"
 
 def t10_benchmark(root):
     path = root / "results" / "benchmark" / "benchmark_results.csv"
@@ -216,13 +235,29 @@ def t10_benchmark(root):
     require(len(rows) == 48, f"Số phép đo {len(rows)} không phải 48")
     require(all(r["status"] == "SUCCESS" and float(r["duration_ms"]) > 0 for r in rows),
             "Benchmark có status khác SUCCESS hoặc thời gian không dương")
+    run_ids = {r["run_id"] for r in rows}
+    require(len(run_ids) == 1, "Benchmark chứa nhiều run_id")
+    validation = root / "results" / "benchmark" / "benchmark_validation.csv"
+    audits = csv_rows(validation, ("run_id", "table_name", "row_count", "total_revenue",
+                                   "range_row_count", "range_revenue", "hdfs_size_bytes"))
+    require(len(audits) == 4 and {r["run_id"] for r in audits} == run_ids,
+            "Thiếu xác thực bốn bảng cho lần benchmark hiện tại")
+    require(len({r["table_name"] for r in audits}) == 4,
+            "Bảng benchmark trùng hoặc thiếu")
+    require(all(int(r["row_count"]) == EXPECTED_ROWS["transactions"]
+                and Decimal(r["total_revenue"]) == BASELINE_REVENUE
+                and int(r["range_row_count"]) > 0
+                and int(r["hdfs_size_bytes"]) > 0 for r in audits),
+            "Bảng benchmark sai số dòng, tổng tiền, khoảng lọc hoặc dung lượng")
+    require(len({(r["range_row_count"], r["range_revenue"]) for r in audits}) == 1,
+            "Bốn bảng benchmark khác kết quả khoảng lọc")
     summary = root / "results" / "benchmark" / "benchmark_summary.csv"
     if summary.exists():
         sums = csv_rows(summary, ("query_id", "format", "partitioned", "runs", "median_duration_ms"))
         require(len(sums) == 16 and all(int(x["runs"]) == 3 for x in sums),
                 "benchmark_summary.csv không đủ 16 dòng hoặc số lần đo không đúng")
-    return "48 SUCCESS, 16 nhóm × 3 phép đo", f"{len(rows)} SUCCESS", \
-           "Chỉ kiểm tra tính đầy đủ các phép đo; chưa xác thực số bản ghi/dung lượng HDFS giữa cấu hình"
+    return "48 SUCCESS, 16 nhóm × 3 phép đo; 4 bảng đã đối chiếu", f"{len(rows)} SUCCESS", \
+           "Cùng số dòng, tổng tiền, kết quả khoảng lọc và có dung lượng HDFS"
 
 TESTS = [
     ("T01", "MySQL - kết nối và số dòng", t01_mysql),
@@ -232,7 +267,7 @@ TESTS = [
     ("T05", "Giao dịch không trùng khóa", t05_unique_transaction),
     ("T06", "Khóa giỏ hàng và sản phẩm", t06_item_keys),
     ("T07", "Đối chiếu tổng doanh thu", t07_revenue),
-    ("T08", "Kiểm tra kết quả Q1-Q9", t08_business_exports),
+    ("T08", "Kiểm tra kết quả Q1-Q6, Q8-Q9", t08_business_exports),
     ("T09", "Kiểm tra CSV Power BI", t09_powerbi_exports),
     ("T10", "Kiểm tra benchmark", t10_benchmark),
 ]

@@ -2,4 +2,4 @@ payment_method,total_transactions,total_revenue,avg_order_value
 Debit Card,4683,237046.24,50.62
 Cash,4645,235205.68,50.64
 Mobile Payment,4637,235043.41,50.69
-Credit Card,4566,229508.1,50.26
+Credit Card,4566,229508.10,50.26

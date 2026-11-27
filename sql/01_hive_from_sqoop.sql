@@ -23,26 +23,26 @@ CREATE EXTERNAL TABLE stg_products (
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '\001'
 STORED AS TEXTFILE
-LOCATION '/user/thinh2005/convenience_retail/raw/products';
+LOCATION '/user/${hivevar:hdfs_user}/convenience_retail/raw/products';
 
 CREATE EXTERNAL TABLE stg_transactions (
-    city STRING,
-    customer_category STRING,
-    customer_name STRING,
-    member STRING,
-    payment_method STRING,
-    promotion STRING,
-    season STRING,
-    total_cost DOUBLE,
-    total_items INT,
-    transaction_date STRING,
     transaction_id BIGINT,
-    transaction_time STRING
+    transaction_date STRING,
+    transaction_time STRING,
+    customer_name STRING,
+    customer_category STRING,
+    city STRING,
+    payment_method STRING,
+    season STRING,
+    promotion STRING,
+    member STRING,
+    total_items INT,
+    total_cost DECIMAL(12,2)
 )
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '\001'
 STORED AS TEXTFILE
-LOCATION '/user/thinh2005/convenience_retail/raw/transactions';
+LOCATION '/user/${hivevar:hdfs_user}/convenience_retail/raw/transactions';
 
 CREATE EXTERNAL TABLE stg_transaction_items (
     transaction_id BIGINT,
@@ -51,7 +51,7 @@ CREATE EXTERNAL TABLE stg_transaction_items (
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '\001'
 STORED AS TEXTFILE
-LOCATION '/user/thinh2005/convenience_retail/raw/transaction_items';
+LOCATION '/user/${hivevar:hdfs_user}/convenience_retail/raw/transaction_items';
 
 -- 2. Tạo các bảng Dimension chuẩn (không trùng khóa)
 CREATE TABLE dim_product STORED AS ORC AS
@@ -62,8 +62,7 @@ SELECT
     transaction_date AS date_str,
     year(transaction_date) AS trans_year,
     month(transaction_date) AS trans_month,
-    quarter(transaction_date) AS trans_quarter,
-    MIN(season) AS season
+    quarter(transaction_date) AS trans_quarter
 FROM stg_transactions
 GROUP BY transaction_date;
 
